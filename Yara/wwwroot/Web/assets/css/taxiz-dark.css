@@ -1,0 +1,221 @@
+:root {
+  --taxiz-black: #ffffff;
+  --taxiz-black-rgb: 255, 255, 255;
+  --taxiz-black2: #000000;
+  --taxiz-black2-rgb: 0, 0, 0;
+  --taxiz-black3: #141414;
+  --taxiz-black3-rgb: 20, 20, 20;
+}
+
+body {
+  background-color: var(--taxiz-black3);
+}
+
+.taxiz-btn {
+  color: var(--taxiz-black3);
+}
+.taxiz-btn:hover {
+  color: var(--taxiz-black3);
+}
+.taxiz-btn::before, .taxiz-btn::after {
+  background-color: var(--taxiz-black);
+}
+.taxiz-btn--border {
+  color: var(--taxiz-black);
+}
+.taxiz-btn--border:hover {
+  color: var(--taxiz-black3);
+}
+.taxiz-btn--border:hover .taxiz-btn__icon {
+  color: var(--taxiz-black3);
+}
+.taxiz-btn--border::before, .taxiz-btn--border::after {
+  background-color: var(--taxiz-base);
+}
+
+.taxiz-owl__carousel--basic-nav.owl-carousel .owl-nav button {
+  color: var(--taxiz-black3);
+}
+.taxiz-owl__carousel--basic-nav.owl-carousel .owl-nav button:hover {
+  color: var(--taxiz-black);
+  background-color: var(--taxiz-black3);
+}
+
+.main-header,
+.home-showcase__inner,
+.demo-one__card,
+.main-menu .main-menu__list li ul {
+  background-color: var(--taxiz-black2);
+}
+
+.preloader,
+.topbar__info li:hover .topbar__info__icon,
+.main-header__right__inner__bg,
+.mobile-nav__content,
+.search-popup__form .taxiz-btn::before,
+.search-popup__form .taxiz-btn::after,
+.main-slider-one__item,
+.about-one,
+.main-footer__inner,
+.services-one,
+.service-card__title:hover::before,
+.taxiz-info__item:hover .taxiz-info__item__icon,
+.service-card__link,
+.services-one__inner-bg,
+.why-choose-one,
+.taxi-rates-one,
+.taxi-rates-one__inner-bg,
+.taxi-rates-one__inner-bg::after,
+.taxi-card,
+.taxi-card__price,
+.taxi-booking__inner::after,
+.taxi-booking__form,
+.taxi-booking__form__heading::before,
+.download-app-one,
+.testimonials-one,
+.testimonials-one__content,
+.testimonial-card,
+.testimonials-one__shape,
+.blog-one,
+.book-one,
+.book-one .sec-title__shape::before,
+.book-one .sec-title__shape::after,
+.book-one .book-one__btn::before,
+.book-one .book-one__btn::after {
+  background-color: var(--taxiz-black3);
+}
+
+.demo-one__btns {
+  background-color: RGBA(var(--taxiz-black3-rgb), 0.8);
+}
+
+.blog-card__image__link {
+  background-color: RGBA(var(--taxiz-black3-rgb), 0.7);
+}
+
+.mobile-nav__btn span {
+  background-color: var(--taxiz-black);
+}
+
+.taxi-rates-one__main-tab-box .tab-buttons .tab-btn::before,
+.taxi-rates-one__main-tab-box .tab-buttons .tab-btn::after,
+.testimonials-one__carousel.owl-carousel .owl-nav button:hover,
+.blog-one__btn::after {
+  background-color: var(--taxiz-base);
+}
+
+.main-header__search::before {
+  background-color: RGBA(var(--taxiz-gray-rgb), 0.8);
+}
+
+.main-slider-one__bg__inner::after {
+  background: linear-gradient(100.12deg, var(--taxiz-black3) 12.7%, RGBA(var(--taxiz-black3-rgb), 0) 100%);
+}
+
+.about-one__bg {
+  mix-blend-mode: multiply;
+}
+
+.taxi-rates-one__bg {
+  mix-blend-mode: overlay;
+  opacity: 1;
+}
+
+.topbar__info li,
+.topbar__info__icon,
+.topbar__login__icon,
+.topbar__login__inner,
+.main-header__btn:hover,
+.mobile-nav__content .main-menu__list li a button,
+.mobile-nav__content .main-menu__list li a button.expanded,
+.mobile-nav__contact__icon,
+.main-menu .main-menu__list li ul li:hover > a,
+.main-menu .main-menu__list li ul li > a::after,
+.search-popup__form input[type=search]:focus,
+.search-popup__form input[type=text]:focus,
+.main-slider-one__btn:hover,
+.main-slider-one__video-btn,
+.main-slider-one__video-btn:hover,
+.emargency-call__icon,
+.about-one__experience__year,
+.taxiz-info__item__title,
+.taxiz-info__item__icon,
+.service-card__title,
+.services-one__custome-navs button,
+.service-card__title:hover,
+.services-one__custome-navs button:hover,
+.service-card:hover .service-card__link,
+.taxi-rates-one__main-tab-box .tab-buttons .tab-btn:hover,
+.taxi-rates-one__main-tab-box .tab-buttons .tab-btn.active-btn,
+.taxi-card:hover .taxi-card__price,
+.taxi-booking__form__heading,
+.taxi-booking__form input:focus,
+.taxi-booking__form__btn:hover,
+.ui-datepicker .ui-datepicker-header,
+.ui-datepicker-calendar th span,
+.ui-datepicker-calendar .ui-state-default,
+.ui-datepicker-calendar .ui-widget-content .ui-state-default,
+.ui-datepicker-calendar .ui-widget-header .ui-state-default,
+.ui-datepicker-calendar .ui-state-default:hover,
+.ui-datepicker-calendar .ui-widget-content .ui-state-default:hover,
+.ui-datepicker-calendar .ui-widget-header .ui-state-default:hover,
+.taxi-booking__form .bootstrap-select .dropdown-menu > li > a,
+.taxi-booking__form .bootstrap-select .dropdown-menu > li:hover > a,
+.taxi-booking__form .bootstrap-select .dropdown-menu > li.selected > a,
+.testimonials-one__carousel.owl-carousel .owl-nav button:hover,
+.download-app-one__btn .download-app-one__btn__title,
+.download-app-one__btn:hover .download-app-one__btn__title,
+.download-app-one__btn:hover .download-app-one__btn__text,
+.blog-one__btn:hover,
+.blog-card__date,
+.blog-card__meta li,
+.blog-card__meta__icon,
+.blog-card__meta li a:hover,
+.blog-card__title,
+.blog-card__link,
+.book-one .sec-title__tagline,
+.book-one .sec-title__title,
+.footer-widget__call:hover .footer-widget__call__icon,
+.main-footer__bottom .social-links a:hover {
+  color: var(--taxiz-black3);
+}
+
+.book-one .book-one__btn:hover {
+  color: var(--taxiz-black);
+}
+
+.main-menu .main-menu__list > li.current > a,
+.main-menu .main-menu__list > li:hover > a,
+.taxiz-info__item:hover .taxiz-info__item__icon {
+  color: var(--taxiz-base);
+}
+
+.taxi-booking__form label,
+.testimonial-card__name {
+  color: var(--taxiz-white2);
+}
+
+.testimonial-card__quote,
+.testimonials-one__carousel.owl-carousel .owl-nav button {
+  color: var(--taxiz-text);
+}
+
+.topbar__info__icon {
+  border-color: RGBA(var(--taxiz-black3-rgb), 0.2);
+}
+
+.topbar__info li:hover .topbar__info__icon,
+.topbar__language .bootstrap-select > .dropdown-toggle::after,
+.testimonials-one__shape::after,
+.book-one .book-one__btn {
+  border-color: var(--taxiz-black3);
+}
+
+.about-one__text-box,
+.why-choose-one .sec-title,
+.why-choose-one__left .why-choose-one__item:not(:last-child),
+.why-choose-one__right .why-choose-one__item:not(:last-child),
+.taxi-booking__form {
+  border-color: RGBA(var(--taxiz-border-color-rgb), 0.2);
+}
+/*# sourceMappingURL=taxiz-dark.css.map */

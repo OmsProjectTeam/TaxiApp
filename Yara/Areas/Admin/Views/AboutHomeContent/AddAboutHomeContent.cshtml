@@ -1,0 +1,288 @@
+﻿@model ViewmMODeElMASTER
+@{
+    ViewData["Title"] = ResourceWeb.LBAddAboutHomeContent;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-lg-12 col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddAboutHomeContent</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+
+
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBAddAboutHomeContent</h4>
+                    <!-- /.box-title -->
+
+
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="AboutHomeContent" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.AboutHomeContent.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.AboutHomeContent.IdAboutHomeContent" class="form-control">
+                                <input type="hidden" asp-for="@Model.AboutHomeContent.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                                <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
+                                <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.YearsExperience" for="exampleInputEmail1">@ResourceWeb.LbYearsExperience</label>
+                                        <input asp-for="@Model.AboutHomeContent.YearsExperience" type="text" placeholder="@ResourceWeb.LbYearsExperience ...." class="form-control" maxlength="10">
+                                        <span asp-validation-for="@Model.AboutHomeContent.YearsExperience" class="text-danger"></span>
+                                       
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceAr" for="exampleInputEmail1">@ResourceWeb.LbDescriptionYearsExperienceAr</label>
+                                        <input asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceAr" type="text" placeholder="@ResourceWeb.LbDescriptionYearsExperienceAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.DescriptionYearsExperienceAr" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceEn" for="exampleInputEmail1">@ResourceWeb.LbDescriptionYearsExperienceEn</label>
+                                        <input asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceEn" type="text" placeholder="@ResourceWeb.LbDescriptionYearsExperienceEn...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.DescriptionYearsExperienceEn" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceKr1" for="exampleInputEmail1">@ResourceWeb.LbDescriptionYearsExperienceKr1</label>
+                                        <input asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceKr1" type="text" placeholder="@ResourceWeb.LbDescriptionYearsExperienceKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.DescriptionYearsExperienceKr1" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceKr2" for="exampleInputEmail1">@ResourceWeb.LbDescriptionYearsExperienceKr2</label>
+                                        <input asp-for="@Model.AboutHomeContent.DescriptionYearsExperienceKr2" type="text" placeholder="@ResourceWeb.LbDescriptionYearsExperienceKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.DescriptionYearsExperienceKr2" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelOneAr" for="exampleInputEmail1">@ResourceWeb.LbTitelOneAr</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelOneAr" type="text" placeholder="@ResourceWeb.LbTitelOneAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelOneAr" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelOneEn" for="exampleInputEmail1">@ResourceWeb.LbTitelOneEn</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelOneEn" type="text" placeholder="@ResourceWeb.LbTitelOneEn ...." class="form-control">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelOneEn" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelOneKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr1</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelOneKr1" type="text" placeholder="@ResourceWeb.LbTitelOneKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelOneKr1" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelOneKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelOneKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelOneKr2" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelTwoAr" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoAr</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelTwoAr" type="text" placeholder="@ResourceWeb.LbTitelTwoAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelTwoAr" class="text-danger"></span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelTwoEn" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoEn</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelTwoEn" type="text" placeholder="@ResourceWeb.LbTitelTwoEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelTwoEn" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelTwoKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr1</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelTwoKr1" type="text" placeholder="@ResourceWeb.LbTitelTwoKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelTwoKr1" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.TitelTwoKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
+                                        <input asp-for="@Model.AboutHomeContent.TitelTwoKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.TitelTwoKr2" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.FirstDescriptionAr" for="exampleInputEmail1">@ResourceWeb.LbFirstDescriptionAr</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.FirstDescriptionAr" type="text" placeholder="@ResourceWeb.LbFirstDescriptionAr...." class="form-control" maxlength="1500"rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.FirstDescriptionAr" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.FirstDescriptionEN" for="exampleInputEmail1">@ResourceWeb.LbFirstDescriptionEn</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.FirstDescriptionEN" type="text" placeholder="@ResourceWeb.LbFirstDescriptionEn...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.FirstDescriptionEN" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.FirstDescriptionKr1" for="exampleInputEmail1">@ResourceWeb.LbFirstDescriptionKr1</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.FirstDescriptionKr1" type="text" placeholder="@ResourceWeb.LbFirstDescriptionKr1...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.FirstDescriptionKr1" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.FirstDescriptionKr2" for="exampleInputEmail1">@ResourceWeb.LbFirstDescriptionKr2</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.FirstDescriptionKr2" type="text" placeholder="@ResourceWeb.LbFirstDescriptionKr2...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.FirstDescriptionKr2" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.SecandDescriptionAr" for="exampleInputEmail1">@ResourceWeb.LbSecandDescriptionAr</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.SecandDescriptionAr" type="text" placeholder="@ResourceWeb.LbSecandDescriptionAr...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.SecandDescriptionAr" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.SecandDescriptionEn" for="exampleInputEmail1">@ResourceWeb.LbSecandDescriptionEn</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.SecandDescriptionEn" type="text" placeholder="@ResourceWeb.LbSecandDescriptionEn...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.SecandDescriptionEn" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.SecandDescriptionKr1" for="exampleInputEmail1">@ResourceWeb.LbSecandDescriptionKr1</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.SecandDescriptionKr1" type="text" placeholder="@ResourceWeb.LbSecandDescriptionKr1...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.SecandDescriptionKr1" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.SecandDescriptionKr2" for="exampleInputEmail1">@ResourceWeb.LbSecandDescriptionKr2</label>
+                                        <textarea asp-for="@Model.AboutHomeContent.SecandDescriptionKr2" type="text" placeholder="@ResourceWeb.LbSecandDescriptionKr2...." class="form-control" maxlength="1500" rows="8"></textarea>
+                                        <span asp-validation-for="@Model.AboutHomeContent.SecandDescriptionKr2" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.PhoneDescriptionAr" for="exampleInputEmail1">@ResourceWeb.LbPhoneDescriptionAr</label>
+                                        <input asp-for="@Model.AboutHomeContent.PhoneDescriptionAr" type="text" placeholder="@ResourceWeb.LbPhoneDescriptionAr...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.PhoneDescriptionAr" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">                                  
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.PhoneDescriptionEn" for="exampleInputEmail1">@ResourceWeb.LbPhoneDescriptionEn</label>
+                                        <input asp-for="@Model.AboutHomeContent.PhoneDescriptionEn" type="text" placeholder="@ResourceWeb.LbPhoneDescriptionEn...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.PhoneDescriptionEn" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.PhoneDescriptionKr1" for="exampleInputEmail1">@ResourceWeb.LbPhoneDescriptionKr1</label>
+                                        <input asp-for="@Model.AboutHomeContent.PhoneDescriptionKr1" type="text" placeholder="@ResourceWeb.LbPhoneDescriptionKr1...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.PhoneDescriptionKr1" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.AboutHomeContent.PhoneDescriptionKr2" for="exampleInputEmail1">@ResourceWeb.LbPhoneDescriptionKr2</label>
+                                        <input asp-for="@Model.AboutHomeContent.PhoneDescriptionKr2" type="text" placeholder="@ResourceWeb.LbPhoneDescriptionKr2...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.AboutHomeContent.PhoneDescriptionKr2" class="text-danger"></span>
+                                    </div>
+                               
+                                </div>
+                            </div>
+                          
+
+
+                            <div class="checkbox margin-bottom-20">
+                                <div class="switch success"><input type="checkbox" asp-for="@Model.AboutHomeContent.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+
+                        </form>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.lbOldeAndUserGide</h4>
+                    <!-- /.box-title -->
+                    <div class="card-content">
+                        <div class="form-group">
+                            <img src="~/images/user gide/AboutHomeContent.png" width="1920" height="1077" />
+                        </div>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-content -->
+</div>
+
+@section Scripts {
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    <script>
+        $("#url").val(window.location.href);
+    </script>
+}
+
