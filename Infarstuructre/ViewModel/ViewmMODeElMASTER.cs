@@ -52,7 +52,13 @@ namespace Infarstuructre.ViewModel
 		public List<VwUser> Users { get; set; }
 
         public IEnumerable<TBAboutHomeContent> ListAboutHomeContent { get; set; }
-        public TBAboutHomeContent AboutHomeContent { get; set; }
+        public TBAboutHomeContent AboutHomeContent { get; set; }   
+		public IEnumerable<TBPhotoAboutHomeContent> ListPhotoAboutHomeContent { get; set; }
+        public TBPhotoAboutHomeContent PhotoAboutHomeContent { get; set; }
+        public IEnumerable<TBSliderHomeContent> ListSliderHomeConten { get; set; }
+        public TBSliderHomeContent SliderHomeConten { get; set; }   
+		public IEnumerable<TBViewPhotoSliderHomeContent> ListViewPhotoSliderHomeContent { get; set; }
+        public TBPhotoSliderHomeContent PhotoSliderHomeContent { get; set; }
     }
  }
 

@@ -187,6 +187,24 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل الصور في قسم عنا بالرئيسية .
+        /// </summary>
+        public static string LBAddEditPhotoAboutHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddEditPhotoAboutHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل السليدر العلوي في الرئيسية.
+        /// </summary>
+        public static string LBAddEditSliderHomeConten {
+            get {
+                return ResourceManager.GetString("LBAddEditSliderHomeConten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Adding and modifying Email Alart Setting.
         /// </summary>
         public static string LBAddEmailAlartSetting {
@@ -1465,6 +1483,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to صور عنا في الرئيسية.
+        /// </summary>
+        public static string LBMYPhotoAboutHomeContent {
+            get {
+                return ResourceManager.GetString("LBMYPhotoAboutHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to My Profits.
         /// </summary>
         public static string LBMyProfits {
@@ -1497,6 +1524,15 @@ namespace Yara.Resource {
         public static string LBMyShippingPrice {
             get {
                 return ResourceManager.GetString("LBMyShippingPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to السليدر العلوي في الرئيسية .
+        /// </summary>
+        public static string LBMYSliderHomeConten {
+            get {
+                return ResourceManager.GetString("LBMYSliderHomeConten", resourceCulture);
             }
         }
         
@@ -1587,6 +1623,15 @@ namespace Yara.Resource {
         public static string LbNameRols {
             get {
                 return ResourceManager.GetString("LbNameRols", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الاسم الفريد.
+        /// </summary>
+        public static string LbNekName {
+            get {
+                return ResourceManager.GetString("LbNekName", resourceCulture);
             }
         }
         
@@ -2248,6 +2293,42 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to العنوان الثالث عربي .
+        /// </summary>
+        public static string LbTitelThreeAr {
+            get {
+                return ResourceManager.GetString("LbTitelThreeAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان الثالث إنكليزي.
+        /// </summary>
+        public static string LbTitelThreeEn {
+            get {
+                return ResourceManager.GetString("LbTitelThreeEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان الثالث كردي.
+        /// </summary>
+        public static string LbTitelThreeKr1 {
+            get {
+                return ResourceManager.GetString("LbTitelThreeKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان الثالث سيراني.
+        /// </summary>
+        public static string LbTitelThreeKr2 {
+            get {
+                return ResourceManager.GetString("LbTitelThreeKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to عنوان الثاني عربي.
         /// </summary>
         public static string LbTitelTwoAr {
@@ -2289,6 +2370,42 @@ namespace Yara.Resource {
         public static string LbTitle {
             get {
                 return ResourceManager.GetString("LbTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنوان الزر عربي.
+        /// </summary>
+        public static string LbTitleButtonAr {
+            get {
+                return ResourceManager.GetString("LbTitleButtonAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنوان الزر إنكليزي.
+        /// </summary>
+        public static string LbTitleButtonEn {
+            get {
+                return ResourceManager.GetString("LbTitleButtonEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنوان الزر كردي.
+        /// </summary>
+        public static string LbTitleButtonKr1 {
+            get {
+                return ResourceManager.GetString("LbTitleButtonKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنوان الزر سيراني.
+        /// </summary>
+        public static string LbTitleButtonKr2 {
+            get {
+                return ResourceManager.GetString("LbTitleButtonKr2", resourceCulture);
             }
         }
         
@@ -2388,6 +2505,51 @@ namespace Yara.Resource {
         public static string LBUpload_image {
             get {
                 return ResourceManager.GetString("LBUpload_image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه عربي.
+        /// </summary>
+        public static string LbUrlButtonAr {
+            get {
+                return ResourceManager.GetString("LbUrlButtonAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه إنكليزي.
+        /// </summary>
+        public static string LbUrlButtonEn {
+            get {
+                return ResourceManager.GetString("LbUrlButtonEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه كردي.
+        /// </summary>
+        public static string LbUrlButtonKr1 {
+            get {
+                return ResourceManager.GetString("LbUrlButtonKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه سيراني.
+        /// </summary>
+        public static string LbUrlButtonKr2 {
+            get {
+                return ResourceManager.GetString("LbUrlButtonKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط اليوتيوب.
+        /// </summary>
+        public static string LbUrlYoutubeButton {
+            get {
+                return ResourceManager.GetString("LbUrlYoutubeButton", resourceCulture);
             }
         }
         
@@ -2775,6 +2937,15 @@ namespace Yara.Resource {
         public static string VLMerchantNameDoplceted {
             get {
                 return ResourceManager.GetString("VLMerchantNameDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال الاسم الفريد لشريحة السيليدر  في الرئيسية يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLNekNameDoplceted {
+            get {
+                return ResourceManager.GetString("VLNekNameDoplceted", resourceCulture);
             }
         }
         

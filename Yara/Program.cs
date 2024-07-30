@@ -95,6 +95,9 @@ builder.Services.AddScoped<IIUserInformation, CLSUserInformation>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IIRolsInformation, CLSRolsInformation>();
 builder.Services.AddScoped<IIAboutHomeContent, CLSTBAboutHomeContent>();
+builder.Services.AddScoped<IIPhotoAboutHomeContent, CLSTBPhotoAboutHomeContent>();
+builder.Services.AddScoped<IISliderHomeContent, CLSTBSliderHomeContent>();
+builder.Services.AddScoped<IIPhotoSliderHomeContent, CLSTBPhotoSliderHomeContent>();
 
 
 

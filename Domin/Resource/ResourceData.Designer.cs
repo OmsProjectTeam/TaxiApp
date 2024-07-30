@@ -88,6 +88,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الثالث باللغة الانكليزية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string LBVlTitelThreeEn {
+            get {
+                return ResourceManager.GetString("LBVlTitelThreeEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to أقصى أعدد أحرف يمكن إدخاله هو 10 أحرف ....!.
         /// </summary>
         public static string MaxLength10 {
@@ -273,6 +282,15 @@ namespace Domin.Resource {
         public static string RoleName {
             get {
                 return ResourceManager.GetString("RoleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط اليو تيوب  لتتم العمليو بنجاح ...!.
+        /// </summary>
+        public static string UrlYoutubeButton {
+            get {
+                return ResourceManager.GetString("UrlYoutubeButton", resourceCulture);
             }
         }
         
@@ -619,6 +637,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدخال الاسم الفريد لتتم العمليية بنجاح .
+        /// </summary>
+        public static string VlNekName {
+            get {
+                return ResourceManager.GetString("VlNekName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include the nickname for the process to complete successfully..!.
         /// </summary>
         public static string VlNikeNAme {
@@ -835,6 +862,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الثالث باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelThreeAr {
+            get {
+                return ResourceManager.GetString("VlTitelThreeAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج العنوان الثالث لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlTitelThreeEn {
+            get {
+                return ResourceManager.GetString("VlTitelThreeEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الثالث باللغة الكردية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelThreeKr1 {
+            get {
+                return ResourceManager.GetString("VlTitelThreeKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الثالث باللغة السيراني لتتم لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelThreeKr2 {
+            get {
+                return ResourceManager.GetString("VlTitelThreeKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يرجى أدراج العنوان الثاني باللغة العربية لتتم العملية بنجاح ...!.
         /// </summary>
         public static string VlTitelTwoAr {
@@ -876,6 +939,42 @@ namespace Domin.Resource {
         public static string VlTitle {
             get {
                 return ResourceManager.GetString("VlTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج عنوان الزر باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitleButtonAr {
+            get {
+                return ResourceManager.GetString("VlTitleButtonAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج عنوان الزر باللغة الانكليزية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitleButtonEn {
+            get {
+                return ResourceManager.GetString("VlTitleButtonEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج عنوان الزر باللغة الكرديةلتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitleButtonKr1 {
+            get {
+                return ResourceManager.GetString("VlTitleButtonKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج عنوان الزر باللغة السيرانية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitleButtonKr2 {
+            get {
+                return ResourceManager.GetString("VlTitleButtonKr2", resourceCulture);
             }
         }
         
@@ -939,6 +1038,42 @@ namespace Domin.Resource {
         public static string VlTypeSystemDelivery {
             get {
                 return ResourceManager.GetString("VlTypeSystemDelivery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط الزر باللغة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlButtonAr {
+            get {
+                return ResourceManager.GetString("VlUrlButtonAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط الزر باللغة الانكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlButtonEn {
+            get {
+                return ResourceManager.GetString("VlUrlButtonEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط الزر باللغة  الكردية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlButtonKr1 {
+            get {
+                return ResourceManager.GetString("VlUrlButtonKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط الزر باللغة  السيرانية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlButtonKr2 {
+            get {
+                return ResourceManager.GetString("VlUrlButtonKr2", resourceCulture);
             }
         }
         

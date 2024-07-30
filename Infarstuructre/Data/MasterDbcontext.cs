@@ -31,6 +31,14 @@ namespace Infarstuructre.Data
 			{
 				entity.HasNoKey();
 				entity.ToView("VwUsers");
+			}); 
+            //***********************************************************
+
+
+			builder.Entity<TBViewPhotoSliderHomeContent>(entity =>
+			{
+				entity.HasNoKey();
+				entity.ToView("ViewPhotoSliderHomeContent");
 			});
 
 
@@ -50,8 +58,30 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("((1))");
 
             //---------------------------------	
-
-
+            //---------------------------------	
+            builder.Entity<TBPhotoAboutHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBPhotoAboutHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBSliderHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBSliderHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBPhotoSliderHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBPhotoSliderHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	
         }
 
 
@@ -60,6 +90,10 @@ namespace Infarstuructre.Data
         //***********************************
         public DbSet<VwUser> VwUsers { get; set; }
         public DbSet<TBAboutHomeContent> TBAboutHomeContents { get; set; }
+        public DbSet<TBPhotoAboutHomeContent> TBPhotoAboutHomeContents { get; set; }
+        public DbSet<TBSliderHomeContent> TBSliderHomeContents { get; set; }
+        public DbSet<TBPhotoSliderHomeContent> TBPhotoSliderHomeContents { get; set; }
+        public DbSet<TBViewPhotoSliderHomeContent> ViewPhotoSliderHomeContent { get; set; }
       
 
 

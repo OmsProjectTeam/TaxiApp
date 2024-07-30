@@ -159,6 +159,12 @@
   <data name="LbAddEditInformationCompanies" xml:space="preserve">
     <value>Add and modify company data</value>
   </data>
+  <data name="LBAddEditPhotoAboutHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل الصور في قسم عنا بالرئيسية </value>
+  </data>
+  <data name="LBAddEditSliderHomeConten" xml:space="preserve">
+    <value>إضافة وتعديل السليدر العلوي في الرئيسية</value>
+  </data>
   <data name="LBAddEmailAlartSetting" xml:space="preserve">
     <value>Adding and modifying Email Alart Setting</value>
   </data>
@@ -585,6 +591,9 @@
   <data name="LBMyOrderStatus" xml:space="preserve">
     <value>Order Status</value>
   </data>
+  <data name="LBMYPhotoAboutHomeContent" xml:space="preserve">
+    <value>صور عنا في الرئيسية</value>
+  </data>
   <data name="LBMyProfits" xml:space="preserve">
     <value>My Profits</value>
   </data>
@@ -596,6 +605,9 @@
   </data>
   <data name="LBMyShippingPrice" xml:space="preserve">
     <value>Shipping systems pricing</value>
+  </data>
+  <data name="LBMYSliderHomeConten" xml:space="preserve">
+    <value>السليدر العلوي في الرئيسية </value>
   </data>
   <data name="LBMyTaskStatus" xml:space="preserve">
     <value>Task Status</value>
@@ -626,6 +638,9 @@
   </data>
   <data name="LbNameRols" xml:space="preserve">
     <value>NameRols</value>
+  </data>
+  <data name="LbNekName" xml:space="preserve">
+    <value>الاسم الفريد</value>
   </data>
   <data name="LbNikeNAme" xml:space="preserve">
     <value>Nick name</value>
@@ -846,6 +861,18 @@
   <data name="LbTitelOneKr2" xml:space="preserve">
     <value>العنوان الاول بالسيراني</value>
   </data>
+  <data name="LbTitelThreeAr" xml:space="preserve">
+    <value>العنوان الثالث عربي </value>
+  </data>
+  <data name="LbTitelThreeEn" xml:space="preserve">
+    <value>العنوان الثالث إنكليزي</value>
+  </data>
+  <data name="LbTitelThreeKr1" xml:space="preserve">
+    <value>العنوان الثالث كردي</value>
+  </data>
+  <data name="LbTitelThreeKr2" xml:space="preserve">
+    <value>العنوان الثالث سيراني</value>
+  </data>
   <data name="LbTitelTwoAr" xml:space="preserve">
     <value>عنوان الثاني عربي</value>
   </data>
@@ -860,6 +887,18 @@
   </data>
   <data name="LbTitle" xml:space="preserve">
     <value>Title</value>
+  </data>
+  <data name="LbTitleButtonAr" xml:space="preserve">
+    <value>عنوان الزر عربي</value>
+  </data>
+  <data name="LbTitleButtonEn" xml:space="preserve">
+    <value>عنوان الزر إنكليزي</value>
+  </data>
+  <data name="LbTitleButtonKr1" xml:space="preserve">
+    <value>عنوان الزر كردي</value>
+  </data>
+  <data name="LbTitleButtonKr2" xml:space="preserve">
+    <value>عنوان الزر سيراني</value>
   </data>
   <data name="LbTitleShipping" xml:space="preserve">
     <value>Title Shipping</value>
@@ -893,6 +932,21 @@
   </data>
   <data name="LBUpload_image" xml:space="preserve">
     <value>upload</value>
+  </data>
+  <data name="LbUrlButtonAr" xml:space="preserve">
+    <value>رابط التوجيه عربي</value>
+  </data>
+  <data name="LbUrlButtonEn" xml:space="preserve">
+    <value>رابط التوجيه إنكليزي</value>
+  </data>
+  <data name="LbUrlButtonKr1" xml:space="preserve">
+    <value>رابط التوجيه كردي</value>
+  </data>
+  <data name="LbUrlButtonKr2" xml:space="preserve">
+    <value>رابط التوجيه سيراني</value>
+  </data>
+  <data name="LbUrlYoutubeButton" xml:space="preserve">
+    <value>رابط اليوتيوب</value>
   </data>
   <data name="LbUserEmage" xml:space="preserve">
     <value>Image</value>
@@ -1022,6 +1076,9 @@
   </data>
   <data name="VLMerchantNameDoplceted" xml:space="preserve">
     <value>The email address has already been added. Please check and try again later...!</value>
+  </data>
+  <data name="VLNekNameDoplceted" xml:space="preserve">
+    <value>تم إدخال الاسم الفريد لشريحة السيليدر  في الرئيسية يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
   </data>
   <data name="VLReceiptNoDoplceted" xml:space="preserve">
     <value>The bond number has already been entered. Please check and try again later...!</value>

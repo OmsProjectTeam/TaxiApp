@@ -414,4 +414,49 @@
   <data name="VlYearsExperience" xml:space="preserve">
     <value>يرجى أدخال سنوات الخبرة لتتم العملية بنجاح ...!</value>
   </data>
+  <data name="LBVlTitelThreeEn" xml:space="preserve">
+    <value>يرجى إدراج العنوان الثالث باللغة الانكليزية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="UrlYoutubeButton" xml:space="preserve">
+    <value>يرجى أدراج رابط اليو تيوب  لتتم العمليو بنجاح ...!</value>
+  </data>
+  <data name="VlNekName" xml:space="preserve">
+    <value>يرجى أدخال الاسم الفريد لتتم العمليية بنجاح </value>
+  </data>
+  <data name="VlTitelThreeAr" xml:space="preserve">
+    <value>يرجى إدراج العنوان الثالث باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelThreeKr1" xml:space="preserve">
+    <value>يرجى إدراج العنوان الثالث باللغة الكردية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelThreeKr2" xml:space="preserve">
+    <value>يرجى إدراج العنوان الثالث باللغة السيراني لتتم لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitleButtonAr" xml:space="preserve">
+    <value>يرجى أدراج عنوان الزر باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitleButtonEn" xml:space="preserve">
+    <value>يرجى أدراج عنوان الزر باللغة الانكليزية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitleButtonKr1" xml:space="preserve">
+    <value>يرجى أدراج عنوان الزر باللغة الكرديةلتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitleButtonKr2" xml:space="preserve">
+    <value>يرجى أدراج عنوان الزر باللغة السيرانية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlUrlButtonAr" xml:space="preserve">
+    <value>يرجى أدراج رابط الزر باللغة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlButtonEn" xml:space="preserve">
+    <value>يرجى أدراج رابط الزر باللغة الانكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlButtonKr1" xml:space="preserve">
+    <value>يرجى أدراج رابط الزر باللغة  الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlButtonKr2" xml:space="preserve">
+    <value>يرجى أدراج رابط الزر باللغة  السيرانية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlTitelThreeEn" xml:space="preserve">
+    <value>يرجى أدراج العنوان الثالث لتتم العملية بنجاح ...!</value>
+  </data>
 </root>

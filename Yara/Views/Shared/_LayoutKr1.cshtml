@@ -89,10 +89,25 @@
 							<span class="topbar__login__icon">
 								<i class="icon-user"></i>
 							</span><!-- /.topbar__login__icon -->
-							<div class="topbar__login__inner">
-								<a href="login.html" class="topbar__login__text">log In</a>/
-								<a href="login.html" class="topbar__login__text">Register</a>
-							</div><!-- /.topbar__login__inner -->
+							@if (signInManager.IsSignedIn(User))
+							{
+								<div class="topbar__login__inner">
+									<a asp-area="Admin" asp-controller="Accounts" asp-action="Logout1" class="topbar__login__text">Logout</a>/
+									<a asp-area="Admin" asp-controller="Home" asp-action="Index" asp-route-userId="@Model.Id" class="topbar__login__text">Admin Panel</a>/
+									<a asp-area="ClintAccount" asp-controller="Home" asp-action="Index" asp-route-userId="@Model.Id" class="topbar__login__text">Admin User</a>/
+									<a asp-area="merchantAccount" asp-controller="Home" asp-action="Index" asp-route-userId="@Model.Id" class="topbar__login__text">Admin Drive</a>
+								</div>
+							}
+
+
+							else
+							{
+								<div class="topbar__login__inner">
+									<a asp-area="Admin" asp-controller="Accounts" asp-action="Login" class="topbar__login__text">log In</a>/
+									<a asp-area="Admin" asp-controller="Accounts" asp-action="Register" class="topbar__login__text">Register clint</a>/
+									<a asp-area="Admin" asp-controller="Accounts" asp-action="RegisterMerchant" class="topbar__login__text">Register Diver</a>
+								</div>
+							}<!-- /.topbar__login__inner -->
 						</div><!-- /.topbar__login -->
 					</div><!-- /.topbar__right -->
 				</div><!-- /.topbar__inner -->
