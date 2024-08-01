@@ -1537,6 +1537,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to عناوين قسم الخدمات .
+        /// </summary>
+        public static string LBMyServicesHomeContent {
+            get {
+                return ResourceManager.GetString("LBMyServicesHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MyShipping Address.
         /// </summary>
         public static string LBMyShippingAddress {

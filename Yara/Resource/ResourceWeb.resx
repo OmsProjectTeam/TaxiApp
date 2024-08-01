@@ -609,6 +609,9 @@
   <data name="LBMyRolesName" xml:space="preserve">
     <value>Roles </value>
   </data>
+  <data name="LBMyServicesHomeContent" xml:space="preserve">
+    <value>عناوين قسم الخدمات </value>
+  </data>
   <data name="LBMyShippingAddress" xml:space="preserve">
     <value>MyShipping Address</value>
   </data>
