@@ -459,4 +459,40 @@
   <data name="VlTitelThreeEn" xml:space="preserve">
     <value>يرجى أدراج العنوان الثالث لتتم العملية بنجاح ...!</value>
   </data>
+  <data name="VlTitelForAr" xml:space="preserve">
+    <value>يرجى إدراج العنوان الرابع باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelForEn" xml:space="preserve">
+    <value>يرجى إدراج العنوان الرابع باللغة الانكليزية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelForKr1" xml:space="preserve">
+    <value>يرجى إدراج العنوان الرابع باللغة الكردية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelForKr2" xml:space="preserve">
+    <value>يرجى إدراج العنوان الرابع باللغة السيرانية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelSixAr" xml:space="preserve">
+    <value>يرجى إدراج العنوان السادس باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelSixEn" xml:space="preserve">
+    <value>يرجى إدراج العنوان السادس باللغة الانكليزية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelSixKr1" xml:space="preserve">
+    <value>يرجى إدراج العنوان السادس باللغة الكردية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelSixKr2" xml:space="preserve">
+    <value>يرجى إدراج العنوان السادس باللغة السيرانية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelVifeAr" xml:space="preserve">
+    <value>يرجى إدراج العنوان الخامس باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelVifeEn" xml:space="preserve">
+    <value>يرجى إدراج العنوان الخامس باللغة الانكليزية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelVifeKr1" xml:space="preserve">
+    <value>يرجى إدراج العنوان الخامس باللغة الكردية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTitelVifeKr2" xml:space="preserve">
+    <value>يرجى إدراج العنوان الخامس باللغة السيرانية لتتم العملية بنجاح ....!</value>
+  </data>
 </root>

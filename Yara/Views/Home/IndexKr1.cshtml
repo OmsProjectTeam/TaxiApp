@@ -72,10 +72,13 @@
                                     <div class="main-slider-one__col-image">
                                         <div class="main-slider-one__image">
                                             <div class="main-slider-one__image__inner">
-                                                <img src="~/Web/assets/images/resources/main-slider-image-1-1.jpg" alt="main-slider">
+                                        @foreach (var item1 in Model.ListViewPhotoSliderHomeContent.OrderByDescending(n => n.IdSliderHomeContent).Where(a => a.IdSliderHomeContent == item.IdSliderHomeContent).Take(1).ToList())
+                                        {
+                                                                            <img src="@string.Format("/Images/Home/{0}",item1.Photo)"style="height:470px;width:470px" alt="main-slider">
+                                        }
                                             </div><!-- /.main-slider-one__image__inner -->
-                                            <img src="~/Web/assets/images/resources/main-slider-car-1-1.png" alt="car"
-                                                class="main-slider-one__image__car">
+                                           @*  <img src="~/Web/assets/images/resources/main-slider-car-1-1.png" alt="car"
+                                                class="main-slider-one__image__car">*@
                                         </div><!-- /.main-slider-one__image -->
                                     </div><!-- /.main-slider-one__col-image -->
                                 </div><!-- /.row gutter-y-50 -->
@@ -177,44 +180,49 @@
 <section class="services-one section-space">
     <div class="services-one__bg" style="background-image: url('/Web/assets/images/shapes/services-bg-1-1.png');"></div>
     <!-- /.services-one__bg -->
-    <div class="container">
-        <div class="taxiz-info">
-            <div class="taxiz-info__inner">
-                <div class="taxiz-info__bg" style="background-image: url('/Web/assets/images/shapes/taxiz-info-bg-1-1.png');">
-                </div><!-- /.taxiz-info__bg -->
-                <div class="taxiz-info__row row">
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="taxiz-info__item">
-                            <div class="taxiz-info__item__icon">
-                                <i class="icon-booking"></i>
-                            </div><!-- /.taxiz-info__item__icon -->
-                            <h4 class="taxiz-info__item__title">Easier & Faster <br> Bookings</h4>
-                            <!-- /.taxiz-info__item__title -->
-                        </div><!-- /.taxiz-info__item -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
-                        <div class="taxiz-info__item">
-                            <div class="taxiz-info__item__icon">
-                                <i class="icon-map"></i>
-                            </div><!-- /.taxiz-info__item__icon -->
-                            <h4 class="taxiz-info__item__title">Too Many Pickup <br> Locations</h4>
-                            <!-- /.taxiz-info__item__title -->
-                        </div><!-- /.taxiz-info__item -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                        <div class="taxiz-info__item">
-                            <div class="taxiz-info__item__icon">
-                                <i class="icon-costumer"></i>
-                            </div><!-- /.taxiz-info__item__icon -->
-                            <h4 class="taxiz-info__item__title">Customers 100% <br> Satisfied</h4>
-                            <!-- /.taxiz-info__item__title -->
-                        </div><!-- /.taxiz-info__item -->
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.taxiz-info__row row -->
-                <img src="~/Web/assets/images/resources/taxiz-info-1-1.jpg" alt="info" class="taxiz-info__image">
-            </div><!-- /.taxiz-info__inner -->
-        </div><!-- /.taxiz-info -->
-    </div><!-- /.container -->
+    @foreach (var item in Model.ListTaxiInfoStep)
+    {
+        <div class="container">
+            <div class="taxiz-info">
+                <div class="taxiz-info__inner">
+                    <div class="taxiz-info__bg" style="background-image: url('/Web/assets/images/shapes/taxiz-info-bg-1-1.png');">
+                    </div><!-- /.taxiz-info__bg -->
+                    <div class="taxiz-info__row row">
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="taxiz-info__item">
+                                <div class="taxiz-info__item__icon">
+                                    <i class="icon-booking"></i>
+                                </div><!-- /.taxiz-info__item__icon -->
+                                <h4 class="taxiz-info__item__title">@item.TitelOneKr1 <br> @item.TitelTwoKr1</h4>
+                                <!-- /.taxiz-info__item__title -->
+                            </div><!-- /.taxiz-info__item -->
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                            <div class="taxiz-info__item">
+                                <div class="taxiz-info__item__icon">
+                                    <i class="icon-map"></i>
+                                </div><!-- /.taxiz-info__item__icon -->
+                                <h4 class="taxiz-info__item__title">@item.TitelThreeKr1 <br> @item.TitelForKr1</h4>
+                                <!-- /.taxiz-info__item__title -->
+                            </div><!-- /.taxiz-info__item -->
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                            <div class="taxiz-info__item">
+                                <div class="taxiz-info__item__icon">
+                                    <i class="icon-costumer"></i>
+                                </div><!-- /.taxiz-info__item__icon -->
+                                <h4 class="taxiz-info__item__title">@item.TitelVifeKr1<br> @item.TitelSixKr1</h4>
+                                <!-- /.taxiz-info__item__title -->
+                            </div><!-- /.taxiz-info__item -->
+                        </div><!-- /.col-lg-4 -->
+                    </div><!-- /.taxiz-info__row row -->
+                    <img src=" @string.Format("/Images/Home/{0}", item.Photo)" alt="info" class="taxiz-info__image">
+                </div><!-- /.taxiz-info__inner -->
+            </div><!-- /.taxiz-info -->
+        </div>
+    }
+    
+    <!-- /.container -->
     <div class="container">
         <div class="services-one__top">
             <div class="row gutter-y-50 align-items-center">

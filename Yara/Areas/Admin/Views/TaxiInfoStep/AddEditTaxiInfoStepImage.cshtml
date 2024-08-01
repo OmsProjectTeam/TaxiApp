@@ -1,0 +1,291 @@
+﻿@model ViewmMODeElMASTER
+@{
+    ViewData["Title"] = ResourceWeb.LBAddEditTaxiInfoStep;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-lg-12 col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddEditTaxiInfoStep</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+
+
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBAddEditTaxiInfoStep</h4>
+                    <!-- /.box-title -->
+
+
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="TaxiInfoStep" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.TaxiInfoStep.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.TaxiInfoStep.IdTaxiInfoStep" class="form-control">
+                                <input type="hidden" asp-for="@Model.TaxiInfoStep.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                                <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
+                                <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelOneAr" for="exampleInputEmail1">@ResourceWeb.LbTitelOneAr</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelOneAr" type="text" placeholder="@ResourceWeb.LbTitelOneAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelOneAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelOneEn" for="exampleInputEmail1">@ResourceWeb.LbTitelOneEn</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelOneEn" type="text" placeholder="@ResourceWeb.LbTitelOneEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelOneEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelOneKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr1</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelOneKr1" type="text" placeholder="@ResourceWeb.LbTitelOneKr1 ...." class="form-control">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelOneKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelOneKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelOneKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelOneKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelTwoAr" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoAr</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelTwoAr" type="text" placeholder="@ResourceWeb.LbTitelTwoAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelTwoAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelTwoEn" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoEn</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelTwoEn" type="text" placeholder="@ResourceWeb.LbTitelTwoEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelTwoEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelTwoKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr1</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelTwoKr1" type="text" placeholder="@ResourceWeb.LbTitelTwoKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelTwoKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelTwoKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelTwoKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelTwoKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelThreeAr" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeAr</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelThreeAr" type="text" placeholder="@ResourceWeb.LbTitelThreeAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelThreeAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelThreeEn" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeEn</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelThreeEn" type="text" placeholder="@ResourceWeb.LbTitelThreeEn...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelThreeEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelThreeKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr1</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelThreeKr1" type="text" placeholder="@ResourceWeb.LbTitelThreeKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelThreeKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelThreeKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr2</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelThreeKr2" type="text" placeholder="@ResourceWeb.LbTitelThreeKr2...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelThreeKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelForAr" for="exampleInputEmail1">@ResourceWeb.LbTitelForAr</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelForAr" type="text" placeholder="@ResourceWeb.LbTitelForAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelForAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelForEn" for="exampleInputEmail1">@ResourceWeb.LbTitelForEn</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelForEn" type="text" placeholder="@ResourceWeb.LbTitelForEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelForEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelForKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelForKr1</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelForKr1" type="text" placeholder="@ResourceWeb.LbTitelForKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelForKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelForKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelForKr2</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelForKr2" type="text" placeholder="@ResourceWeb.LbTitelForKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelForKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelVifeAr" for="exampleInputEmail1">@ResourceWeb.LbTitelVifeAr</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelVifeAr" type="text" placeholder="@ResourceWeb.LbTitelVifeAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelVifeAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelVifeEn" for="exampleInputEmail1">@ResourceWeb.LbTitelVifeEn</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelVifeEn" type="text" placeholder="@ResourceWeb.LbTitelVifeEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelVifeEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelVifeKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelVifeKr1</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelVifeKr1" type="text" placeholder="@ResourceWeb.LbTitelVifeKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelVifeKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelVifeKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelVifeKr2</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelVifeKr2" type="text" placeholder="@ResourceWeb.LbTitelVifeKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelVifeKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelSixAr" for="exampleInputEmail1">@ResourceWeb.LbTitelSixAr</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelSixAr" type="text" placeholder="@ResourceWeb.LbTitelSixAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelSixAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelSixEn" for="exampleInputEmail1">@ResourceWeb.LbTitelSixEn</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelSixEn" type="text" placeholder="@ResourceWeb.LbTitelSixEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelSixEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelSixKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelSixKr1</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelSixKr1" type="text" placeholder="@ResourceWeb.LbTitelSixKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelSixKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxiInfoStep.TitelSixKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelSixKr2</label>
+                                        <input asp-for="@Model.TaxiInfoStep.TitelSixKr2" type="text" placeholder="@ResourceWeb.LbTitelSixKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxiInfoStep.TitelSixKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p><input type="file" accept="image/*" name="Files" id="file" onchange="loadFile(event)" style="display: none;"></p>
+                                <p><label class="btn btn-violet btn-rounded btn-bordered waves-effect waves-light" for="file" style="cursor: pointer;" name="Files">@ResourceWeb.LBUpload_image</label></p>
+                                <p><img id="output" width="450" height="300" /></p>
+                                <span style="color:red"><strong>@TempData["Message"]</strong></span>
+                            </div>
+
+                            <div class="checkbox margin-bottom-20">
+                                <div class="switch success"><input type="checkbox" asp-for="@Model.TaxiInfoStep.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+                        </form>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.lbOldeAndUserGide</h4>
+                    <!-- /.box-title -->
+                    <div class="card-content">
+                        <div class="form-group">
+                            <input type="hidden" asp-for="@Model.TaxiInfoStep.Photo" for="exampleInputEmail1"></input>
+                            <p><img src="@string.Format("/Images/Home/{0}",Model.TaxiInfoStep.Photo)" id="output" width="450" height="300" /></p>
+                        </div>
+                        <div class="form-group">
+                            <img src="~/images/user gide/TaxiInfoStep.png" width="1920" height="1077" />
+                        </div>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-content -->
+</div>
+
+@section Scripts {
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    <script>
+        $("#url").val(window.location.href);
+    </script>
+}
+

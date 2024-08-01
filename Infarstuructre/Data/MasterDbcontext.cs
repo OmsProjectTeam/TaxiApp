@@ -81,6 +81,22 @@ namespace Infarstuructre.Data
             builder.Entity<TBPhotoSliderHomeContent>()
            .Property(b => b.CurrentState)
            .HasDefaultValueSql("((1))");
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBTaxiInfoStep>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBTaxiInfoStep>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBServicesHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBServicesHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
             //---------------------------------	
         }
 
@@ -94,6 +110,8 @@ namespace Infarstuructre.Data
         public DbSet<TBSliderHomeContent> TBSliderHomeContents { get; set; }
         public DbSet<TBPhotoSliderHomeContent> TBPhotoSliderHomeContents { get; set; }
         public DbSet<TBViewPhotoSliderHomeContent> ViewPhotoSliderHomeContent { get; set; }
+        public DbSet<TBTaxiInfoStep> TBTaxiInfoSteps { get; set; }
+        public DbSet<TBServicesHomeContent> TBServicesHomeContents { get; set; }
       
 
 

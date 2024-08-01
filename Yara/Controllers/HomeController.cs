@@ -12,15 +12,18 @@ namespace Yara.Controllers
 		IIAboutHomeContent iAboutHomeContent;
         IIPhotoAboutHomeContent iPhotoAboutHomeContent;
         IISliderHomeContent iSliderHomeContent;
+        IIPhotoSliderHomeContent iPhotoSliderHomeContent;
+        IITaxiInfoStep iTaxiInfoStep;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1)
 		{
 			_logger = logger;
 			_userManager= userManager;
 			iAboutHomeContent = iAboutHomeContent1;
             iPhotoAboutHomeContent = iPhotoAboutHomeContent1;
             iSliderHomeContent = iSliderHomeContent1;
-
+            iPhotoSliderHomeContent=    iPhotoSliderHomeContent1;
+            iTaxiInfoStep=  iTaxiInfoStep1;
         }
 
 		public async Task<IActionResult> Index()
@@ -29,6 +32,8 @@ namespace Yara.Controllers
             vmodel.ListAboutHomeContent = iAboutHomeContent.GetAll().Take(1);
             vmodel.ListPhotoAboutHomeContent = iPhotoAboutHomeContent.GetAll();
             vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
+            vmodel.ListViewPhotoSliderHomeContent = iPhotoSliderHomeContent.GetAll();
+            vmodel.ListTaxiInfoStep = iTaxiInfoStep.GetAll().Take(1);
             var user = await _userManager.GetUserAsync(User);
 			if (user == null)
 				return View(vmodel);
@@ -44,7 +49,9 @@ namespace Yara.Controllers
             vmodel.ListAboutHomeContent = iAboutHomeContent.GetAll().Take(1);
             vmodel.ListPhotoAboutHomeContent = iPhotoAboutHomeContent.GetAll();
             vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
-            vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
+            vmodel.ListViewPhotoSliderHomeContent = iPhotoSliderHomeContent.GetAll();
+            vmodel.ListTaxiInfoStep = iTaxiInfoStep.GetAll().Take(1);
+
 
 
 
@@ -63,7 +70,8 @@ namespace Yara.Controllers
             vmodel.ListAboutHomeContent = iAboutHomeContent.GetAll().Take(1);
             vmodel.ListPhotoAboutHomeContent = iPhotoAboutHomeContent.GetAll();
             vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
-            vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
+            vmodel.ListViewPhotoSliderHomeContent = iPhotoSliderHomeContent.GetAll();
+            vmodel.ListTaxiInfoStep = iTaxiInfoStep.GetAll().Take(1);
 
 
 
@@ -81,7 +89,10 @@ namespace Yara.Controllers
             ViewmMODeElMASTER vmodel = new ViewmMODeElMASTER();
             vmodel.ListAboutHomeContent = iAboutHomeContent.GetAll().Take(1);
             vmodel.ListPhotoAboutHomeContent = iPhotoAboutHomeContent.GetAll();
+            vmodel.ListViewPhotoSliderHomeContent = iPhotoSliderHomeContent.GetAll();
             vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
+            vmodel.ListTaxiInfoStep = iTaxiInfoStep.GetAll().Take(1);
+
 
 
             var user = await _userManager.GetUserAsync(User);

@@ -826,6 +826,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الرابع باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelForAr {
+            get {
+                return ResourceManager.GetString("VlTitelForAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الرابع باللغة الانكليزية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelForEn {
+            get {
+                return ResourceManager.GetString("VlTitelForEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الرابع باللغة الكردية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelForKr1 {
+            get {
+                return ResourceManager.GetString("VlTitelForKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الرابع باللغة السيرانية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelForKr2 {
+            get {
+                return ResourceManager.GetString("VlTitelForKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يرجى أدراج العنوان الاول باللغة العربية لتتم العملية بنجاح ...!.
         /// </summary>
         public static string VlTitelOneAr {
@@ -858,6 +894,42 @@ namespace Domin.Resource {
         public static string VlTitelOneKr2 {
             get {
                 return ResourceManager.GetString("VlTitelOneKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان السادس باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelSixAr {
+            get {
+                return ResourceManager.GetString("VlTitelSixAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان السادس باللغة الانكليزية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelSixEn {
+            get {
+                return ResourceManager.GetString("VlTitelSixEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان السادس باللغة الكردية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelSixKr1 {
+            get {
+                return ResourceManager.GetString("VlTitelSixKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان السادس باللغة السيرانية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelSixKr2 {
+            get {
+                return ResourceManager.GetString("VlTitelSixKr2", resourceCulture);
             }
         }
         
@@ -930,6 +1002,42 @@ namespace Domin.Resource {
         public static string VlTitelTwoKr2 {
             get {
                 return ResourceManager.GetString("VlTitelTwoKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الخامس باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelVifeAr {
+            get {
+                return ResourceManager.GetString("VlTitelVifeAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الخامس باللغة الانكليزية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelVifeEn {
+            get {
+                return ResourceManager.GetString("VlTitelVifeEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الخامس باللغة الكردية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelVifeKr1 {
+            get {
+                return ResourceManager.GetString("VlTitelVifeKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج العنوان الخامس باللغة السيرانية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTitelVifeKr2 {
+            get {
+                return ResourceManager.GetString("VlTitelVifeKr2", resourceCulture);
             }
         }
         

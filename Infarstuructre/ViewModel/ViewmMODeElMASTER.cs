@@ -25,13 +25,9 @@ namespace Infarstuructre.ViewModel
 		public IEnumerable<RegisterViewModel> ListRegisterViewModel { get; set; }
 		public IEnumerable<NewRegister> ListNewRegister { get; set; }
 		public ChangePasswordViewModel SChangePassword { get; set; }
-
         public bool Rememberme { get; set; }
         public List<SelectListItem> Roles1 { get; set; }
         public string SelectedRoleId { get; set; }
-
-
-
         public string UserName { get; set; }
 		public string UserId { get; set; }
 		public string UserImage { get; set; }
@@ -46,11 +42,9 @@ namespace Infarstuructre.ViewModel
 		public string Password { get; set; }
 		public string ComparePassword { get; set; }
 		public string userName { get; set; }
-		public string PhoneNumber { get; set; }	
-		
+		public string PhoneNumber { get; set; }		
 		public List<IdentityRole> Roles { get; set; }
 		public List<VwUser> Users { get; set; }
-
         public IEnumerable<TBAboutHomeContent> ListAboutHomeContent { get; set; }
         public TBAboutHomeContent AboutHomeContent { get; set; }   
 		public IEnumerable<TBPhotoAboutHomeContent> ListPhotoAboutHomeContent { get; set; }
@@ -59,6 +53,10 @@ namespace Infarstuructre.ViewModel
         public TBSliderHomeContent SliderHomeConten { get; set; }   
 		public IEnumerable<TBViewPhotoSliderHomeContent> ListViewPhotoSliderHomeContent { get; set; }
         public TBPhotoSliderHomeContent PhotoSliderHomeContent { get; set; }
+		public IEnumerable<TBTaxiInfoStep> ListTaxiInfoStep { get; set; }
+        public TBTaxiInfoStep TaxiInfoStep { get; set; }
+		public IEnumerable<TBServicesHomeContent> ListServicesHomeContent { get; set; }
+        public TBServicesHomeContent ServicesHomeContent { get; set; }
     }
  }
 

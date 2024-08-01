@@ -10,7 +10,7 @@ namespace Domin.Entity
     {
         public int IdPhotoSliderHomeContent { get; set; }
         public int IdSliderHomeContent { get; set; }
-        public int NekName { get; set; }
+        public string NekName { get; set; }
         public string Photo { get; set; }
         public string DataEntry { get; set; }
         public DateTime DateTimeEntry { get; set; }
