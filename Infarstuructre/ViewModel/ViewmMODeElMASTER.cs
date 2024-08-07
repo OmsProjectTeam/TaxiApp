@@ -56,7 +56,9 @@ namespace Infarstuructre.ViewModel
 		public IEnumerable<TBTaxiInfoStep> ListTaxiInfoStep { get; set; }
         public TBTaxiInfoStep TaxiInfoStep { get; set; }
 		public IEnumerable<TBServicesHomeContent> ListServicesHomeContent { get; set; }
-        public TBServicesHomeContent ServicesHomeContent { get; set; }
+        public TBServicesHomeContent ServicesHomeContent { get; set; }	
+		public IEnumerable<TBService> ListService { get; set; }
+        public TBService Service { get; set; }
     }
  }
 

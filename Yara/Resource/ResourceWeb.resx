@@ -213,6 +213,9 @@
   <data name="LBAddRolesName" xml:space="preserve">
     <value>Adding and modifying Roles</value>
   </data>
+  <data name="LBAddServicesHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل عناوين قسم الخدمات </value>
+  </data>
   <data name="LBAddShippingAddress" xml:space="preserve">
     <value>Add Shipping Address</value>
   </data>
@@ -1142,6 +1145,9 @@
   </data>
   <data name="VLSavedSuccessfully" xml:space="preserve">
     <value>The saving process was completed successfully</value>
+  </data>
+  <data name="VLServiceDoplceted" xml:space="preserve">
+    <value>تم إدخال الخدمة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
   </data>
   <data name="VLTitleShippingoplceted" xml:space="preserve">
     <value>The shipping price address has been entered. Please verify and try again later....!</value>

@@ -349,6 +349,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل عناوين قسم الخدمات .
+        /// </summary>
+        public static string LBAddServicesHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddServicesHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Shipping Address.
         /// </summary>
         public static string LBAddShippingAddress {
@@ -3135,6 +3144,15 @@ namespace Yara.Resource {
         public static string VLSavedSuccessfully {
             get {
                 return ResourceManager.GetString("VLSavedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال الخدمة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLServiceDoplceted {
+            get {
+                return ResourceManager.GetString("VLServiceDoplceted", resourceCulture);
             }
         }
         

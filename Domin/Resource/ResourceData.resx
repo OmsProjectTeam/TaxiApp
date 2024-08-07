@@ -495,4 +495,31 @@
   <data name="VlTitelVifeKr2" xml:space="preserve">
     <value>يرجى إدراج العنوان الخامس باللغة السيرانية لتتم العملية بنجاح ....!</value>
   </data>
+  <data name="MaxLength250" xml:space="preserve">
+    <value>يجب أن لا يزيد عدد الاحرف المدخلة عن 250 حرف يرجى التأكد لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlServiceAr" xml:space="preserve">
+    <value>يرجى أدراج الخدمة باللغة العربي لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlServiceEn" xml:space="preserve">
+    <value>يرجى أدراج الخدمة باللغة الإنكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlServiceKr1" xml:space="preserve">
+    <value>يرجى أدراج الخدمة باللغة الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlServiceKr2" xml:space="preserve">
+    <value>يرجى أدراج الخدمة باللغة السيراني لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlServiceAr" xml:space="preserve">
+    <value>يرجى إدراج رابط التوجيه للصفحة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlServiceEn" xml:space="preserve">
+    <value>يرجى إدراج رابط التوجيه للصفحة الأنكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlServiceKr1" xml:space="preserve">
+    <value>يرجى إدراج رابط التوجيه للصفحة الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlServiceKr2" xml:space="preserve">
+    <value>يرجى إدراج رابط التوجيه للصفحة السيراني لتتم العملية بنجاح ...!</value>
+  </data>
 </root>

@@ -169,6 +169,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يجب أن لا يزيد عدد الاحرف المدخلة عن 250 حرف يرجى التأكد لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string MaxLength250 {
+            get {
+                return ResourceManager.GetString("MaxLength250", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The number of characters entered must not exceed 300 characters...!.
         /// </summary>
         public static string MaxLength300 {
@@ -799,6 +808,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج الخدمة باللغة العربي لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlServiceAr {
+            get {
+                return ResourceManager.GetString("VlServiceAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج الخدمة باللغة الإنكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlServiceEn {
+            get {
+                return ResourceManager.GetString("VlServiceEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج الخدمة باللغة الكردية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlServiceKr1 {
+            get {
+                return ResourceManager.GetString("VlServiceKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج الخدمة باللغة السيراني لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlServiceKr2 {
+            get {
+                return ResourceManager.GetString("VlServiceKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shipping Address.
         /// </summary>
         public static string VlShippingAddress {
@@ -1182,6 +1227,42 @@ namespace Domin.Resource {
         public static string VlUrlButtonKr2 {
             get {
                 return ResourceManager.GetString("VlUrlButtonKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج رابط التوجيه للصفحة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlServiceAr {
+            get {
+                return ResourceManager.GetString("VlUrlServiceAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج رابط التوجيه للصفحة الأنكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlServiceEn {
+            get {
+                return ResourceManager.GetString("VlUrlServiceEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج رابط التوجيه للصفحة الكردية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlServiceKr1 {
+            get {
+                return ResourceManager.GetString("VlUrlServiceKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج رابط التوجيه للصفحة السيراني لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlServiceKr2 {
+            get {
+                return ResourceManager.GetString("VlUrlServiceKr2", resourceCulture);
             }
         }
         

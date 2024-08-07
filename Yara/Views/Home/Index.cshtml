@@ -243,8 +243,8 @@
             </div><!-- /.taxiz-info -->
         </div>
         }
-        
-        <!-- /.container -->
+        @foreach (var item in Model.ListServicesHomeContent)
+    {
         <div class="container">
             <div class="services-one__top">
                 <div class="row gutter-y-50 align-items-center">
@@ -252,9 +252,9 @@
                         <div class="sec-title @@extraClassName">
                             <div class="sec-title__top">
                                 <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-                                <h6 class="sec-title__tagline">our services</h6><!-- /.sec-title__tagline -->
+                                <h6 class="sec-title__tagline">@item.TitelOneEn</h6><!-- /.sec-title__tagline -->
                             </div><!-- /.sec-title__top -->
-                            <h3 class="sec-title__title">We're Partner Of <br> Your Business</h3><!-- /.sec-title__title -->
+                            <h3 class="sec-title__title">@item.TitelTwoEn <br> @item.TitelThreeEn</h3><!-- /.sec-title__title -->
                         </div><!-- /.sec-title -->
                     </div><!-- /.col-md-8 -->
                     <div class="col-md-4">
@@ -262,7 +262,17 @@
                     </div><!-- /.col-md-4 -->
                 </div><!-- /.row gutter-y-40 -->
             </div><!-- /.services-one__top -->
-        </div><!-- /.container -->
+        </div>
+
+        <!-- /.container -->
+    }
+        <!-- /.container -->
+       
+
+
+
+
+
         <div class="container-fluid">
             <div class="services-one__carousel taxiz-owl__carousel taxiz-owl__carousel--basic-nav owl-carousel owl-theme"
                  data-owl-options='{

@@ -98,6 +98,14 @@ namespace Infarstuructre.Data
            .Property(b => b.CurrentState)
            .HasDefaultValueSql("((1))");
             //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBService>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBService>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	
         }
 
 
@@ -112,6 +120,7 @@ namespace Infarstuructre.Data
         public DbSet<TBViewPhotoSliderHomeContent> ViewPhotoSliderHomeContent { get; set; }
         public DbSet<TBTaxiInfoStep> TBTaxiInfoSteps { get; set; }
         public DbSet<TBServicesHomeContent> TBServicesHomeContents { get; set; }
+        public DbSet<TBService> TBServices { get; set; }
       
 
 
