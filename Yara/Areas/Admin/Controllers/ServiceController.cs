@@ -85,7 +85,7 @@
                     else
                     {
                         TempData["Message"] = ResourceWeb.VLimageuplode;
-                        return Redirect(returnUrl);
+                        return RedirectToAction("AddEditService");
                     }
                     var reqwest = iService.saveData(slider);
                     if (reqwest == true)
@@ -98,7 +98,7 @@
                         var PhotoNAme = slider.Photo;
                         var delet = iService.DELETPhotoWethError(PhotoNAme);
                         TempData["ErrorSave"] = ResourceWeb.VLErrorSave;
-                        return Redirect(returnUrl);
+                        return RedirectToAction("AddEditService");
                     }
                 }
                 else
@@ -120,7 +120,7 @@
                             var PhotoNAme = slider.Photo;
                             //var delet = iService.DELETPHOTOWethError(PhotoNAme);
                             TempData["ErrorSave"] = ResourceWeb.VLErrorUpdate;
-                            return Redirect(returnUrl);
+                            return RedirectToAction("AddEditServiceImage");
                         }
                     }
                     else
@@ -137,7 +137,7 @@
                             var PhotoNAme = slider.Photo;
                             var delet = iService.DELETPhotoWethError(PhotoNAme);
                             TempData["ErrorSave"] = ResourceWeb.VLErrorUpdate;
-                            return Redirect(returnUrl);
+                            return RedirectToAction("AddEditServiceImage");
                         }
                     }
                 }
@@ -151,14 +151,14 @@
                     //var PhotoNAme = slider.Photo;
                     //var delet = iService.DELETPHOTOWethError(PhotoNAme);
                     TempData["ErrorSave"] = ResourceWeb.VLErrorSave;
-                    return Redirect(returnUrl);
+                    return RedirectToAction("AddEditService");
                 }
                 else
                 {
                     var PhotoNAme = slider.Photo;
                     var delet = iService.DELETPhotoWethError(PhotoNAme);
                     TempData["ErrorSave"] = ResourceWeb.VLErrorSave;
-                    return Redirect(returnUrl);
+                    return RedirectToAction("AddEditService");
                 }
             }
         }

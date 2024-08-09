@@ -612,6 +612,9 @@
   <data name="LBMyRolesName" xml:space="preserve">
     <value>Roles </value>
   </data>
+  <data name="LBMYService" xml:space="preserve">
+    <value>الخدمات </value>
+  </data>
   <data name="LBMyServicesHomeContent" xml:space="preserve">
     <value>عناوين قسم الخدمات </value>
   </data>
@@ -1040,6 +1043,30 @@
   </data>
   <data name="ReceiptNo" xml:space="preserve">
     <value>Receipt No</value>
+  </data>
+  <data name="ServiceAr" xml:space="preserve">
+    <value>الخدمة عربي</value>
+  </data>
+  <data name="ServiceEn" xml:space="preserve">
+    <value>الخدمة إنكليزي</value>
+  </data>
+  <data name="ServiceKr1" xml:space="preserve">
+    <value>الخدمة كردي</value>
+  </data>
+  <data name="ServiceKr2" xml:space="preserve">
+    <value>الخدمة سرياني </value>
+  </data>
+  <data name="UrlServiceAr" xml:space="preserve">
+    <value>رابط التوجيه عربي</value>
+  </data>
+  <data name="UrlServiceEn" xml:space="preserve">
+    <value>رابط التوجيه انكليزي</value>
+  </data>
+  <data name="UrlServiceKr1" xml:space="preserve">
+    <value>رابط التوجيه كردي</value>
+  </data>
+  <data name="UrlServiceKr2" xml:space="preserve">
+    <value>رابط التوجه سيراني</value>
   </data>
   <data name="VLAreadoplceted" xml:space="preserve">
     <value>Pricing has already been added to the region. Please check and try again later...!</value>

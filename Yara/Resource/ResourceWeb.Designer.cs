@@ -1546,6 +1546,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الخدمات .
+        /// </summary>
+        public static string LBMYService {
+            get {
+                return ResourceManager.GetString("LBMYService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to عناوين قسم الخدمات .
         /// </summary>
         public static string LBMyServicesHomeContent {
@@ -2829,6 +2838,78 @@ namespace Yara.Resource {
         public static string ReceiptNo {
             get {
                 return ResourceManager.GetString("ReceiptNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الخدمة عربي.
+        /// </summary>
+        public static string ServiceAr {
+            get {
+                return ResourceManager.GetString("ServiceAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الخدمة إنكليزي.
+        /// </summary>
+        public static string ServiceEn {
+            get {
+                return ResourceManager.GetString("ServiceEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الخدمة كردي.
+        /// </summary>
+        public static string ServiceKr1 {
+            get {
+                return ResourceManager.GetString("ServiceKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الخدمة سرياني .
+        /// </summary>
+        public static string ServiceKr2 {
+            get {
+                return ResourceManager.GetString("ServiceKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه عربي.
+        /// </summary>
+        public static string UrlServiceAr {
+            get {
+                return ResourceManager.GetString("UrlServiceAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه انكليزي.
+        /// </summary>
+        public static string UrlServiceEn {
+            get {
+                return ResourceManager.GetString("UrlServiceEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجيه كردي.
+        /// </summary>
+        public static string UrlServiceKr1 {
+            get {
+                return ResourceManager.GetString("UrlServiceKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط التوجه سيراني.
+        /// </summary>
+        public static string UrlServiceKr2 {
+            get {
+                return ResourceManager.GetString("UrlServiceKr2", resourceCulture);
             }
         }
         
