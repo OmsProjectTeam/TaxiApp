@@ -133,6 +133,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل قسم لماذا تختارنا بالرئيسية.
+        /// </summary>
+        public static string LBAddChooseUsHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddChooseUsHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Adding and modifying city data.
         /// </summary>
         public static string LBAddCity {
@@ -201,6 +210,15 @@ namespace Yara.Resource {
         public static string LBAddEditPhotoSliderHomeContent {
             get {
                 return ResourceManager.GetString("LBAddEditPhotoSliderHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل الخدمات .
+        /// </summary>
+        public static string LBAddEditService {
+            get {
+                return ResourceManager.GetString("LBAddEditService", resourceCulture);
             }
         }
         
@@ -1353,6 +1371,15 @@ namespace Yara.Resource {
         public static string LBMyAreaDeliveryTariffs {
             get {
                 return ResourceManager.GetString("LBMyAreaDeliveryTariffs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to قسم لماذا تختارنا بالرئيسية.
+        /// </summary>
+        public static string LBMyChooseUsHomeContent {
+            get {
+                return ResourceManager.GetString("LBMyChooseUsHomeContent", resourceCulture);
             }
         }
         

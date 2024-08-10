@@ -1,13 +1,13 @@
 ﻿@model ViewmMODeElMASTER
 @{
-    ViewData["Title"] = ResourceWeb.LBAddServicesHomeContent;
+    ViewData["Title"] = ResourceWeb.LBAddEditService;
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <div class="col-lg-12 col-xs-12">
     <div class="box-content">
         <ul class="list-inline">
-            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddServicesHomeContent</button></a></li>/
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddEditService</button></a></li>/
             <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
             <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
 
@@ -18,17 +18,17 @@
         <div class="row small-spacing">
             <div class="col-lg-6 col-xs-12">
                 <div class="box-content card white">
-                    <h4 class="box-title">@ResourceWeb.LBAddServicesHomeContent</h4>
+                    <h4 class="box-title">@ResourceWeb.LBAddEditService</h4>
                     <!-- /.box-title -->
 
 
 
                     <div class="card-content">
-                        <form role="form" method="post" asp-controller="ServicesHomeContent" asp-action="Save" enctype="multipart/form-data">
+                        <form role="form" method="post" asp-controller="Service" asp-action="Save" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input type="hidden" asp-for="@Model.ServicesHomeContent.DataEntry" class="form-control" value="@User.Identity.Name">
-                                <input type="hidden" asp-for="@Model.ServicesHomeContent.IdServicesHomeContent" class="form-control">
-                                <input type="hidden" asp-for="@Model.ServicesHomeContent.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.Service.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.Service.IdService" class="form-control">
+                                <input type="hidden" asp-for="@Model.Service.DateTimeEntry" value="@DateTime.Now">
                                 <input type="hidden" asp-for="@Model.returnUrl" id="url">
                                 <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
                                 <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
@@ -38,14 +38,14 @@
                             <div class="card-content">
                                 <div class="row small-spacing">
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelOneAr" for="exampleInputEmail1">@ResourceWeb.LbTitelOneAr</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelOneAr" type="text" placeholder="@ResourceWeb.LbTitelOneAr ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelOneAr" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.ServiceAr" for="exampleInputEmail1">@ResourceWeb.ServiceAr</label>
+                                        <input asp-for="@Model.Service.ServiceAr" type="text" placeholder="@ResourceWeb.ServiceAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.ServiceAr" class="text-danger"></span>
                                     </div>
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelOneEn" for="exampleInputEmail1">@ResourceWeb.LbTitelOneEn</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelOneEn" type="text" placeholder="@ResourceWeb.LbTitelOneEn ...." class="form-control">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelOneEn" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.ServiceEn" for="exampleInputEmail1">@ResourceWeb.ServiceEn</label>
+                                        <input asp-for="@Model.Service.ServiceEn" type="text" placeholder="@ResourceWeb.ServiceEn ...." class="form-control">
+                                        <span asp-validation-for="@Model.Service.ServiceEn" class="text-danger"></span>
                                     </div>
                                 </div>
 
@@ -53,14 +53,14 @@
                             <div class="card-content">
                                 <div class="row small-spacing">
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelOneKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr1</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelOneKr1" type="text" placeholder="@ResourceWeb.LbTitelOneKr1 ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelOneKr1" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.ServiceKr1" for="exampleInputEmail1">@ResourceWeb.ServiceKr1</label>
+                                        <input asp-for="@Model.Service.ServiceKr1" type="text" placeholder="@ResourceWeb.ServiceKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.ServiceKr1" class="text-danger"></span>
                                     </div>
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelOneKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelOneKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelOneKr2" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.ServiceKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.Service.ServiceKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.ServiceKr2" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -68,15 +68,15 @@
                                 <div class="row small-spacing">
 
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelTwoAr" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoAr</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelTwoAr" type="text" placeholder="@ResourceWeb.LbTitelTwoAr ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelTwoAr" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.UrlServiceAr" for="exampleInputEmail1">@ResourceWeb.UrlServiceAr</label>
+                                        <input asp-for="@Model.Service.UrlServiceAr" type="text" placeholder="@ResourceWeb.UrlServiceAr ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.Service.UrlServiceAr" class="text-danger"></span>
 
                                     </div>
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelTwoEn" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoEn</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelTwoEn" type="text" placeholder="@ResourceWeb.LbTitelTwoEn ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelTwoEn" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.UrlServiceEn" for="exampleInputEmail1">@ResourceWeb.UrlServiceEn</label>
+                                        <input asp-for="@Model.Service.UrlServiceEn" type="text" placeholder="@ResourceWeb.UrlServiceEn ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.Service.UrlServiceEn" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -84,59 +84,44 @@
                             <div class="card-content">
                                 <div class="row small-spacing">
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelTwoKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr1</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelTwoKr1" type="text" placeholder="@ResourceWeb.LbTitelTwoKr1 ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelTwoKr1" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.UrlServiceKr1" for="exampleInputEmail1">@ResourceWeb.UrlServiceKr1</label>
+                                        <input asp-for="@Model.Service.UrlServiceKr1" type="text" placeholder="@ResourceWeb.UrlServiceKr1 ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.Service.UrlServiceKr1" class="text-danger"></span>
                                     </div>
 
 
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelTwoKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelTwoKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelTwoKr2" class="text-danger"></span>
+                                        <label asp-for="@Model.Service.UrlServiceKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
+                                        <input asp-for="@Model.Service.UrlServiceKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.UrlServiceKr2" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content">
                                 <div class="row small-spacing">
-
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelThreeAr" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeAr</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelThreeAr" type="text" placeholder="@ResourceWeb.LbTitelThreeAr ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelThreeAr" class="text-danger"></span>
-
+                                        <div class="checkbox margin-bottom-20">
+                                            <div class="switch success"><input type="checkbox" asp-for="@Model.Service.Active" id="switch-9" checked="checked"><label for="switch-9">@ResourceWeb.LbActive</label></div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelThreeEn" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeEn</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelThreeEn" type="text" placeholder="@ResourceWeb.LbTitelThreeEn...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelThreeEn" class="text-danger"></span>
-
-                                    </div>
+                                        <div class="checkbox margin-bottom-20">
+                                            <div class="switch success"><input type="checkbox" asp-for="@Model.Service.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                                        </div>
                                 </div>
                             </div>
+                            </div>
+
                             <div class="card-content">
-                                <div class="row small-spacing">
-
-                                    <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelThreeKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr1</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelThreeKr1" type="text" placeholder="@ResourceWeb.LbTitelThreeKr1 ...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelThreeKr1" class="text-danger"></span>
-
-                                    </div>
-                                    <div class="col-lg-6 col-xs-6">
-                                        <label asp-for="@Model.ServicesHomeContent.TitelThreeKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr2</label>
-                                        <input asp-for="@Model.ServicesHomeContent.TitelThreeKr2" type="text" placeholder="@ResourceWeb.LbTitelThreeKr2...." class="form-control" maxlength="150">
-                                        <span asp-validation-for="@Model.ServicesHomeContent.TitelThreeKr2" class="text-danger"></span>
-
-                                    </div>
+                                <div class="form-group">
+                                    <p><input type="file" accept="image/*" name="Files" id="file" onchange="loadFile(event)" style="display: none;"></p>
+                                    <p><label class="btn btn-violet btn-rounded btn-bordered waves-effect waves-light" for="file" style="cursor: pointer;" name="Files">@ResourceWeb.LBUpload_image</label></p>
+                                    <p><img id="output" width="450" height="300" /></p>
+                                    <span style="color:red"><strong>@TempData["Message"]</strong></span>
                                 </div>
                             </div>
 
-
-
-                            <div class="checkbox margin-bottom-20">
-                                <div class="switch success"><input type="checkbox" asp-for="@Model.ServicesHomeContent.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
-                            </div>
+                           
                             <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
 
                         </form>
@@ -151,7 +136,7 @@
                     <!-- /.box-title -->
                     <div class="card-content">
                         <div class="form-group">
-                            <img src="~/images/user gide/ServicesHomeContent.png" width="1920" height="1077" />
+                            <img src="~/images/user gide/Service.png" width="1920" height="1077" />
                         </div>
                     </div>
                     <!-- /.card-content -->

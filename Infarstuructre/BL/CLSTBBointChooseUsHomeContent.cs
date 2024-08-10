@@ -1,48 +1,40 @@
 ﻿
+
 namespace Infarstuructre.BL
 {
-    public interface IIService
+    public interface IIBointChooseUsHomeContent
     {
-        List<TBService> GetAll();
-        TBService GetById(int IdService);
-        bool saveData(TBService savee);
-        bool UpdateData(TBService updatss);
-        bool deleteData(int IdService);
-        List<TBService> GetAllv(int IdService);
-        bool DELETPhoto(int IdService);
+        List<TBBointChooseUsHomeContent> GetAll();
+        TBBointChooseUsHomeContent GetById(int IdBointChooseUsHomeContent);
+        bool saveData(TBBointChooseUsHomeContent savee);
+        bool UpdateData(TBBointChooseUsHomeContent updatss);
+        bool deleteData(int IdBointChooseUsHomeContent);
+        List<TBBointChooseUsHomeContent> GetAllv(int IdBointChooseUsHomeContent);
+        bool DELETPhoto(int IdBointChooseUsHomeContent);
         bool DELETPhotoWethError(string PhotoNAme);
-        List<TBService> GetAllHome();
     }
-    public class ClSTBService: IIService 
+    public class CLSTBBointChooseUsHomeContent: IIBointChooseUsHomeContent
     {
         MasterDbcontext dbcontext;
-        public ClSTBService(MasterDbcontext dbcontext1)
+        public CLSTBBointChooseUsHomeContent(MasterDbcontext dbcontext1)
         {
-            dbcontext=dbcontext1;
+            dbcontext= dbcontext1;
         }
-        public List<TBService> GetAll()
+        public List<TBBointChooseUsHomeContent> GetAll()
         {
-            List<TBService> MySlider = dbcontext.TBServices.OrderByDescending(n => n.IdService).Where(a => a.CurrentState == true).ToList();
+            List<TBBointChooseUsHomeContent> MySlider = dbcontext.TBBointChooseUsHomeContents.OrderByDescending(n => n.IdBointChooseUsHomeContent).Where(a => a.CurrentState == true).ToList();
             return MySlider;
         }
-
-        public List<TBService> GetAllHome()
+        public TBBointChooseUsHomeContent GetById(int IdBointChooseUsHomeContent)
         {
-            List<TBService> MySlider = dbcontext.TBServices.OrderByDescending(n => n.IdService).Where(a => a.CurrentState == true).Where(a => a.Active == true).ToList();
-            return MySlider;
-        }
-
-
-        public TBService GetById(int IdService)
-        {
-            TBService sslid = dbcontext.TBServices.FirstOrDefault(a => a.IdService == IdService);
+            TBBointChooseUsHomeContent sslid = dbcontext.TBBointChooseUsHomeContents.FirstOrDefault(a => a.IdBointChooseUsHomeContent == IdBointChooseUsHomeContent);
             return sslid;
         }
-        public bool saveData(TBService savee)
+        public bool saveData(TBBointChooseUsHomeContent savee)
         {
             try
             {
-                dbcontext.Add<TBService>(savee);
+                dbcontext.Add<TBBointChooseUsHomeContent>(savee);
                 dbcontext.SaveChanges();
                 return true;
             }
@@ -51,7 +43,7 @@ namespace Infarstuructre.BL
                 return false;
             }
         }
-        public bool UpdateData(TBService updatss)
+        public bool UpdateData(TBBointChooseUsHomeContent updatss)
         {
             try
             {
@@ -64,11 +56,11 @@ namespace Infarstuructre.BL
                 return false;
             }
         }
-        public bool deleteData(int IdService)
+        public bool deleteData(int IdBointChooseUsHomeContent)
         {
             try
             {
-                var catr = GetById(IdService);
+                var catr = GetById(IdBointChooseUsHomeContent);
                 catr.CurrentState = false;
                 //TbSubCateegoory dele = dbcontex.TbSubCateegoorys.Where(a => a.IdBrand == IdBrand).FirstOrDefault();
                 //dbcontex.TbSubCateegoorys.Remove(dele);
@@ -82,16 +74,16 @@ namespace Infarstuructre.BL
             }
 
         }
-        public List<TBService> GetAllv(int IdService)
+        public List<TBBointChooseUsHomeContent> GetAllv(int IdBointChooseUsHomeContent)
         {
-            List<TBService> MySlider = dbcontext.TBServices.OrderByDescending(n => n.IdService == IdService).Where(a => a.IdService == IdService).Where(a => a.CurrentState == true).ToList();
+            List<TBBointChooseUsHomeContent> MySlider = dbcontext.TBBointChooseUsHomeContents.OrderByDescending(n => n.IdBointChooseUsHomeContent == IdBointChooseUsHomeContent).Where(a => a.IdBointChooseUsHomeContent == IdBointChooseUsHomeContent).Where(a => a.CurrentState == true).ToList();
             return MySlider;
         }
-        public bool DELETPhoto(int IdService)
+        public bool DELETPhoto(int IdBointChooseUsHomeContent)
         {
             try
             {
-                var catr = GetById(IdService);
+                var catr = GetById(IdBointChooseUsHomeContent);
                 //using (FileStream fs = new FileStream(catr.Photo, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 //{
                 if (!string.IsNullOrEmpty(catr.Photo))

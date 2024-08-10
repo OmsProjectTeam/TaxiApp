@@ -59,6 +59,10 @@ namespace Infarstuructre.ViewModel
         public TBServicesHomeContent ServicesHomeContent { get; set; }	
 		public IEnumerable<TBService> ListService { get; set; }
         public TBService Service { get; set; }
+		public IEnumerable<TBChooseUsHomeContent> ListChooseUsHomeContent { get; set; }
+        public TBChooseUsHomeContent ChooseUsHomeContent { get; set; }	
+		public IEnumerable<TBBointChooseUsHomeContent> ListBointChooseUsHomeContent { get; set; }
+        public TBBointChooseUsHomeContent BointChooseUsHomeContent { get; set; }
     }
  }
 

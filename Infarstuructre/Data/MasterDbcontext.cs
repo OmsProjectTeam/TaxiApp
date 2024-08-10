@@ -105,6 +105,22 @@ namespace Infarstuructre.Data
             builder.Entity<TBService>()
            .Property(b => b.CurrentState)
            .HasDefaultValueSql("((1))");
+            //---------------------------------
+            //---------------------------------	
+            builder.Entity<TBChooseUsHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBChooseUsHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBBointChooseUsHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBBointChooseUsHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
             //---------------------------------	
         }
 
@@ -121,6 +137,8 @@ namespace Infarstuructre.Data
         public DbSet<TBTaxiInfoStep> TBTaxiInfoSteps { get; set; }
         public DbSet<TBServicesHomeContent> TBServicesHomeContents { get; set; }
         public DbSet<TBService> TBServices { get; set; }
+        public DbSet<TBChooseUsHomeContent> TBChooseUsHomeContents { get; set; }
+        public DbSet<TBBointChooseUsHomeContent> TBBointChooseUsHomeContents { get; set; }
       
 
 

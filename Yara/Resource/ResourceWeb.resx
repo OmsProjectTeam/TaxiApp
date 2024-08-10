@@ -141,6 +141,9 @@
   <data name="LBAddAreaDeliveryTariffs" xml:space="preserve">
     <value>Adding and modifying the pricing of delivery companies for the regions</value>
   </data>
+  <data name="LBAddChooseUsHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل قسم لماذا تختارنا بالرئيسية</value>
+  </data>
   <data name="LBAddCity" xml:space="preserve">
     <value>Adding and modifying city data</value>
   </data>
@@ -164,6 +167,9 @@
   </data>
   <data name="LBAddEditPhotoSliderHomeContent" xml:space="preserve">
     <value>أضافة وتعديل الصور  في السليدر العلوي</value>
+  </data>
+  <data name="LBAddEditService" xml:space="preserve">
+    <value>إضافة وتعديل الخدمات </value>
   </data>
   <data name="LBAddEditSliderHomeConten" xml:space="preserve">
     <value>إضافة وتعديل السليدر العلوي في الرئيسية</value>
@@ -548,6 +554,9 @@
   </data>
   <data name="LBMyAreaDeliveryTariffs" xml:space="preserve">
     <value>Pricing of delivery companies to the regions</value>
+  </data>
+  <data name="LBMyChooseUsHomeContent" xml:space="preserve">
+    <value>قسم لماذا تختارنا بالرئيسية</value>
   </data>
   <data name="LBMyCity" xml:space="preserve">
     <value>Cities data</value>

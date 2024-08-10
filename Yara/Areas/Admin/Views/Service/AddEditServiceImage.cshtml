@@ -1,8 +1,168 @@
-﻿
+﻿@model ViewmMODeElMASTER
 @{
-    ViewData["Title"] = "AddEditServiceImage";
+    ViewData["Title"] = ResourceWeb.LBAddEditService;
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>AddEditServiceImage</h2>
+<div class="col-lg-12 col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddEditService</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+
+
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBAddEditService</h4>
+                    <!-- /.box-title -->
+
+
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="Service" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.Service.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.Service.IdService" class="form-control">
+                                <input type="hidden" asp-for="@Model.Service.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.Service.Photo">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                                <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
+                                <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+                            </div>
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.ServiceAr" for="exampleInputEmail1">@ResourceWeb.ServiceAr</label>
+                                        <input asp-for="@Model.Service.ServiceAr" type="text" placeholder="@ResourceWeb.ServiceAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.ServiceAr" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.ServiceEn" for="exampleInputEmail1">@ResourceWeb.ServiceEn</label>
+                                        <input asp-for="@Model.Service.ServiceEn" type="text" placeholder="@ResourceWeb.ServiceEn ...." class="form-control">
+                                        <span asp-validation-for="@Model.Service.ServiceEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.ServiceKr1" for="exampleInputEmail1">@ResourceWeb.ServiceKr1</label>
+                                        <input asp-for="@Model.Service.ServiceKr1" type="text" placeholder="@ResourceWeb.ServiceKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.ServiceKr1" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.ServiceKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.Service.ServiceKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.ServiceKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.UrlServiceAr" for="exampleInputEmail1">@ResourceWeb.UrlServiceAr</label>
+                                        <input asp-for="@Model.Service.UrlServiceAr" type="text" placeholder="@ResourceWeb.UrlServiceAr ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.Service.UrlServiceAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.UrlServiceEn" for="exampleInputEmail1">@ResourceWeb.UrlServiceEn</label>
+                                        <input asp-for="@Model.Service.UrlServiceEn" type="text" placeholder="@ResourceWeb.UrlServiceEn ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.Service.UrlServiceEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.UrlServiceKr1" for="exampleInputEmail1">@ResourceWeb.UrlServiceKr1</label>
+                                        <input asp-for="@Model.Service.UrlServiceKr1" type="text" placeholder="@ResourceWeb.UrlServiceKr1 ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.Service.UrlServiceKr1" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.Service.UrlServiceKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
+                                        <input asp-for="@Model.Service.UrlServiceKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.Service.UrlServiceKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <div class="checkbox margin-bottom-20">
+                                            <div class="switch success"><input type="checkbox" asp-for="@Model.Service.Active" id="switch-9" checked="checked"><label for="switch-9">@ResourceWeb.LbActive</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <div class="checkbox margin-bottom-20">
+                                            <div class="switch success"><input type="checkbox" asp-for="@Model.Service.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <p><input type="file" accept="image/*" name="Files" id="file" onchange="loadFile(event)" style="display: none;"></p>
+                                    <p><label class="btn btn-violet btn-rounded btn-bordered waves-effect waves-light" for="file" style="cursor: pointer;" name="Files">@ResourceWeb.LBUpload_image</label></p>
+                                    <p><img id="output" width="450" height="300" /></p>
+                                    <span style="color:red"><strong>@TempData["Message"]</strong></span>
+                                </div>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+
+                        </form>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.lbOldeAndUserGide</h4>
+                    <!-- /.box-title -->
+                    <div class="card-content">
+                        <div class="form-group">
+                            <input type="hidden" asp-for="@Model.Service.Photo" for="exampleInputEmail1"></input>
+                            <p><img src="@string.Format("/Images/Home/{0}",Model.Service.Photo)" id="output" width="450" height="300" /></p>
+                        </div>
+                        <div class="form-group">
+                            <img src="~/images/user gide/Service.png" width="1920" height="1077" />
+                        </div>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-content -->
+</div>
+
+@section Scripts {
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    <script>
+        $("#url").val(window.location.href);
+    </script>
+}
 

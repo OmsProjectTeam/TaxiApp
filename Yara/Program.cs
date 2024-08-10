@@ -101,6 +101,8 @@ builder.Services.AddScoped<IIPhotoSliderHomeContent, CLSTBPhotoSliderHomeContent
 builder.Services.AddScoped<IITaxiInfoStep, CLSTBTaxiInfoStep>();
 builder.Services.AddScoped<IIServicesHomeContent, CLSTBServicesHomeContent>();
 builder.Services.AddScoped<IIService, ClSTBService>();
+builder.Services.AddScoped<IIChooseUsHomeContent, CLSTBChooseUsHomeContent>();
+builder.Services.AddScoped<IIBointChooseUsHomeContent, CLSTBBointChooseUsHomeContent>();
 
 
 
