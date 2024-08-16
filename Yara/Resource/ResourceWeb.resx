@@ -159,6 +159,9 @@
   <data name="LBAddCustomerMessages" xml:space="preserve">
     <value>Add and modify the Customer Messages</value>
   </data>
+  <data name="LBAddEditBointChooseUsHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل نقاط لماذا تختارنا بالرئيسية</value>
+  </data>
   <data name="LbAddEditInformationCompanies" xml:space="preserve">
     <value>Add and modify company data</value>
   </data>
@@ -554,6 +557,9 @@
   </data>
   <data name="LBMyAreaDeliveryTariffs" xml:space="preserve">
     <value>Pricing of delivery companies to the regions</value>
+  </data>
+  <data name="LBMYBointChooseUsHomeContent" xml:space="preserve">
+    <value>نقاط لماذا تختارنا بالرئيسية </value>
   </data>
   <data name="LBMyChooseUsHomeContent" xml:space="preserve">
     <value>قسم لماذا تختارنا بالرئيسية</value>

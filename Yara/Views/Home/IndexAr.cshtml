@@ -326,72 +326,112 @@
         <div class="row gutter-y-40 align-items-center">
             <div class="col-lg-4">
                 <div class="why-choose-one__left">
-                    <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="why-choose-one__item__icon">
-                            <i class="icon-check-mark"></i>
-                        </div><!-- /.why-choose-one__item__icon -->
-                        <div class="why-choose-one__item__content">
-                            <h3 class="why-choose-one__item__title">Many Pickup Locations</h3>
-                            <!-- /.why-choose-one__item__title -->
-                            <p class="why-choose-one__item__text">
-                                Quisque sollicitudin feugiat risus, eu posuere ex
-                                euismod eu. Phasellus hendrerit, massa
-                            </p><!-- /.why-choose-one__item__text -->
-                        </div><!-- /.why-choose-one__item__content -->
-                    </div><!-- /.why-choose-one__item -->
-                    <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
-                        <div class="why-choose-one__item__icon">
-                            <i class="icon-check-mark"></i>
-                        </div><!-- /.why-choose-one__item__icon -->
-                        <div class="why-choose-one__item__content">
-                            <h3 class="why-choose-one__item__title">More Reliable & Experienced</h3>
-                            <!-- /.why-choose-one__item__title -->
-                            <p class="why-choose-one__item__text">
-                                We just need to put these last issues to bed net net,
-                                yet product management breakout
-                            </p><!-- /.why-choose-one__item__text -->
-                        </div><!-- /.why-choose-one__item__content -->
-                    </div><!-- /.why-choose-one__item -->
+
+
+
+                    @foreach (var item in Model.ListBointChooseUsHomeContent.Take(1))
+                    {
+                        <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="why-choose-one__item__icon">
+                                <i class="icon-check-mark"></i>
+                            </div><!-- /.why-choose-one__item__icon -->
+                            <div class="why-choose-one__item__content">
+                                <h3 class="why-choose-one__item__title">@item.TitelOneAr</h3>
+                                <!-- /.why-choose-one__item__title -->
+                                <p class="why-choose-one__item__text">
+                                    @item.FirstDescriptionAr
+                                </p><!-- /.why-choose-one__item__text -->
+                            </div><!-- /.why-choose-one__item__content -->
+                        </div>
+                    }
+
+
+
+                    <!-- /.why-choose-one__item -->
+                    @foreach (var item in Model.ListBointChooseUsHomeContent.Skip(1).Take(1))
+                    {
+                        <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                            <div class="why-choose-one__item__icon">
+                                <i class="icon-check-mark"></i>
+                            </div><!-- /.why-choose-one__item__icon -->
+                            <div class="why-choose-one__item__content">
+                                <h3 class="why-choose-one__item__title">@item.TitelOneAr</h3>
+                                <!-- /.why-choose-one__item__title -->
+                                <p class="why-choose-one__item__text">
+                                    @item.FirstDescriptionAr
+                                </p><!-- /.why-choose-one__item__text -->
+                            </div><!-- /.why-choose-one__item__content -->
+                        </div>
+                    }
+
+
+                    <!-- /.why-choose-one__item -->
                 </div><!-- /.why-choose-one__left -->
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
+
                 <div class="why-choose-one__image">
-                    <img src="~/Web/assets/images/why-choose/why-choose-1-1.jpg" alt="why-choose" class="why-choose-one__image__img">
-                    <img src="~/Web/assets/images/why-choose/why-choose-car-1-1.png" alt="car" class="why-choose-one__image__car">
+
+                    @foreach (var item in Model.ListBointChooseUsHomeContent.Skip(2).Take(1))
+                    {
+                        <img src="@string.Format("/Images/Home/{0}",item.Photo)" alt="why-choose" class="why-choose-one__image__img" style="height:250px;width:350px">
+                    }
+
+                    @foreach (var item in Model.ListBointChooseUsHomeContent.Take(1))
+                    {
+                        <img src="@string.Format("/Images/Home/{0}",item.Photo)" alt="car" class="why-choose-one__image__car" style="height:200px;width:350px">
+
+                    }
                     <div class="why-choose-one__image__box"></div><!-- /.why-choose-one__image__box -->
                 </div><!-- /.why-choose-one__image -->
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <div class="why-choose-one__right">
-                    <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="why-choose-one__item__icon">
-                            <i class="icon-check-mark"></i>
-                        </div><!-- /.why-choose-one__item__icon -->
-                        <div class="why-choose-one__item__content">
-                            <h3 class="why-choose-one__item__title">Easy & Emergency Solutions</h3>
-                            <!-- /.why-choose-one__item__title -->
-                            <p class="why-choose-one__item__text">
-                                Lift and shift i also believe it's important for every
-                                member to be involved and invested in
-                            </p><!-- /.why-choose-one__item__text -->
-                        </div><!-- /.why-choose-one__item__content -->
-                    </div><!-- /.why-choose-one__item -->
-                    <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
-                        <div class="why-choose-one__item__icon">
-                            <i class="icon-check-mark"></i>
-                        </div><!-- /.why-choose-one__item__icon -->
-                        <div class="why-choose-one__item__content">
-                            <h3 class="why-choose-one__item__title">Getting Affordable price</h3>
-                            <!-- /.why-choose-one__item__title -->
-                            <p class="why-choose-one__item__text">
-                                Upsell we need more paper prairie dogging the right
-                                info at the right time to the right
-                            </p><!-- /.why-choose-one__item__text -->
-                        </div><!-- /.why-choose-one__item__content -->
-                    </div><!-- /.why-choose-one__item -->
+
+                    @foreach (var item in Model.ListBointChooseUsHomeContent.Skip(2).Take(1))
+                    {
+                        <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="why-choose-one__item__icon">
+                                <i class="icon-check-mark"></i>
+                            </div><!-- /.why-choose-one__item__icon -->
+                            <div class="why-choose-one__item__content">
+                                <h3 class="why-choose-one__item__title">@item.TitelOneAr</h3>
+                                <!-- /.why-choose-one__item__title -->
+                                <p class="why-choose-one__item__text">
+                                    @item.FirstDescriptionAr
+                                </p><!-- /.why-choose-one__item__text -->
+                            </div><!-- /.why-choose-one__item__content -->
+                        </div>
+                    }
+
+                    <!-- /.why-choose-one__item -->
+                    @foreach (var item in Model.ListBointChooseUsHomeContent.Skip(3).Take(1))
+                    {
+
+                        <div class="why-choose-one__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                            <div class="why-choose-one__item__icon">
+                                <i class="icon-check-mark"></i>
+                            </div><!-- /.why-choose-one__item__icon -->
+                            <div class="why-choose-one__item__content">
+                                <h3 class="why-choose-one__item__title">@item.TitelOneAr</h3>
+                                <!-- /.why-choose-one__item__title -->
+                                <p class="why-choose-one__item__text">
+                                    @item.FirstDescriptionAr
+                                </p><!-- /.why-choose-one__item__text -->
+                            </div><!-- /.why-choose-one__item__content -->
+                        </div>
+                    }
+
+
+                    <!-- /.why-choose-one__item -->
                 </div><!-- /.why-choose-one__right -->
             </div><!-- /.col-lg-4 -->
-        </div><!-- /.row gutter-y-40 -->
+        </div>
+        
+        
+        
+        
+        <!-- /.row gutter-y-40 -->
     </div><!-- /.container -->
     <div class="why-choose-one__shape-left">
         <div class="why-choose-one__shape-left__one"></div><!-- /.why-choose-one__shape-left__one -->

@@ -187,6 +187,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل نقاط لماذا تختارنا بالرئيسية.
+        /// </summary>
+        public static string LBAddEditBointChooseUsHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddEditBointChooseUsHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify company data.
         /// </summary>
         public static string LbAddEditInformationCompanies {
@@ -1371,6 +1380,15 @@ namespace Yara.Resource {
         public static string LBMyAreaDeliveryTariffs {
             get {
                 return ResourceManager.GetString("LBMyAreaDeliveryTariffs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نقاط لماذا تختارنا بالرئيسية .
+        /// </summary>
+        public static string LBMYBointChooseUsHomeContent {
+            get {
+                return ResourceManager.GetString("LBMYBointChooseUsHomeContent", resourceCulture);
             }
         }
         
