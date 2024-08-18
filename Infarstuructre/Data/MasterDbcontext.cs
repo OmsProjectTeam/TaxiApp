@@ -104,6 +104,9 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBService>()
            .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))"); 
+            builder.Entity<TBService>()
+           .Property(b => b.Active)
            .HasDefaultValueSql("((1))");
             //---------------------------------
             //---------------------------------	
@@ -120,6 +123,17 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBBointChooseUsHomeContent>()
            .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBCarCategorie>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBCarCategorie>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))"); 
+            builder.Entity<TBCarCategorie>()
+           .Property(b => b.Active)
            .HasDefaultValueSql("((1))");
             //---------------------------------	
         }
@@ -139,6 +153,7 @@ namespace Infarstuructre.Data
         public DbSet<TBService> TBServices { get; set; }
         public DbSet<TBChooseUsHomeContent> TBChooseUsHomeContents { get; set; }
         public DbSet<TBBointChooseUsHomeContent> TBBointChooseUsHomeContents { get; set; }
+        public DbSet<TBCarCategorie> TBCarCategories { get; set; }
       
 
 

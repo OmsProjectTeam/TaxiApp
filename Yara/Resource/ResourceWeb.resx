@@ -162,6 +162,9 @@
   <data name="LBAddEditBointChooseUsHomeContent" xml:space="preserve">
     <value>إضافة وتعديل نقاط لماذا تختارنا بالرئيسية</value>
   </data>
+  <data name="LBAddEditCarCategorie" xml:space="preserve">
+    <value>إضافة وتعديل فئات السيارات </value>
+  </data>
   <data name="LbAddEditInformationCompanies" xml:space="preserve">
     <value>Add and modify company data</value>
   </data>
@@ -269,6 +272,18 @@
   </data>
   <data name="Lbbypass" xml:space="preserve">
     <value>bypass</value>
+  </data>
+  <data name="LBCarCategorieAr" xml:space="preserve">
+    <value>الفئة عربي</value>
+  </data>
+  <data name="LbCarCategorieEn" xml:space="preserve">
+    <value>الفئة إنكليزي</value>
+  </data>
+  <data name="LbCarCategorieKr1" xml:space="preserve">
+    <value>الفئة كردي</value>
+  </data>
+  <data name="LbCarCategorieKr2" xml:space="preserve">
+    <value>الفئة سيراني</value>
   </data>
   <data name="LbCatchReceiptNo" xml:space="preserve">
     <value>Catch Receipt No</value>
@@ -560,6 +575,9 @@
   </data>
   <data name="LBMYBointChooseUsHomeContent" xml:space="preserve">
     <value>نقاط لماذا تختارنا بالرئيسية </value>
+  </data>
+  <data name="LBMYCarCategorie" xml:space="preserve">
+    <value>فئات السيارات </value>
   </data>
   <data name="LBMyChooseUsHomeContent" xml:space="preserve">
     <value>قسم لماذا تختارنا بالرئيسية</value>
@@ -1085,6 +1103,9 @@
   </data>
   <data name="VLAreadoplceted" xml:space="preserve">
     <value>Pricing has already been added to the region. Please check and try again later...!</value>
+  </data>
+  <data name="VLCarCategorieDoplceted" xml:space="preserve">
+    <value>تم إدخال فئة السيارة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
   </data>
   <data name="VLCatchReceiptNoDoplceted" xml:space="preserve">
     <value>The receipt voucher number has already been entered. Please verify and try again later...!</value>

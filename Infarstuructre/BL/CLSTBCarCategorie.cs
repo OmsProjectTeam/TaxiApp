@@ -1,47 +1,46 @@
 ﻿
+
 namespace Infarstuructre.BL
 {
-    public interface IIService
+    public interface IICarCategorie
     {
-        List<TBService> GetAll();
-        TBService GetById(int IdService);
-        bool saveData(TBService savee);
-        bool UpdateData(TBService updatss);
-        bool deleteData(int IdService);
-        List<TBService> GetAllv(int IdService);
-        bool DELETPhoto(int IdService);
+        List<TBCarCategorie> GetAll();
+        List<TBCarCategorie> GetAllHome();
+        TBCarCategorie GetById(int IdCarCategories);
+        bool saveData(TBCarCategorie savee);
+        bool UpdateData(TBCarCategorie updatss);
+        bool deleteData(int IdCarCategories);
+        List<TBCarCategorie> GetAllv(int IdCarCategories);
+        bool DELETPhoto(int IdCarCategories);
         bool DELETPhotoWethError(string PhotoNAme);
-        List<TBService> GetAllHome();
     }
-    public class ClSTBService: IIService 
+    public class CLSTBCarCategorie: IICarCategorie
     {
         MasterDbcontext dbcontext;
-        public ClSTBService(MasterDbcontext dbcontext1)
+        public CLSTBCarCategorie(MasterDbcontext dbcontext1)
         {
-            dbcontext=dbcontext1;
+            dbcontext= dbcontext1;
         }
-        public List<TBService> GetAll()
+        public List<TBCarCategorie> GetAll()
         {
-            List<TBService> MySlider = dbcontext.TBServices.OrderByDescending(n => n.IdService).Where(a => a.CurrentState == true).ToList();
+            List<TBCarCategorie> MySlider = dbcontext.TBCarCategories.OrderByDescending(n => n.IdCarCategories).Where(a => a.CurrentState == true).ToList();
             return MySlider;
         }
-
-        public List<TBService> GetAllHome()
+        public List<TBCarCategorie> GetAllHome()
         {
-            List<TBService> MySlider = dbcontext.TBServices.OrderByDescending(n => n.IdService).Where(a => a.CurrentState == true).Where(a => a.Active == true).ToList();
+            List<TBCarCategorie> MySlider = dbcontext.TBCarCategories.OrderByDescending(n => n.IdCarCategories).Where(a => a.CurrentState == true).Where(a => a.Active == true).ToList();
             return MySlider;
         }
-
-        public TBService GetById(int IdService)
+        public TBCarCategorie GetById(int IdCarCategories)
         {
-            TBService sslid = dbcontext.TBServices.FirstOrDefault(a => a.IdService == IdService);
+            TBCarCategorie sslid = dbcontext.TBCarCategories.FirstOrDefault(a => a.IdCarCategories == IdCarCategories);
             return sslid;
         }
-        public bool saveData(TBService savee)
+        public bool saveData(TBCarCategorie savee)
         {
             try
             {
-                dbcontext.Add<TBService>(savee);
+                dbcontext.Add<TBCarCategorie>(savee);
                 dbcontext.SaveChanges();
                 return true;
             }
@@ -50,7 +49,7 @@ namespace Infarstuructre.BL
                 return false;
             }
         }
-        public bool UpdateData(TBService updatss)
+        public bool UpdateData(TBCarCategorie updatss)
         {
             try
             {
@@ -63,11 +62,11 @@ namespace Infarstuructre.BL
                 return false;
             }
         }
-        public bool deleteData(int IdService)
+        public bool deleteData(int IdCarCategories)
         {
             try
             {
-                var catr = GetById(IdService);
+                var catr = GetById(IdCarCategories);
                 catr.CurrentState = false;
                 //TbSubCateegoory dele = dbcontex.TbSubCateegoorys.Where(a => a.IdBrand == IdBrand).FirstOrDefault();
                 //dbcontex.TbSubCateegoorys.Remove(dele);
@@ -81,16 +80,16 @@ namespace Infarstuructre.BL
             }
 
         }
-        public List<TBService> GetAllv(int IdService)
+        public List<TBCarCategorie> GetAllv(int IdCarCategories)
         {
-            List<TBService> MySlider = dbcontext.TBServices.OrderByDescending(n => n.IdService == IdService).Where(a => a.IdService == IdService).Where(a => a.CurrentState == true).ToList();
+            List<TBCarCategorie> MySlider = dbcontext.TBCarCategories.OrderByDescending(n => n.IdCarCategories == IdCarCategories).Where(a => a.IdCarCategories == IdCarCategories).Where(a => a.CurrentState == true).ToList();
             return MySlider;
         }
-        public bool DELETPhoto(int IdService)
+        public bool DELETPhoto(int IdCarCategories)
         {
             try
             {
-                var catr = GetById(IdService);
+                var catr = GetById(IdCarCategories);
                 //using (FileStream fs = new FileStream(catr.Photo, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 //{
                 if (!string.IsNullOrEmpty(catr.Photo))

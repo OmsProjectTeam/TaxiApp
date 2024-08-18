@@ -349,6 +349,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السيارة باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlCarCategorieAr {
+            get {
+                return ResourceManager.GetString("VlCarCategorieAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السيارة باللغة الانكليزية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlCarCategorieEn {
+            get {
+                return ResourceManager.GetString("VlCarCategorieEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السيارة باللغة الكرديةلتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlCarCategorieKr1 {
+            get {
+                return ResourceManager.GetString("VlCarCategorieKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السيارة باللغة السيرانية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlCarCategorieKr2 {
+            get {
+                return ResourceManager.GetString("VlCarCategorieKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to please inclode the Catch Receipt.
         /// </summary>
         public static string VlCatchReceiptNo {

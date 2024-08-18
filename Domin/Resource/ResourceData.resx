@@ -522,4 +522,16 @@
   <data name="VlUrlServiceKr2" xml:space="preserve">
     <value>يرجى إدراج رابط التوجيه للصفحة السيراني لتتم العملية بنجاح ...!</value>
   </data>
+  <data name="VlCarCategorieAr" xml:space="preserve">
+    <value>يرجى أدراج فئة السيارة باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlCarCategorieEn" xml:space="preserve">
+    <value>يرجى أدراج فئة السيارة باللغة الانكليزية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlCarCategorieKr1" xml:space="preserve">
+    <value>يرجى أدراج فئة السيارة باللغة الكرديةلتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlCarCategorieKr2" xml:space="preserve">
+    <value>يرجى أدراج فئة السيارة باللغة السيرانية لتتم العملية بنجاح ....!</value>
+  </data>
 </root>

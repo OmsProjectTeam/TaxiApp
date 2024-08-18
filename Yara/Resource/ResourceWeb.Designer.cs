@@ -196,6 +196,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل فئات السيارات .
+        /// </summary>
+        public static string LBAddEditCarCategorie {
+            get {
+                return ResourceManager.GetString("LBAddEditCarCategorie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify company data.
         /// </summary>
         public static string LbAddEditInformationCompanies {
@@ -516,6 +525,42 @@ namespace Yara.Resource {
         public static string Lbbypass {
             get {
                 return ResourceManager.GetString("Lbbypass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة عربي.
+        /// </summary>
+        public static string LBCarCategorieAr {
+            get {
+                return ResourceManager.GetString("LBCarCategorieAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة إنكليزي.
+        /// </summary>
+        public static string LbCarCategorieEn {
+            get {
+                return ResourceManager.GetString("LbCarCategorieEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة كردي.
+        /// </summary>
+        public static string LbCarCategorieKr1 {
+            get {
+                return ResourceManager.GetString("LbCarCategorieKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة سيراني.
+        /// </summary>
+        public static string LbCarCategorieKr2 {
+            get {
+                return ResourceManager.GetString("LbCarCategorieKr2", resourceCulture);
             }
         }
         
@@ -1389,6 +1434,15 @@ namespace Yara.Resource {
         public static string LBMYBointChooseUsHomeContent {
             get {
                 return ResourceManager.GetString("LBMYBointChooseUsHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئات السيارات .
+        /// </summary>
+        public static string LBMYCarCategorie {
+            get {
+                return ResourceManager.GetString("LBMYCarCategorie", resourceCulture);
             }
         }
         
@@ -2964,6 +3018,15 @@ namespace Yara.Resource {
         public static string VLAreadoplceted {
             get {
                 return ResourceManager.GetString("VLAreadoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال فئة السيارة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLCarCategorieDoplceted {
+            get {
+                return ResourceManager.GetString("VLCarCategorieDoplceted", resourceCulture);
             }
         }
         
