@@ -18,8 +18,9 @@ namespace Yara.Controllers
         IIService iService;
         IIChooseUsHomeContent iChooseUsHomeContent;
         IIBointChooseUsHomeContent iBointChooseUsHomeContent;
+        IICarCategorie iCarCategorie;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1)
 		{
 			_logger = logger;
 			_userManager= userManager;
@@ -32,6 +33,7 @@ namespace Yara.Controllers
             iService= iService1;
             iChooseUsHomeContent = iChooseUsHomeContent1;
             iBointChooseUsHomeContent = iBointChooseUsHomeContent1;
+            iCarCategorie=  iCarCategorie1;
         }
 
 		public async Task<IActionResult> Index()
@@ -46,6 +48,7 @@ namespace Yara.Controllers
             vmodel.ListService = iService.GetAllHome();
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
+            vmodel.ListCarCategorie = iCarCategorie.GetAll();
 
 
             var user = await _userManager.GetUserAsync(User);
@@ -69,6 +72,8 @@ namespace Yara.Controllers
             vmodel.ListService = iService.GetAllHome();
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
+            vmodel.ListCarCategorie = iCarCategorie.GetAll();
+
 
 
 
@@ -94,6 +99,8 @@ namespace Yara.Controllers
             vmodel.ListService = iService.GetAllHome();
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
+            vmodel.ListCarCategorie = iCarCategorie.GetAll();
+
 
 
 
@@ -122,6 +129,8 @@ namespace Yara.Controllers
             vmodel.ListService = iService.GetAllHome();
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
+            vmodel.ListCarCategorie = iCarCategorie.GetAll();
+
 
 
 

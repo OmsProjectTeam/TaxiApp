@@ -64,7 +64,9 @@ namespace Infarstuructre.ViewModel
 		public IEnumerable<TBBointChooseUsHomeContent> ListBointChooseUsHomeContent { get; set; }
         public TBBointChooseUsHomeContent BointChooseUsHomeContent { get; set; }
         public IEnumerable<TBCarCategorie> ListCarCategorie { get; set; }
-        public TBCarCategorie CarCategorie { get; set; }
+        public TBCarCategorie CarCategorie { get; set; }  
+		public IEnumerable<TBTaxiRatesHomeContent> ListTaxiRatesHomeContent { get; set; }
+        public TBTaxiRatesHomeContent TaxiRatesHomeContent { get; set; }
     }
  }
 

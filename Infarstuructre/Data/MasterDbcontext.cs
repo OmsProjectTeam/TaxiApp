@@ -136,6 +136,15 @@ namespace Infarstuructre.Data
            .Property(b => b.Active)
            .HasDefaultValueSql("((1))");
             //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBTaxiRatesHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBTaxiRatesHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))"); 
+      
+            //---------------------------------	
         }
 
 
@@ -154,6 +163,7 @@ namespace Infarstuructre.Data
         public DbSet<TBChooseUsHomeContent> TBChooseUsHomeContents { get; set; }
         public DbSet<TBBointChooseUsHomeContent> TBBointChooseUsHomeContents { get; set; }
         public DbSet<TBCarCategorie> TBCarCategories { get; set; }
+        public DbSet<TBTaxiRatesHomeContent> TBTaxiRatesHomeContents { get; set; }
       
 
 

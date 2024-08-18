@@ -421,6 +421,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل عنواين فئات التاكاسي الرئيسية.
+        /// </summary>
+        public static string LBAddTaxiRatesHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddTaxiRatesHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify currency calculator.
         /// </summary>
         public static string LBAddTransaction {
@@ -1704,6 +1713,15 @@ namespace Yara.Resource {
         public static string LBMYTaxiInfoStep {
             get {
                 return ResourceManager.GetString("LBMYTaxiInfoStep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنواين فئات التاكاسي الرئيسية.
+        /// </summary>
+        public static string LBMyTaxiRatesHomeContent {
+            get {
+                return ResourceManager.GetString("LBMyTaxiRatesHomeContent", resourceCulture);
             }
         }
         

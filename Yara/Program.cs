@@ -104,6 +104,7 @@ builder.Services.AddScoped<IIService, ClSTBService>();
 builder.Services.AddScoped<IIChooseUsHomeContent, CLSTBChooseUsHomeContent>();
 builder.Services.AddScoped<IIBointChooseUsHomeContent, CLSTBBointChooseUsHomeContent>();
 builder.Services.AddScoped<IICarCategorie, CLSTBCarCategorie>();
+builder.Services.AddScoped<IITaxiRatesHomeContent, CLSTBTaxiRatesHomeContent>();
 
 
 

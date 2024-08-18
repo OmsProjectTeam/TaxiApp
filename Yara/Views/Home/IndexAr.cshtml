@@ -461,23 +461,29 @@
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
                         <ul class="tab-buttons">
-                            <li data-tab="#toyota" class="taxiz-btn taxiz-btn--white tab-btn active-btn">
-                                <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
-                                <span>Toyota</span>
-                            </li>
-                            <li data-tab="#honda" class="taxiz-btn taxiz-btn--white tab-btn">
-                                <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
-                                <span>Honda</span>
+                            @foreach (var item in Model.ListCarCategorie)
+                            {
+                                <li data-tab="#@item.CarCategorieAr" class="taxiz-btn taxiz-btn--white tab-btn active-btn">
+                                    <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
+                                    <span>@item.CarCategorieAr</span>
+                                </li>
+                            }
+
+
+
+                            @*    <li data-tab="#honda" class="taxiz-btn taxiz-btn--white tab-btn">
+                            <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
+                            <span>Honda</span>
                             </li>
                             <li data-tab="#chevrolet" class="taxiz-btn taxiz-btn--white tab-btn">
-                                <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
-                                <span>Chevrolet</span>
+                            <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
+                            <span>Chevrolet</span>
                             </li>
                             <li data-tab="#nissan" class="taxiz-btn taxiz-btn--white tab-btn">
-                                <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
-                                <span>Nissan</span>
-                            </li>
-                        </ul><!-- /.tab-buttons -->
+                            <span class="taxiz-btn__icon"><i class="icon-front-car"></i></span>
+                            <span>Nissan</span>
+                            </li> *@
+                        </ul><!-- /.tab-buttons --><!-- /.tab-buttons -->
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row gutter-y-40 -->
             </div><!-- /.taxi-rates-one__top -->

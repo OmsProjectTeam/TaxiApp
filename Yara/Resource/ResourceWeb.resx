@@ -237,6 +237,9 @@
   <data name="LBAddTaskStatus" xml:space="preserve">
     <value>Adding and modifying Task Status</value>
   </data>
+  <data name="LBAddTaxiRatesHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل عنواين فئات التاكاسي الرئيسية</value>
+  </data>
   <data name="LBAddTransaction" xml:space="preserve">
     <value>Add and modify currency calculator</value>
   </data>
@@ -665,6 +668,9 @@
   </data>
   <data name="LBMYTaxiInfoStep" xml:space="preserve">
     <value>خطوات العمل </value>
+  </data>
+  <data name="LBMyTaxiRatesHomeContent" xml:space="preserve">
+    <value>عنواين فئات التاكاسي الرئيسية</value>
   </data>
   <data name="LBMyTransaction" xml:space="preserve">
     <value>Currency calculator</value>
