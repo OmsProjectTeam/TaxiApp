@@ -67,6 +67,10 @@ namespace Infarstuructre.ViewModel
         public TBCarCategorie CarCategorie { get; set; }  
 		public IEnumerable<TBTaxiRatesHomeContent> ListTaxiRatesHomeContent { get; set; }
         public TBTaxiRatesHomeContent TaxiRatesHomeContent { get; set; }
+		public IEnumerable<TBPhotoBookYourRideContent> ListPhotoBookYourRideContent { get; set; }
+        public TBPhotoBookYourRideContent PhotoBookYourRideContent { get; set; }
+		public IEnumerable<TBTaxiType> ListTaxiType { get; set; }
+        public TBTaxiType TaxiType { get; set; }
     }
  }
 

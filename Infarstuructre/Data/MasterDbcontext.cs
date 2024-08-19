@@ -145,6 +145,25 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("((1))"); 
       
             //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBPhotoBookYourRideContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBPhotoBookYourRideContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBTaxiType>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBTaxiType>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            builder.Entity<TBTaxiType>()
+           .Property(b => b.Active)
+           .HasDefaultValueSql("((1))");
+            //---------------------------------	
         }
 
 
@@ -164,6 +183,8 @@ namespace Infarstuructre.Data
         public DbSet<TBBointChooseUsHomeContent> TBBointChooseUsHomeContents { get; set; }
         public DbSet<TBCarCategorie> TBCarCategories { get; set; }
         public DbSet<TBTaxiRatesHomeContent> TBTaxiRatesHomeContents { get; set; }
+        public DbSet<TBPhotoBookYourRideContent> TBPhotoBookYourRideContents { get; set; }
+        public DbSet<TBTaxiType> TBTaxiTypes { get; set; }
       
 
 

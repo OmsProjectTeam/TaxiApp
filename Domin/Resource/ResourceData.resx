@@ -534,4 +534,16 @@
   <data name="VlCarCategorieKr2" xml:space="preserve">
     <value>يرجى أدراج فئة السيارة باللغة السيرانية لتتم العملية بنجاح ....!</value>
   </data>
+  <data name="VlTaxiTypeAr" xml:space="preserve">
+    <value>يرجى أدراج نوع التاكسي باللغة العربية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTaxiTypeEn" xml:space="preserve">
+    <value>يرجى أدراج نوع التاكسي باللغة الأنكليزية  لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTaxiTypeKr1" xml:space="preserve">
+    <value>يرجى أدراج نوع التاكسي باللغة الكردية لتتم العملية بنجاح ....!</value>
+  </data>
+  <data name="VlTaxiTypeKr2" xml:space="preserve">
+    <value>يرجى أدراج نوع التاكسي باللغة السيرانية لتتم العملية بنجاح ....!</value>
+  </data>
 </root>

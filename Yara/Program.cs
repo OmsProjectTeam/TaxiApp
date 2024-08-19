@@ -105,6 +105,8 @@ builder.Services.AddScoped<IIChooseUsHomeContent, CLSTBChooseUsHomeContent>();
 builder.Services.AddScoped<IIBointChooseUsHomeContent, CLSTBBointChooseUsHomeContent>();
 builder.Services.AddScoped<IICarCategorie, CLSTBCarCategorie>();
 builder.Services.AddScoped<IITaxiRatesHomeContent, CLSTBTaxiRatesHomeContent>();
+builder.Services.AddScoped<IIPhotoBookYourRideContent, CLSTBPhotoBookYourRideContent>();
+builder.Services.AddScoped<IITaxiType, CLSTBTaxiType>();
 
 
 

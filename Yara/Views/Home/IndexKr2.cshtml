@@ -452,14 +452,16 @@
             <div class="taxi-rates-one__top">
                 <div class="row gutter-y-40 align-items-center">
                     <div class="col-lg-6">
-                        <div class="sec-title @@extraClassName">
-                            <div class="sec-title__top">
-                                <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-                                <h6 class="sec-title__tagline">our taxi rates</h6><!-- /.sec-title__tagline -->
-                            </div><!-- /.sec-title__top -->
-                            <h3 class="sec-title__title">Our Flexible Taxi <br> Rates</h3><!-- /.sec-title__title -->
-                        </div><!-- /.sec-title -->
-                    </div><!-- /.col-lg-6 -->
+                        @foreach (var item in Model.ListTaxiRatesHomeContent)
+                        {
+                            <div class="sec-title @@extraClassName">
+                                <div class="sec-title__top">
+                                    <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
+                                    <h6 class="sec-title__tagline">@item.TitelOneKr2</h6><!-- /.sec-title__tagline -->
+                                </div><!-- /.sec-title__top -->
+                                <h3 class="sec-title__title">@item.TitelTwoKr2 <br> @item.TitelThreeKr2</h3><!-- /.sec-title__title -->
+                            </div>
+                        }<!-- /.col-lg-6 -->
                     <div class="col-lg-6">
                         <ul class="tab-buttons">
                             @foreach (var item in Model.ListCarCategorie)
@@ -1091,9 +1093,12 @@
     <div class="taxi-booking taxi-booking--one">
         <div class="taxi-booking__top">
             <div class="container">
-                <div class="taxi-booking__bg" style="background-image: url('/Web/assets/images/resources/taxi-booking-bg.jpg');">
-                    <div class="taxi-booking__shape" style="background-image: url('/Web/assets/images/shapes/taxi-booking-shape-1-1.png');"></div><!-- /.taxi-booking__shape -->
-                </div><!-- /.taxi-booking__bg -->
+                    @foreach (var item in Model.ListPhotoBookYourRideContent)
+                    {
+                        <div class="taxi-booking__bg" style="background-image: url('@string.Format("/Images/Home/{0}", item.Photo)');">
+                            <div class="taxi-booking__shape" style="background-image: url('/Web/assets/images/shapes/taxi-booking-shape-1-1.png');"></div><!-- /.taxi-booking__shape -->
+                        </div>
+                    }<!-- /.taxi-booking__bg -->
             </div><!-- /.container -->
         </div><!-- /.taxi-booking__top -->
         <div class="taxi-booking__inner">
@@ -1135,7 +1140,10 @@
                             <div class="taxi-booking__form__field">
                                 <select class="selectpicker" aria-label="Default select example">
                                     <option selected="">choose taxi</option>
-                                    <option value="1">city transport</option>
+                                        @foreach (var item in Model.ListTaxiType)
+                                        {
+                                            <option value="@item.TaxiTypeKr2">@item.TaxiTypeKr2</option>
+                                        }
                                     <option value="2">Holiday tour</option>
                                     <option value="3">business tour</option>
                                     <option value="4">airport transport</option>

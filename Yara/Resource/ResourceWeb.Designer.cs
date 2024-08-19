@@ -223,6 +223,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to أضافة وتعديل صورة قسم حجز موعد بالرئيسية.
+        /// </summary>
+        public static string LBAddEditPhotoBookYourRideContent {
+            get {
+                return ResourceManager.GetString("LBAddEditPhotoBookYourRideContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to أضافة وتعديل الصور  في السليدر العلوي.
         /// </summary>
         public static string LBAddEditPhotoSliderHomeContent {
@@ -255,6 +264,15 @@ namespace Yara.Resource {
         public static string LBAddEditTaxiInfoStep {
             get {
                 return ResourceManager.GetString("LBAddEditTaxiInfoStep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل أنواع خدمة التاكسي المتوفرة.
+        /// </summary>
+        public static string LBAddEditTaxiType {
+            get {
+                return ResourceManager.GetString("LBAddEditTaxiType", resourceCulture);
             }
         }
         
@@ -1627,6 +1645,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to صورة قسم حجز موعد بالرئيسية.
+        /// </summary>
+        public static string LBMYPhotoBookYourRideContent {
+            get {
+                return ResourceManager.GetString("LBMYPhotoBookYourRideContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الصور  في السليدر العلوي .
         /// </summary>
         public static string LBMYPhotoSliderHomeContent {
@@ -1722,6 +1749,15 @@ namespace Yara.Resource {
         public static string LBMyTaxiRatesHomeContent {
             get {
                 return ResourceManager.GetString("LBMyTaxiRatesHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to أنواع خدمة التاكسي المتوفرة.
+        /// </summary>
+        public static string LBMYTaxiType {
+            get {
+                return ResourceManager.GetString("LBMYTaxiType", resourceCulture);
             }
         }
         
@@ -2433,6 +2469,42 @@ namespace Yara.Resource {
         public static string LbTaskStatus {
             get {
                 return ResourceManager.GetString("LbTaskStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة التاكسي عربي.
+        /// </summary>
+        public static string LBTaxiTypeAr {
+            get {
+                return ResourceManager.GetString("LBTaxiTypeAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة التاكسي إنكليزي.
+        /// </summary>
+        public static string LBTaxiTypeEn {
+            get {
+                return ResourceManager.GetString("LBTaxiTypeEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة التاكسي كردي.
+        /// </summary>
+        public static string LBTaxiTypeKr1 {
+            get {
+                return ResourceManager.GetString("LBTaxiTypeKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة التاكسي سيراني.
+        /// </summary>
+        public static string LBTaxiTypeKr2 {
+            get {
+                return ResourceManager.GetString("LBTaxiTypeKr2", resourceCulture);
             }
         }
         
@@ -3360,6 +3432,15 @@ namespace Yara.Resource {
         public static string VLServiceDoplceted {
             get {
                 return ResourceManager.GetString("VLServiceDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة التاكسي مسبقا يرجى التأكد وأعادة المحاولة لاحقا .....!.
+        /// </summary>
+        public static string VLTaxiTypeDoplceted {
+            get {
+                return ResourceManager.GetString("VLTaxiTypeDoplceted", resourceCulture);
             }
         }
         

@@ -19,8 +19,11 @@ namespace Yara.Controllers
         IIChooseUsHomeContent iChooseUsHomeContent;
         IIBointChooseUsHomeContent iBointChooseUsHomeContent;
         IICarCategorie iCarCategorie;
+        IITaxiRatesHomeContent iTaxiRatesHomeContent;
+        IIPhotoBookYourRideContent iPhotoBookYourRideContent;
+        IITaxiType iTaxiType;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1,IITaxiRatesHomeContent iTaxiRatesHomeContent1,IIPhotoBookYourRideContent iPhotoBookYourRideContent1,IITaxiType iTaxiType1)
 		{
 			_logger = logger;
 			_userManager= userManager;
@@ -34,6 +37,9 @@ namespace Yara.Controllers
             iChooseUsHomeContent = iChooseUsHomeContent1;
             iBointChooseUsHomeContent = iBointChooseUsHomeContent1;
             iCarCategorie=  iCarCategorie1;
+            iTaxiRatesHomeContent= iTaxiRatesHomeContent1;
+            iPhotoBookYourRideContent = iPhotoBookYourRideContent1;
+            iTaxiType= iTaxiType1;
         }
 
 		public async Task<IActionResult> Index()
@@ -49,6 +55,10 @@ namespace Yara.Controllers
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
             vmodel.ListCarCategorie = iCarCategorie.GetAll();
+            vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
+            vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
+            vmodel.ListTaxiType = iTaxiType.GetAll();
+
 
 
             var user = await _userManager.GetUserAsync(User);
@@ -73,6 +83,11 @@ namespace Yara.Controllers
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
             vmodel.ListCarCategorie = iCarCategorie.GetAll();
+            vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
+            vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
+            vmodel.ListTaxiType = iTaxiType.GetAll();
+
+
 
 
 
@@ -100,13 +115,9 @@ namespace Yara.Controllers
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
             vmodel.ListCarCategorie = iCarCategorie.GetAll();
-
-
-
-
-
-
-
+            vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
+            vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
+            vmodel.ListTaxiType = iTaxiType.GetAll();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -130,12 +141,9 @@ namespace Yara.Controllers
             vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
             vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
             vmodel.ListCarCategorie = iCarCategorie.GetAll();
-
-
-
-
-
-
+            vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
+            vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
+            vmodel.ListTaxiType = iTaxiType.GetAll();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)

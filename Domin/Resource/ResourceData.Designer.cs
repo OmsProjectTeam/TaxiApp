@@ -907,6 +907,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج نوع التاكسي باللغة العربية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTaxiTypeAr {
+            get {
+                return ResourceManager.GetString("VlTaxiTypeAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج نوع التاكسي باللغة الأنكليزية  لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTaxiTypeEn {
+            get {
+                return ResourceManager.GetString("VlTaxiTypeEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج نوع التاكسي باللغة الكردية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTaxiTypeKr1 {
+            get {
+                return ResourceManager.GetString("VlTaxiTypeKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج نوع التاكسي باللغة السيرانية لتتم العملية بنجاح ....!.
+        /// </summary>
+        public static string VlTaxiTypeKr2 {
+            get {
+                return ResourceManager.GetString("VlTaxiTypeKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يرجى إدراج العنوان الرابع باللغة العربية لتتم العملية بنجاح ....!.
         /// </summary>
         public static string VlTitelForAr {

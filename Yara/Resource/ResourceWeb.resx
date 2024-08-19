@@ -171,6 +171,9 @@
   <data name="LBAddEditPhotoAboutHomeContent" xml:space="preserve">
     <value>إضافة وتعديل الصور في قسم عنا بالرئيسية </value>
   </data>
+  <data name="LBAddEditPhotoBookYourRideContent" xml:space="preserve">
+    <value>أضافة وتعديل صورة قسم حجز موعد بالرئيسية</value>
+  </data>
   <data name="LBAddEditPhotoSliderHomeContent" xml:space="preserve">
     <value>أضافة وتعديل الصور  في السليدر العلوي</value>
   </data>
@@ -182,6 +185,9 @@
   </data>
   <data name="LBAddEditTaxiInfoStep" xml:space="preserve">
     <value>إضافة وتعديل خطوات العمل</value>
+  </data>
+  <data name="LBAddEditTaxiType" xml:space="preserve">
+    <value>إضافة وتعديل أنواع خدمة التاكسي المتوفرة</value>
   </data>
   <data name="LBAddEmailAlartSetting" xml:space="preserve">
     <value>Adding and modifying Email Alart Setting</value>
@@ -639,6 +645,9 @@
   <data name="LBMYPhotoAboutHomeContent" xml:space="preserve">
     <value>صور عنا في الرئيسية</value>
   </data>
+  <data name="LBMYPhotoBookYourRideContent" xml:space="preserve">
+    <value>صورة قسم حجز موعد بالرئيسية</value>
+  </data>
   <data name="LBMYPhotoSliderHomeContent" xml:space="preserve">
     <value>الصور  في السليدر العلوي </value>
   </data>
@@ -671,6 +680,9 @@
   </data>
   <data name="LBMyTaxiRatesHomeContent" xml:space="preserve">
     <value>عنواين فئات التاكاسي الرئيسية</value>
+  </data>
+  <data name="LBMYTaxiType" xml:space="preserve">
+    <value>أنواع خدمة التاكسي المتوفرة</value>
   </data>
   <data name="LBMyTransaction" xml:space="preserve">
     <value>Currency calculator</value>
@@ -908,6 +920,18 @@
   </data>
   <data name="LbTaskStatus" xml:space="preserve">
     <value>Task Status</value>
+  </data>
+  <data name="LBTaxiTypeAr" xml:space="preserve">
+    <value>فئة التاكسي عربي</value>
+  </data>
+  <data name="LBTaxiTypeEn" xml:space="preserve">
+    <value>فئة التاكسي إنكليزي</value>
+  </data>
+  <data name="LBTaxiTypeKr1" xml:space="preserve">
+    <value>فئة التاكسي كردي</value>
+  </data>
+  <data name="LBTaxiTypeKr2" xml:space="preserve">
+    <value>فئة التاكسي سيراني</value>
   </data>
   <data name="LbTitelForAr" xml:space="preserve">
     <value>العنوان الرابع عربي</value>
@@ -1217,6 +1241,9 @@
   </data>
   <data name="VLServiceDoplceted" xml:space="preserve">
     <value>تم إدخال الخدمة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLTaxiTypeDoplceted" xml:space="preserve">
+    <value>تم أدخال فئة التاكسي مسبقا يرجى التأكد وأعادة المحاولة لاحقا .....!</value>
   </data>
   <data name="VLTitleShippingoplceted" xml:space="preserve">
     <value>The shipping price address has been entered. Please verify and try again later....!</value>
