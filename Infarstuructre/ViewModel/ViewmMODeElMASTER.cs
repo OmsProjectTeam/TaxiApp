@@ -70,7 +70,9 @@ namespace Infarstuructre.ViewModel
 		public IEnumerable<TBPhotoBookYourRideContent> ListPhotoBookYourRideContent { get; set; }
         public TBPhotoBookYourRideContent PhotoBookYourRideContent { get; set; }
 		public IEnumerable<TBTaxiType> ListTaxiType { get; set; }
-        public TBTaxiType TaxiType { get; set; }
+        public TBTaxiType TaxiType { get; set; }	
+		public IEnumerable<TBTaxizAppHomeContent> ListTaxizAppHomeContent { get; set; }
+        public TBTaxizAppHomeContent TaxizAppHomeContent { get; set; }
     }
  }
 

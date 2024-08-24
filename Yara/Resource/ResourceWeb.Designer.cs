@@ -448,6 +448,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل عناوين التطبيقات في الرئيسية .
+        /// </summary>
+        public static string LBAddTaxizAppHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify currency calculator.
         /// </summary>
         public static string LBAddTransaction {
@@ -1762,6 +1771,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to عناوين التطبيقات في الرئيسية .
+        /// </summary>
+        public static string LBMyTaxizAppHomeContent {
+            get {
+                return ResourceManager.GetString("LBMyTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Currency calculator.
         /// </summary>
         public static string LBMyTransaction {
@@ -2865,6 +2883,78 @@ namespace Yara.Resource {
         public static string LBUpload_image {
             get {
                 return ResourceManager.GetString("LBUpload_image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق الاندرويد عربي.
+        /// </summary>
+        public static string LbUrlAndrAppAr {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الاندرويد إنكليزي .
+        /// </summary>
+        public static string LbUrlAndrAppEn {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الاندرويد كردي.
+        /// </summary>
+        public static string LbUrlAndrAppKr1 {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الاندرويد سيراني.
+        /// </summary>
+        public static string LbUrlAndrAppKr2 {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  عربي.
+        /// </summary>
+        public static string LbUrlAppAr {
+            get {
+                return ResourceManager.GetString("LbUrlAppAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  إنكليزي.
+        /// </summary>
+        public static string LbUrlAppEn {
+            get {
+                return ResourceManager.GetString("LbUrlAppEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  كردي.
+        /// </summary>
+        public static string LbUrlAppKr1 {
+            get {
+                return ResourceManager.GetString("LbUrlAppKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  سيراني.
+        /// </summary>
+        public static string LbUrlAppKr2 {
+            get {
+                return ResourceManager.GetString("LbUrlAppKr2", resourceCulture);
             }
         }
         

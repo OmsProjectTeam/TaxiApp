@@ -546,4 +546,28 @@
   <data name="VlTaxiTypeKr2" xml:space="preserve">
     <value>يرجى أدراج نوع التاكسي باللغة السيرانية لتتم العملية بنجاح ....!</value>
   </data>
+  <data name="VlUrlAndrAppAr" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بأندرويد  باللغة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAndrAppEn" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بأندرويد باللغة الانكليزية  لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAndrAppKr1" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بأندرويد باللغة الكردية  لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAndrAppKr2" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بأندرويد باللغة السيراني لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAppAr" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAppEn" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة الأنكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAppKr1" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlUrlAppKr2" xml:space="preserve">
+    <value>يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة السيرانية لتتم العملية بنجاح ...!</value>
+  </data>
 </root>

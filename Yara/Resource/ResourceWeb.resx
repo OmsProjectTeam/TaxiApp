@@ -246,6 +246,9 @@
   <data name="LBAddTaxiRatesHomeContent" xml:space="preserve">
     <value>إضافة وتعديل عنواين فئات التاكاسي الرئيسية</value>
   </data>
+  <data name="LBAddTaxizAppHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل عناوين التطبيقات في الرئيسية </value>
+  </data>
   <data name="LBAddTransaction" xml:space="preserve">
     <value>Add and modify currency calculator</value>
   </data>
@@ -684,6 +687,9 @@
   <data name="LBMYTaxiType" xml:space="preserve">
     <value>أنواع خدمة التاكسي المتوفرة</value>
   </data>
+  <data name="LBMyTaxizAppHomeContent" xml:space="preserve">
+    <value>عناوين التطبيقات في الرئيسية </value>
+  </data>
   <data name="LBMyTransaction" xml:space="preserve">
     <value>Currency calculator</value>
   </data>
@@ -1052,6 +1058,30 @@
   </data>
   <data name="LBUpload_image" xml:space="preserve">
     <value>upload</value>
+  </data>
+  <data name="LbUrlAndrAppAr" xml:space="preserve">
+    <value>رابط تطبيق الاندرويد عربي</value>
+  </data>
+  <data name="LbUrlAndrAppEn" xml:space="preserve">
+    <value>رابط تطبيق  الاندرويد إنكليزي </value>
+  </data>
+  <data name="LbUrlAndrAppKr1" xml:space="preserve">
+    <value>رابط تطبيق  الاندرويد كردي</value>
+  </data>
+  <data name="LbUrlAndrAppKr2" xml:space="preserve">
+    <value>رابط تطبيق  الاندرويد سيراني</value>
+  </data>
+  <data name="LbUrlAppAr" xml:space="preserve">
+    <value>رابط تطبيق  الابل  عربي</value>
+  </data>
+  <data name="LbUrlAppEn" xml:space="preserve">
+    <value>رابط تطبيق  الابل  إنكليزي</value>
+  </data>
+  <data name="LbUrlAppKr1" xml:space="preserve">
+    <value>رابط تطبيق  الابل  كردي</value>
+  </data>
+  <data name="LbUrlAppKr2" xml:space="preserve">
+    <value>رابط تطبيق  الابل  سيراني</value>
   </data>
   <data name="LbUrlButtonAr" xml:space="preserve">
     <value>رابط التوجيه عربي</value>

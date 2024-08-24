@@ -1195,13 +1195,25 @@
         <div class="row gutter-y-50">
             <div class="col-lg-6">
                 <div class="download-app-one__content">
-                    <div class="sec-title @@extraClassName">
-                        <div class="sec-title__top">
-                            <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-                            <h6 class="sec-title__tagline">download our app</h6><!-- /.sec-title__tagline -->
-                        </div><!-- /.sec-title__top -->
-                        <h3 class="sec-title__title">Get Free taxiz App <br> On Online Store</h3><!-- /.sec-title__title -->
-                    </div><!-- /.sec-title -->
+                    @foreach (var item in Model.ListTaxizAppHomeContent)
+                    {
+                        <div class="sec-title @@extraClassName">
+                            <div class="sec-title__top">
+                                <div class="sec-title__shape">
+                                </div>
+                                <!-- /.sec-title__shape -->
+                                <h6 class="sec-title__tagline">@item.TitelOneKr2</h6><!-- /.sec-title__tagline -->
+                            </div>
+                            <!-- /.sec-title__top -->
+                            <h3 class="sec-title__title">@item.TitelTwoKr2<br> @item.TitelThreeKr2</h3>
+                            <!-- /.sec-title__title -->
+                        </div>
+                    }
+                    
+                    
+                    
+                    
+                    <!-- /.sec-title -->
                     <p class="download-app-one__text">
                         Whether you're embarking on a cross-country adventure or exploring a
                         new destination by car, finding the right car rental vehicle is essential for a stress-free
