@@ -1,18 +1,18 @@
 ﻿@model ViewmMODeElMASTER
 @{
-    ViewData["Title"] = ResourceWeb.LBMYService;
+    ViewData["Title"] = ResourceWeb.LBMyDriverCategory;
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 <div class="col-lg-12 col-xs-12">
     <div class="box-content">
         <ul class="list-inline">
-            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBMYService</button></a></li>/
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBMyDriverCategory</button></a></li>/
             <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">لوحة التحكم</button></a></li>/
             <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">الرئيسية</button></a></li>
         </ul>
         <!-- /.box-title -->
         <div class="dropdown js__drop_down">
-            <a asp-area="Admin" asp-controller="Service" asp-action="AddEditService"><button type="button" class="btn btn-violet btn-rounded btn-bordered waves-effect waves-light" style="margin-bottom:20px">Add</button></a>
+            <a asp-area="Admin" asp-controller="DriverCategory" asp-action="AddDriverCategory"><button type="button" class="btn btn-violet btn-rounded btn-bordered waves-effect waves-light" style="margin-bottom:20px">Add</button></a>
         </div>
         <!-- /.dropdown js__dropdown -->
         <div id="example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
@@ -48,28 +48,22 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">@ResourceWeb.LbId</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbPhoto</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.ServiceAr</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.UrlServiceAr</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.DriverCategoryAr</th>
 
                                             </thead>
                                             <tfoot>
                                                 <tr>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbId</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.LbPhoto</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.ServiceAr</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.UrlServiceAr</th>
+                                                    <th rowspan="1" colspan="1">@ResourceWeb.DriverCategoryAr</th>
+                                                   
 
                                             </tfoot>
                                             <tbody>
-                                                @foreach (var item in Model.ListService)
+                                                @foreach (var item in Model.ListDriverCategory)
                                                 {
                                                     <tr role="row" class="odd">
-                                                        <td>@item.IdService</td>
-                                                        <td class="sorting_1"> <img src="@string.Format("/Images/Home/{0}",item.Photo)" class="img-bordered img-circle img-circle" style="width:100px; height:100px"></td>
-                                                        <td class="truncate-50">@item.ServiceAr</td>
-                                                        <td class="truncate-50">@item.UrlServiceAr</td>
-
+                                                        <td>@item.IdDriverCategory</td>
+                                                        <td class="truncate-50">@item.DriverCategoryAr</td>                                                     
                                                     </tr>
                                                 }
                                             </tbody>
@@ -84,26 +78,23 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">@ResourceWeb.LbId</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbPhoto</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.ServiceEn</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.UrlServiceEn</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.DriverCategoryEn</th>
 
                                             </thead>
                                             <tfoot>
                                                 <tr>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbId</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.LbPhoto</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.ServiceEn</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.UrlServiceEn</th>
+                                                  
+                                                    <th rowspan="1" colspan="1">@ResourceWeb.DriverCategoryEn</th>
+                                                  
                                             </tfoot>
                                             <tbody>
-                                                @foreach (var item in Model.ListService)
+                                                @foreach (var item in Model.ListDriverCategory)
                                                 {
                                                     <tr role="row" class="odd">
-                                                        <td>@item.IdService</td>
-                                                        <td class="sorting_1"> <img src="@string.Format("/Images/Home/{0}",item.Photo)" class="img-bordered img-circle img-circle" style="width:100px; height:100px"></td>
-                                                        <td class="truncate-50">@item.ServiceEn</td>
-                                                        <td class="truncate-50">@item.UrlServiceEn</td>
+                                                        <td>@item.IdDriverCategory</td>
+                                                        <td class="truncate-50">@item.DriverCategoryEn</td>
+                                                   
                                                     </tr>
                                                 }
                                             </tbody>
@@ -118,25 +109,19 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">@ResourceWeb.LbId</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbPhoto</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.ServiceKr1</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.UrlServiceKr1</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.DriverCategoryKr1</th>
                                             </thead>
                                             <tfoot>
                                                 <tr>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbId</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.LbPhoto</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.ServiceKr1</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.UrlServiceKr1</th>
+                                                    <th rowspan="1" colspan="1">@ResourceWeb.DriverCategoryKr1</th>
                                             </tfoot>
                                             <tbody>
-                                                @foreach (var item in Model.ListService)
+                                                @foreach (var item in Model.ListDriverCategory)
                                                 {
                                                     <tr role="row" class="odd">
-                                                        <td>@item.IdService</td>
-                                                        <td class="sorting_1"> <img src="@string.Format("/Images/Home/{0}",item.Photo)" class="img-bordered img-circle img-circle" style="width:100px; height:100px"></td>
-                                                        <td class="truncate-50">@item.ServiceKr1</td>
-                                                        <td class="truncate-50">@item.UrlServiceKr1</td>
+                                                        <td>@item.IdDriverCategory</td>
+                                                        <td class="truncate-50">@item.DriverCategoryKr1</td>
                                                     </tr>
                                                 }
                                             </tbody>
@@ -151,25 +136,19 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">@ResourceWeb.LbId</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbPhoto</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.ServiceKr2</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.UrlServiceKr2</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.DriverCategoryKr2</th>
                                             </thead>
                                             <tfoot>
                                                 <tr>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbId</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.LbPhoto</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.ServiceKr2</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.UrlServiceKr2</th>
+                                                    <th rowspan="1" colspan="1">@ResourceWeb.DriverCategoryKr2</th>
                                             </tfoot>
                                             <tbody>
-                                                @foreach (var item in Model.ListService)
+                                                @foreach (var item in Model.ListDriverCategory)
                                                 {
                                                     <tr role="row" class="odd">
-                                                        <td>@item.IdService</td>
-                                                        <td class="sorting_1"> <img src="@string.Format("/Images/Home/{0}",item.Photo)" class="img-bordered img-circle img-circle" style="width:100px; height:100px"></td>
-                                                        <td class="truncate-50">@item.ServiceKr2</td>
-                                                        <td class="truncate-50">@item.UrlServiceKr2</td>
+                                                        <td>@item.IdDriverCategory</td>
+                                                        <td class="truncate-50">@item.DriverCategoryKr2</td>
                                                     </tr>
                                                 }
                                             </tbody>
@@ -184,7 +163,7 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending">@ResourceWeb.LbId</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.ServiceAr</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.DriverCategoryAr</th>
                                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbActive</th>
                                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbDataEntry</th>
                                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 64px;">@ResourceWeb.LbDateTimeEntry</th>
@@ -194,7 +173,7 @@
                                             <tfoot>
                                                 <tr>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbId</th>
-                                                    <th rowspan="1" colspan="1">@ResourceWeb.ServiceAr</th>
+                                                    <th rowspan="1" colspan="1">@ResourceWeb.DriverCategoryAr</th>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbActive</th>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbDataEntry</th>
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbDateTimeEntry</th>
@@ -202,19 +181,19 @@
                                                     <th rowspan="1" colspan="1">@ResourceWeb.LbOpration</th>
                                             </tfoot>
                                             <tbody>
-                                                @foreach (var item in Model.ListService)
+                                                @foreach (var item in Model.ListDriverCategory)
                                                 {
                                                     <tr role="row" class="odd">
-                                                        <td>@item.IdService</td>
-                                                        <td class="truncate-50">@item.ServiceAr</td>
+                                                        <td>@item.IdDriverCategory</td>
+                                                        <td class="truncate-50">@item.DriverCategoryAr</td>
                                                         <td>@item.DataEntry</td>
                                                         <td>@item.DateTimeEntry</td>
-                                                        <td><div class="switch primary"><input type="checkbox" checked="@item.Active" IdService="switch-2" disabled><label for="switch-3">@item.Active</label></div></td>
-                                                        <td><div class="switch primary"><input type="checkbox" checked="@item.CurrentState" IdService="switch-3" disabled><label for="switch-2">@item.CurrentState</label></div></td>
+                                                        <td><div class="switch primary"><input type="checkbox" checked="@item.Active" IdDriverCategory="switch-2" disabled><label for="switch-3">@item.Active</label></div></td>
+                                                        <td><div class="switch primary"><input type="checkbox" checked="@item.CurrentState" IdDriverCategory="switch-3" disabled><label for="switch-2">@item.CurrentState</label></div></td>
                                                         <td>
                                                             <ul class="list-inline">
-                                                                <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Service" asp-action="AddEditServiceImage" asp-route-IdService="@item.IdService"><button type="button" class="btn btn-primary btn-circle btn-xs waves-effect waves-light"><i class="ico fa fa-edit"></i></button></a></li>|
-                                                                <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Service" asp-action="DeleteData" asp-route-IdService="@item.IdService"><button type="button" class="btn btn-danger btn-circle btn-xs waves-effect waves-light"><i class="ico fa fa-remove"></i></button></a></li>
+                                                                <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="DriverCategory" asp-action="AddDriverCategory" asp-route-IdDriverCategory="@item.IdDriverCategory"><button type="button" class="btn btn-primary btn-circle btn-xs waves-effect waves-light"><i class="ico fa fa-edit"></i></button></a></li>|
+                                                                <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="DriverCategory" asp-action="DeleteData" asp-route-IdDriverCategory="@item.IdDriverCategory"><button type="button" class="btn btn-danger btn-circle btn-xs waves-effect waves-light"><i class="ico fa fa-remove"></i></button></a></li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -245,7 +224,7 @@
     </div>
 </div>
 <!-- /.box-content -->
-@* <img src="~/images/user gide/Service.png" width="1920" height="1077" /> *@
+@* <img src="~/images/user gide/DriverCategory.png" width="1920" height="1077" /> *@
 @section Scripts
 {
     <!-- Data Tables -->

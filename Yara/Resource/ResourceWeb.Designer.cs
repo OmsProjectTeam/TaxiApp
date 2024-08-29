@@ -61,6 +61,42 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الفئة عربي.
+        /// </summary>
+        public static string DriverCategoryAr {
+            get {
+                return ResourceManager.GetString("DriverCategoryAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة إنكليزي.
+        /// </summary>
+        public static string DriverCategoryEn {
+            get {
+                return ResourceManager.GetString("DriverCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة كردي.
+        /// </summary>
+        public static string DriverCategoryKr1 {
+            get {
+                return ResourceManager.GetString("DriverCategoryKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة سرياني.
+        /// </summary>
+        public static string DriverCategoryKr2 {
+            get {
+                return ResourceManager.GetString("DriverCategoryKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to المعلومات باللغة السيراني.
         /// </summary>
         public static string Generallang2 {
@@ -183,6 +219,15 @@ namespace Yara.Resource {
         public static string LBAddCustomerMessages {
             get {
                 return ResourceManager.GetString("LBAddCustomerMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل فئات السائقين .
+        /// </summary>
+        public static string LBAddDriverCategory {
+            get {
+                return ResourceManager.GetString("LBAddDriverCategory", resourceCulture);
             }
         }
         
@@ -1542,6 +1587,15 @@ namespace Yara.Resource {
         public static string LBMyCustomerMessages {
             get {
                 return ResourceManager.GetString("LBMyCustomerMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئات السائقين.
+        /// </summary>
+        public static string LBMyDriverCategory {
+            get {
+                return ResourceManager.GetString("LBMyDriverCategory", resourceCulture);
             }
         }
         

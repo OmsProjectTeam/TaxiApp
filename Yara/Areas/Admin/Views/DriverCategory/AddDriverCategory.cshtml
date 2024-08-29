@@ -1,8 +1,116 @@
-﻿
+﻿@model ViewmMODeElMASTER
 @{
-    ViewData["Title"] = "AddDriverCategory";
+    ViewData["Title"] = ResourceWeb.LBAddDriverCategory;
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>AddDriverCategory</h2>
+<div class="col-lg-12 col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddDriverCategory</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+
+
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBAddDriverCategory</h4>
+                    <!-- /.box-title -->
+
+
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="DriverCategory" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.DriverCategory.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.DriverCategory.IdDriverCategory" class="form-control">
+                                <input type="hidden" asp-for="@Model.DriverCategory.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                                <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
+                                <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+                            </div>
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.DriverCategory.DriverCategoryAr" for="exampleInputEmail1">@ResourceWeb.DriverCategoryAr</label>
+                                        <input asp-for="@Model.DriverCategory.DriverCategoryAr" type="text" placeholder="@ResourceWeb.DriverCategoryAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.DriverCategory.DriverCategoryAr" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.DriverCategory.DriverCategoryEn" for="exampleInputEmail1">@ResourceWeb.DriverCategoryEn</label>
+                                        <input asp-for="@Model.DriverCategory.DriverCategoryEn" type="text" placeholder="@ResourceWeb.DriverCategoryEn ...." class="form-control">
+                                        <span asp-validation-for="@Model.DriverCategory.DriverCategoryEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.DriverCategory.DriverCategoryKr1" for="exampleInputEmail1">@ResourceWeb.DriverCategoryKr1</label>
+                                        <input asp-for="@Model.DriverCategory.DriverCategoryKr1" type="text" placeholder="@ResourceWeb.DriverCategoryKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.DriverCategory.DriverCategoryKr1" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.DriverCategory.DriverCategoryKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.DriverCategory.DriverCategoryKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.DriverCategory.DriverCategoryKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <div class="checkbox margin-bottom-20">
+                                            <div class="switch success"><input type="checkbox" asp-for="@Model.DriverCategory.Active" id="switch-9" checked="checked"><label for="switch-9">@ResourceWeb.LbActive</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <div class="checkbox margin-bottom-20">
+                                            <div class="switch success"><input type="checkbox" asp-for="@Model.DriverCategory.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+
+
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+
+                        </form>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.lbOldeAndUserGide</h4>
+                    <!-- /.box-title -->
+                    <div class="card-content">
+                        <div class="form-group">
+                            <img src="~/images/user gide/DriverCategory.png" width="1920" height="1077" />
+                        </div>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-content -->
+</div>
+
+@section Scripts {
+ 
+}
 
