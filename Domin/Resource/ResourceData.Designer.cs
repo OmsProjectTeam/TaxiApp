@@ -556,6 +556,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة العربية لتتم العملية بنجاح .
+        /// </summary>
+        public static string VlDriverCategoryAr {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة  الانكليزية  لتتم العملية بنجاح.
+        /// </summary>
+        public static string VlDriverCategoryEn {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة  الكردية  لتتم العملية بنجاح.
+        /// </summary>
+        public static string VlDriverCategoryKr1 {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة  السيرانية  لتتم العملية بنجاح.
+        /// </summary>
+        public static string VlDriverCategoryKr2 {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include the nickname for the process to complete successfully..!.
         /// </summary>
         public static string VlEmail {
@@ -1263,6 +1299,78 @@ namespace Domin.Resource {
         public static string VlTypeSystemDelivery {
             get {
                 return ResourceManager.GetString("VlTypeSystemDelivery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بأندرويد  باللغة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAndrAppAr {
+            get {
+                return ResourceManager.GetString("VlUrlAndrAppAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بأندرويد باللغة الانكليزية  لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAndrAppEn {
+            get {
+                return ResourceManager.GetString("VlUrlAndrAppEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بأندرويد باللغة الكردية  لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAndrAppKr1 {
+            get {
+                return ResourceManager.GetString("VlUrlAndrAppKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بأندرويد باللغة السيراني لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAndrAppKr2 {
+            get {
+                return ResourceManager.GetString("VlUrlAndrAppKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAppAr {
+            get {
+                return ResourceManager.GetString("VlUrlAppAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة الأنكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAppEn {
+            get {
+                return ResourceManager.GetString("VlUrlAppEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة الكردية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAppKr1 {
+            get {
+                return ResourceManager.GetString("VlUrlAppKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رابط التطبيق الخاص بنظام الابل  باللغة السيرانية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlUrlAppKr2 {
+            get {
+                return ResourceManager.GetString("VlUrlAppKr2", resourceCulture);
             }
         }
         

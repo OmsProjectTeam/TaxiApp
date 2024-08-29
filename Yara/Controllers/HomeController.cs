@@ -22,8 +22,9 @@ namespace Yara.Controllers
         IITaxiRatesHomeContent iTaxiRatesHomeContent;
         IIPhotoBookYourRideContent iPhotoBookYourRideContent;
         IITaxiType iTaxiType;
+        IITaxizAppHomeContent iTaxizAppHomeContent;   
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1,IITaxiRatesHomeContent iTaxiRatesHomeContent1,IIPhotoBookYourRideContent iPhotoBookYourRideContent1,IITaxiType iTaxiType1)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1,IITaxiRatesHomeContent iTaxiRatesHomeContent1,IIPhotoBookYourRideContent iPhotoBookYourRideContent1,IITaxiType iTaxiType1,IITaxizAppHomeContent iTaxizAppHomeContent1)
 		{
 			_logger = logger;
 			_userManager= userManager;
@@ -40,6 +41,7 @@ namespace Yara.Controllers
             iTaxiRatesHomeContent= iTaxiRatesHomeContent1;
             iPhotoBookYourRideContent = iPhotoBookYourRideContent1;
             iTaxiType= iTaxiType1;
+            iTaxizAppHomeContent = iTaxizAppHomeContent1; 
         }
 
 		public async Task<IActionResult> Index()
@@ -58,6 +60,7 @@ namespace Yara.Controllers
             vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
             vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
             vmodel.ListTaxiType = iTaxiType.GetAll();
+            vmodel.ListTaxizAppHomeContent = iTaxizAppHomeContent.GetAll().Take(1);
 
 
 
@@ -86,6 +89,7 @@ namespace Yara.Controllers
             vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
             vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
             vmodel.ListTaxiType = iTaxiType.GetAll();
+            vmodel.ListTaxizAppHomeContent = iTaxizAppHomeContent.GetAll().Take(1);
 
 
 
@@ -118,6 +122,8 @@ namespace Yara.Controllers
             vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
             vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
             vmodel.ListTaxiType = iTaxiType.GetAll();
+            vmodel.ListTaxizAppHomeContent = iTaxizAppHomeContent.GetAll().Take(1);
+
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -144,6 +150,8 @@ namespace Yara.Controllers
             vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
             vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
             vmodel.ListTaxiType = iTaxiType.GetAll();
+            vmodel.ListTaxizAppHomeContent = iTaxizAppHomeContent.GetAll().Take(1);
+
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)

@@ -61,6 +61,42 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الفئة عربي.
+        /// </summary>
+        public static string DriverCategoryAr {
+            get {
+                return ResourceManager.GetString("DriverCategoryAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة إنكليزي.
+        /// </summary>
+        public static string DriverCategoryEn {
+            get {
+                return ResourceManager.GetString("DriverCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة كردي.
+        /// </summary>
+        public static string DriverCategoryKr1 {
+            get {
+                return ResourceManager.GetString("DriverCategoryKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الفئة سرياني.
+        /// </summary>
+        public static string DriverCategoryKr2 {
+            get {
+                return ResourceManager.GetString("DriverCategoryKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to المعلومات باللغة السيراني.
         /// </summary>
         public static string Generallang2 {
@@ -183,6 +219,15 @@ namespace Yara.Resource {
         public static string LBAddCustomerMessages {
             get {
                 return ResourceManager.GetString("LBAddCustomerMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل فئات السائقين .
+        /// </summary>
+        public static string LBAddDriverCategory {
+            get {
+                return ResourceManager.GetString("LBAddDriverCategory", resourceCulture);
             }
         }
         
@@ -444,6 +489,15 @@ namespace Yara.Resource {
         public static string LBAddTaxiRatesHomeContent {
             get {
                 return ResourceManager.GetString("LBAddTaxiRatesHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل عناوين التطبيقات في الرئيسية .
+        /// </summary>
+        public static string LBAddTaxizAppHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddTaxizAppHomeContent", resourceCulture);
             }
         }
         
@@ -1537,6 +1591,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to فئات السائقين.
+        /// </summary>
+        public static string LBMyDriverCategory {
+            get {
+                return ResourceManager.GetString("LBMyDriverCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email Alart Setting.
         /// </summary>
         public static string LBMyEmailAlartSetting {
@@ -1758,6 +1821,15 @@ namespace Yara.Resource {
         public static string LBMYTaxiType {
             get {
                 return ResourceManager.GetString("LBMYTaxiType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عناوين التطبيقات في الرئيسية .
+        /// </summary>
+        public static string LBMyTaxizAppHomeContent {
+            get {
+                return ResourceManager.GetString("LBMyTaxizAppHomeContent", resourceCulture);
             }
         }
         
@@ -2869,6 +2941,78 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق الاندرويد عربي.
+        /// </summary>
+        public static string LbUrlAndrAppAr {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الاندرويد إنكليزي .
+        /// </summary>
+        public static string LbUrlAndrAppEn {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الاندرويد كردي.
+        /// </summary>
+        public static string LbUrlAndrAppKr1 {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الاندرويد سيراني.
+        /// </summary>
+        public static string LbUrlAndrAppKr2 {
+            get {
+                return ResourceManager.GetString("LbUrlAndrAppKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  عربي.
+        /// </summary>
+        public static string LbUrlAppAr {
+            get {
+                return ResourceManager.GetString("LbUrlAppAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  إنكليزي.
+        /// </summary>
+        public static string LbUrlAppEn {
+            get {
+                return ResourceManager.GetString("LbUrlAppEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  كردي.
+        /// </summary>
+        public static string LbUrlAppKr1 {
+            get {
+                return ResourceManager.GetString("LbUrlAppKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رابط تطبيق  الابل  سيراني.
+        /// </summary>
+        public static string LbUrlAppKr2 {
+            get {
+                return ResourceManager.GetString("LbUrlAppKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to رابط التوجيه عربي.
         /// </summary>
         public static string LbUrlButtonAr {
@@ -3261,6 +3405,42 @@ namespace Yara.Resource {
         public static string VLDescriptionOrderDoplceted {
             get {
                 return ResourceManager.GetString("VLDescriptionOrderDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة العربية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryArDoplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryArDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryEnDoplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryEnDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة الكردية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryKr1Doplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryKr1Doplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة السريانية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryKr2Doplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryKr2Doplceted", resourceCulture);
             }
         }
         

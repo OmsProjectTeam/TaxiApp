@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DriverCategoryAr" xml:space="preserve">
+    <value>الفئة عربي</value>
+  </data>
+  <data name="DriverCategoryEn" xml:space="preserve">
+    <value>الفئة إنكليزي</value>
+  </data>
+  <data name="DriverCategoryKr1" xml:space="preserve">
+    <value>الفئة كردي</value>
+  </data>
+  <data name="DriverCategoryKr2" xml:space="preserve">
+    <value>الفئة سرياني</value>
+  </data>
   <data name="Generallang2" xml:space="preserve">
     <value>المعلومات باللغة السيراني</value>
   </data>
@@ -158,6 +170,9 @@
   </data>
   <data name="LBAddCustomerMessages" xml:space="preserve">
     <value>Add and modify the Customer Messages</value>
+  </data>
+  <data name="LBAddDriverCategory" xml:space="preserve">
+    <value>إضافة وتعديل فئات السائقين </value>
   </data>
   <data name="LBAddEditBointChooseUsHomeContent" xml:space="preserve">
     <value>إضافة وتعديل نقاط لماذا تختارنا بالرئيسية</value>
@@ -245,6 +260,9 @@
   </data>
   <data name="LBAddTaxiRatesHomeContent" xml:space="preserve">
     <value>إضافة وتعديل عنواين فئات التاكاسي الرئيسية</value>
+  </data>
+  <data name="LBAddTaxizAppHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل عناوين التطبيقات في الرئيسية </value>
   </data>
   <data name="LBAddTransaction" xml:space="preserve">
     <value>Add and modify currency calculator</value>
@@ -609,6 +627,9 @@
   <data name="LBMyCustomerMessages" xml:space="preserve">
     <value>Customer Messages</value>
   </data>
+  <data name="LBMyDriverCategory" xml:space="preserve">
+    <value>فئات السائقين</value>
+  </data>
   <data name="LBMyEmailAlartSetting" xml:space="preserve">
     <value>Email Alart Setting</value>
   </data>
@@ -683,6 +704,9 @@
   </data>
   <data name="LBMYTaxiType" xml:space="preserve">
     <value>أنواع خدمة التاكسي المتوفرة</value>
+  </data>
+  <data name="LBMyTaxizAppHomeContent" xml:space="preserve">
+    <value>عناوين التطبيقات في الرئيسية </value>
   </data>
   <data name="LBMyTransaction" xml:space="preserve">
     <value>Currency calculator</value>
@@ -1053,6 +1077,30 @@
   <data name="LBUpload_image" xml:space="preserve">
     <value>upload</value>
   </data>
+  <data name="LbUrlAndrAppAr" xml:space="preserve">
+    <value>رابط تطبيق الاندرويد عربي</value>
+  </data>
+  <data name="LbUrlAndrAppEn" xml:space="preserve">
+    <value>رابط تطبيق  الاندرويد إنكليزي </value>
+  </data>
+  <data name="LbUrlAndrAppKr1" xml:space="preserve">
+    <value>رابط تطبيق  الاندرويد كردي</value>
+  </data>
+  <data name="LbUrlAndrAppKr2" xml:space="preserve">
+    <value>رابط تطبيق  الاندرويد سيراني</value>
+  </data>
+  <data name="LbUrlAppAr" xml:space="preserve">
+    <value>رابط تطبيق  الابل  عربي</value>
+  </data>
+  <data name="LbUrlAppEn" xml:space="preserve">
+    <value>رابط تطبيق  الابل  إنكليزي</value>
+  </data>
+  <data name="LbUrlAppKr1" xml:space="preserve">
+    <value>رابط تطبيق  الابل  كردي</value>
+  </data>
+  <data name="LbUrlAppKr2" xml:space="preserve">
+    <value>رابط تطبيق  الابل  سيراني</value>
+  </data>
   <data name="LbUrlButtonAr" xml:space="preserve">
     <value>رابط التوجيه عربي</value>
   </data>
@@ -1184,6 +1232,18 @@
   </data>
   <data name="VLDescriptionOrderDoplceted" xml:space="preserve">
     <value>The order description has already been entered. Please confirm and try again later...!</value>
+  </data>
+  <data name="VLDriverCategoryArDoplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة العربية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLDriverCategoryEnDoplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLDriverCategoryKr1Doplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة الكردية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLDriverCategoryKr2Doplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة السريانية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
   </data>
   <data name="VLEmailAlartSettingDoplceted" xml:space="preserve">
     <value>Your email address has already been entered, please check and try again later..!</value>

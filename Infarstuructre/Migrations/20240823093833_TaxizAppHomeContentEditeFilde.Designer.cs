@@ -4,6 +4,7 @@ using Infarstuructre.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infarstuructre.Migrations
 {
     [DbContext(typeof(MasterDbcontext))]
-    partial class MasterDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20240823093833_TaxizAppHomeContentEditeFilde")]
+    partial class TaxizAppHomeContentEditeFilde
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -388,58 +391,6 @@ namespace Infarstuructre.Migrations
                     b.ToTable("TBChooseUsHomeContents");
                 });
 
-            modelBuilder.Entity("Domin.Entity.TBDriverCategory", b =>
-                {
-                    b.Property<int>("IdDriverCategory")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdDriverCategory"));
-
-                    b.Property<bool>("Active")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<bool>("CurrentState")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<string>("DataEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateTimeEntry")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<string>("DriverCategoryAr")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<string>("DriverCategoryEn")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<string>("DriverCategoryKr1")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<string>("DriverCategoryKr2")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.HasKey("IdDriverCategory");
-
-                    b.ToTable("TBDriverCategorys");
-                });
-
             modelBuilder.Entity("Domin.Entity.TBPhotoAboutHomeContent", b =>
                 {
                     b.Property<int>("IdPhotoAboutHomeContent")
@@ -534,37 +485,6 @@ namespace Infarstuructre.Migrations
                     b.HasKey("IdPhotoSliderHomeContent");
 
                     b.ToTable("TBPhotoSliderHomeContents");
-                });
-
-            modelBuilder.Entity("Domin.Entity.TBPhotoTaxizAppHomeContent", b =>
-                {
-                    b.Property<int>("IdPhotoTaxizAppHomeContent")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPhotoTaxizAppHomeContent"));
-
-                    b.Property<bool>("CurrentState")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<string>("DataEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateTimeEntry")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<string>("Photo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdPhotoTaxizAppHomeContent");
-
-                    b.ToTable("TBPhotoTaxizAppHomeContents");
                 });
 
             modelBuilder.Entity("Domin.Entity.TBService", b =>
