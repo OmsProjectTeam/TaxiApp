@@ -165,7 +165,35 @@ namespace Yara.Controllers
 		public IActionResult Privacy()
 		{
 			return View();
-		}
+		}	
+        public async Task<IActionResult> Denied()
+		{
+            ViewmMODeElMASTER vmodel = new ViewmMODeElMASTER();
+            vmodel.ListAboutHomeContent = iAboutHomeContent.GetAll().Take(1);
+            vmodel.ListPhotoAboutHomeContent = iPhotoAboutHomeContent.GetAll();
+            vmodel.ListViewPhotoSliderHomeContent = iPhotoSliderHomeContent.GetAll();
+            vmodel.ListSliderHomeConten = iSliderHomeContent.GetAll();
+            vmodel.ListTaxiInfoStep = iTaxiInfoStep.GetAll().Take(1);
+            vmodel.ListServicesHomeContent = iServicesHomeContent.GetAll().Take(1);
+            vmodel.ListService = iService.GetAllHome();
+            vmodel.ListChooseUsHomeContent = iChooseUsHomeContent.GetAll().Take(1);
+            vmodel.ListBointChooseUsHomeContent = iBointChooseUsHomeContent.GetAll();
+            vmodel.ListCarCategorie = iCarCategorie.GetAll();
+            vmodel.ListTaxiRatesHomeContent = iTaxiRatesHomeContent.GetAll().Take(1);
+            vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll().Take(1);
+            vmodel.ListTaxiType = iTaxiType.GetAll();
+            vmodel.ListTaxizAppHomeContent = iTaxizAppHomeContent.GetAll().Take(1);
+
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+                return View(vmodel);
+            // الحصول على دور المستخدم
+            var role = await _userManager.GetRolesAsync(user);
+            ViewBag.UserRole = role.FirstOrDefault();
+
+            return View(vmodel);
+        }
 
 	
 	}
