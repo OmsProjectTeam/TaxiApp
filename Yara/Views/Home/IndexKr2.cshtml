@@ -1208,19 +1208,17 @@
                             <h3 class="sec-title__title">@item.TitelTwoKr2<br> @item.TitelThreeKr2</h3>
                             <!-- /.sec-title__title -->
                         </div>
-                    }
+                  
                     
                     
                     
                     
                     <!-- /.sec-title -->
                     <p class="download-app-one__text">
-                        Whether you're embarking on a cross-country adventure or exploring a
-                        new destination by car, finding the right car rental vehicle is essential for a stress-free
-                        journey. Here are some rental car tips to help you scor
+                        @item.FirstDescriptionKr2
                     </p><!-- /.download-app-one__text -->
                     <div class="download-app-one__button">
-                        <a href="https://www.apple.com/app-store/" class="download-app-one__btn">
+                        <a href="@item.UrlAppKr2" class="download-app-one__btn">
                             <div class="download-app-one__btn__icon">
                                 <img src="~/Web/assets/images/shapes/appstore.png" alt="appstore">
                             </div><!-- /.download-app-one__btn__icon -->
@@ -1229,7 +1227,7 @@
                                 <span class="download-app-one__btn__text">from the appstore</span><!-- /.download-app-one__btn__text -->
                             </div><!-- /.download-app-one__btn__content -->
                         </a><!-- /.download-app-one__btn -->
-                        <a href="https://play.google.com/" class="download-app-one__btn">
+                        <a href="@item.UrlAndrAppKr2" class="download-app-one__btn">
                             <div class="download-app-one__btn__icon">
                                 <img src="~/Web/assets/images/shapes/playstore.png" alt="playstore">
                             </div><!-- /.download-app-one__btn__icon -->
@@ -1238,7 +1236,10 @@
                                 <span class="download-app-one__btn__text">from the playstore</span><!-- /.download-app-one__btn__text -->
                             </div><!-- /.download-app-one__btn__content -->
                         </a><!-- /.download-app-one__btn -->
-                    </div><!-- /.download-app-one__button -->
+                    </div>
+
+
+                    }<!-- /.download-app-one__button -->
                 </div><!-- /.download-app-one__content -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">

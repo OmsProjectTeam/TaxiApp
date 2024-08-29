@@ -75,6 +75,8 @@ namespace Infarstuructre.ViewModel
         public TBTaxizAppHomeContent TaxizAppHomeContent { get; set; }
 		public IEnumerable<TBDriverCategory> ListDriverCategory { get; set; }
         public TBDriverCategory DriverCategory { get; set; }
+		public IEnumerable<TBPhotoTaxizAppHomeContent> ListPhotoTaxizAppHomeContent { get; set; }
+        public TBPhotoTaxizAppHomeContent PhotoTaxizAppHomeContent { get; set; }
     }
  }
 

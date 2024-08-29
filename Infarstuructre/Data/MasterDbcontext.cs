@@ -182,6 +182,15 @@ namespace Infarstuructre.Data
             builder.Entity<TBDriverCategory>()
            .Property(b => b.Active)
            .HasDefaultValueSql("((1))");
+            //---------------------------------	  
+            //---------------------------------	
+            builder.Entity<TBPhotoTaxizAppHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBPhotoTaxizAppHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");  
+          
             //---------------------------------	
         }
 
@@ -206,6 +215,7 @@ namespace Infarstuructre.Data
         public DbSet<TBTaxiType> TBTaxiTypes { get; set; }
         public DbSet<TBTaxizAppHomeContent> TBTaxizAppHomeContents { get; set; }
         public DbSet<TBDriverCategory> TBDriverCategorys { get; set; }
+        public DbSet<TBPhotoTaxizAppHomeContent> TBPhotoTaxizAppHomeContents { get; set; }
       
 
 
