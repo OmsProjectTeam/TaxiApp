@@ -114,7 +114,23 @@
                                     </div>
                                 </div>
                             </div>
-                          
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxizAppHomeContent.TitelThreeKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr1</label>
+                                        <input asp-for="@Model.TaxizAppHomeContent.TitelThreeKr1" type="text" placeholder="@ResourceWeb.LbTitelThreeKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxizAppHomeContent.TitelThreeKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TaxizAppHomeContent.TitelThreeKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr2</label>
+                                        <input asp-for="@Model.TaxizAppHomeContent.TitelThreeKr2" type="text" placeholder="@ResourceWeb.LbTitelThreeKr2...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TaxizAppHomeContent.TitelThreeKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="card-content">
                                 <div class="row small-spacing">
@@ -193,8 +209,8 @@
 
                                     <div class="col-lg-6 col-xs-6">
                                         <label asp-for="@Model.TaxizAppHomeContent.UrlAppAr" for="exampleInputEmail1">@ResourceWeb.LbUrlAppAr</label>
-                                        <input asp-for="@Model.TaxizAppHomeContent.UrlAndrAppAr" type="text" placeholder="@ResourceWeb.LbUrlAppAr ...." class="form-control" maxlength="250">
-                                        <span asp-validation-for="@Model.TaxizAppHomeContent.UrlAndrAppAr" class="text-danger"></span>
+                                        <input asp-for="@Model.TaxizAppHomeContent.UrlAppAr" type="text" placeholder="@ResourceWeb.LbUrlAppAr ...." class="form-control" maxlength="250">
+                                        <span asp-validation-for="@Model.TaxizAppHomeContent.UrlAppAr" class="text-danger"></span>
 
                                     </div>
                                     <div class="col-lg-6 col-xs-6">
@@ -218,7 +234,6 @@
                                         <label asp-for="@Model.TaxizAppHomeContent.UrlAppKr2" for="exampleInputEmail1">@ResourceWeb.LbUrlAppKr2</label>
                                         <input asp-for="@Model.TaxizAppHomeContent.UrlAppKr2" type="text" placeholder="@ResourceWeb.LbUrlAppKr2...." class="form-control" maxlength="250">
                                         <span asp-validation-for="@Model.TaxizAppHomeContent.UrlAppKr2" class="text-danger"></span>
-
                                     </div>
                                 </div>
                             </div>

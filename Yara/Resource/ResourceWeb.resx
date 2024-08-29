@@ -1215,6 +1215,18 @@
   <data name="VLDescriptionOrderDoplceted" xml:space="preserve">
     <value>The order description has already been entered. Please confirm and try again later...!</value>
   </data>
+  <data name="VLDriverCategoryArDoplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة العربية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLDriverCategoryEnDoplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLDriverCategoryKr1Doplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة الكردية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLDriverCategoryKr2Doplceted" xml:space="preserve">
+    <value>تم أدخال فئة السائق باللغة السريانية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
   <data name="VLEmailAlartSettingDoplceted" xml:space="preserve">
     <value>Your email address has already been entered, please check and try again later..!</value>
   </data>

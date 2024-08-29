@@ -556,6 +556,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة العربية لتتم العملية بنجاح .
+        /// </summary>
+        public static string VlDriverCategoryAr {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة  الانكليزية  لتتم العملية بنجاح.
+        /// </summary>
+        public static string VlDriverCategoryEn {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة  الكردية  لتتم العملية بنجاح.
+        /// </summary>
+        public static string VlDriverCategoryKr1 {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج فئة السائق باللغة  السيرانية  لتتم العملية بنجاح.
+        /// </summary>
+        public static string VlDriverCategoryKr2 {
+            get {
+                return ResourceManager.GetString("VlDriverCategoryKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include the nickname for the process to complete successfully..!.
         /// </summary>
         public static string VlEmail {

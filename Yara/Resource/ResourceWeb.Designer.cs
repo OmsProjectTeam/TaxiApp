@@ -3355,6 +3355,42 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة العربية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryArDoplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryArDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryEnDoplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryEnDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة الكردية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryKr1Doplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryKr1Doplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة السائق باللغة السريانية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        public static string VLDriverCategoryKr2Doplceted {
+            get {
+                return ResourceManager.GetString("VLDriverCategoryKr2Doplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your email address has already been entered, please check and try again later..!.
         /// </summary>
         public static string VLEmailAlartSettingDoplceted {
