@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Denied";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAr.cshtml";
+}
+
+
+
+
+<section class="page-header">
+    <div class="page-header__bg" style="background-image: url('/Web/assets/images/backgrounds/page-header-bg-1-1.jpg');"></div>
+    <!-- /.page-header__bg -->
+    <div class="container">
+        <div class="page-header__content">
+            <h2 class="page-header__title">عذرا</h2>
+            <ul class="taxiz-breadcrumb list-unstyled">
+                <li>
+                    <span class="taxiz-breadcrumb__icon">
+                        <i class="icon-home"></i>
+                    </span>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">الرئيسية </a>
+                </li>
+                <li><span>ليس لديك صلاحية الدخول</span></li>
+            </ul><!-- /.thm-breadcrumb list-unstyled -->
+        </div><!-- /.page-header__content -->
+    </div><!-- /.container -->
+</section><!-- /.page-header -->
+
+<section class="error-404 section-space">
+    <div class="container">
+        <div class="error-404__content">
+            <img src="~/Web/assets/images/resources/404-error-image.png" alt="" class="error-404__image">
+            <h3 class="error-404__title">لا يوجد صلاحية </h3><!-- /.error-404__title -->
+            <p class="error-404__text">صفحة غير متاحة </p><!-- /.error-404__text -->
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="taxiz-btn taxiz-btn--secondary error-404__btn"><span>عودة للرئيسية </span></a>
+        </div><!-- /.error-404__content -->
+    </div><!-- /.container -->
+    <div class="error-404__shape-left">
+        <div class="error-404__shape-left__one"></div><!-- /.error-404__shape-left__one -->
+        <div class="error-404__shape-left__two"></div><!-- /.error-404__shape-left__two -->
+    </div><!-- /.error-404__shape-left -->
+    <div class="error-404__shape-right">
+        <div class="error-404__shape-right__one"></div><!-- /.error-404__shape-right__one -->
+        <div class="error-404__shape-right__two"></div><!-- /.error-404__shape-right__two -->
+    </div><!-- /.error-404__shape-right -->
+</section><!-- /.error-404 section-space -->

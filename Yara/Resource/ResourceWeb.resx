@@ -672,6 +672,9 @@
   <data name="LBMYPhotoSliderHomeContent" xml:space="preserve">
     <value>الصور  في السليدر العلوي </value>
   </data>
+  <data name="LBMYPhotoTaxizAppHomeContent" xml:space="preserve">
+    <value>صور قسم التطبيقات في الرئيسية </value>
+  </data>
   <data name="LBMyProfits" xml:space="preserve">
     <value>My Profits</value>
   </data>

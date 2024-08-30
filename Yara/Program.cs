@@ -83,7 +83,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 builder.Services.ConfigureApplicationCookie(options =>
 {
 	options.LoginPath = "/Admin/Accounts/Login";
-	options.AccessDeniedPath = "/Admin/Home/Denied";
+	options.AccessDeniedPath = "/Home/Denied";
 	options.Cookie.Name = "Cookie";
 	options.Cookie.HttpOnly = true;
 	options.ExpireTimeSpan = TimeSpan.FromMinutes(60);

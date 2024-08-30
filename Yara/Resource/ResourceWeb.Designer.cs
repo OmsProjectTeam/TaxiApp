@@ -1726,6 +1726,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to صور قسم التطبيقات في الرئيسية .
+        /// </summary>
+        public static string LBMYPhotoTaxizAppHomeContent {
+            get {
+                return ResourceManager.GetString("LBMYPhotoTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to My Profits.
         /// </summary>
         public static string LBMyProfits {
