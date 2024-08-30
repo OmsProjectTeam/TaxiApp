@@ -1,6 +1,7 @@
 ﻿
 
 
+using Yara.Areas.Admin.Controllers;
 using static Infarstuructre.BL.IIRolsInformation;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -110,6 +111,8 @@ builder.Services.AddScoped<IITaxiType, CLSTBTaxiType>();
 builder.Services.AddScoped<IITaxizAppHomeContent, CLSTBTaxizAppHomeContent>();
 builder.Services.AddScoped<IIDriverCategory, CLSTBDriverCategory>();
 builder.Services.AddScoped<IIPhotoTaxizAppHomeContent, CLSTBPhotoTaxizAppHomeContent>();
+
+builder.Services.AddScoped<AccountsController>();
 
 
 
