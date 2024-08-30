@@ -1,5 +1,7 @@
 ﻿
 
+using Microsoft.EntityFrameworkCore;
+
 namespace Infarstuructre.BL
 {
     public interface IICarCategorie
@@ -13,6 +15,16 @@ namespace Infarstuructre.BL
         List<TBCarCategorie> GetAllv(int IdCarCategories);
         bool DELETPhoto(int IdCarCategories);
         bool DELETPhotoWethError(string PhotoNAme);
+        /// //////////////////////////API//////////////////////////
+
+        Task<List<TBCarCategorie>> GetAllAsync();
+        Task<List<TBCarCategorie>> GetAllvAsync(int id);
+        Task<TBCarCategorie> GetByIdAsync(int id);
+        Task<bool> AddDataAsync(TBCarCategorie savee);
+        Task<bool> UpdateDataAsync(TBCarCategorie updatss);
+        Task<bool> DeletDataAsync(int id);
+        Task<bool> DeletePhotoAsync(int id);
+        Task<bool> DeletePhotoWithErrorAsync(string name);
     }
     public class CLSTBCarCategorie: IICarCategorie
     {
@@ -153,6 +165,84 @@ namespace Infarstuructre.BL
                 // يفضل ألا تترك البرنامج يتجاوز الأخطاء بصمت، يفضل تسجيل الخطأ أو إعادة رميه
                 return false;
             }
+        }
+
+        // //////////////////////////////////////////API//////////////////////////////////////////////////////
+
+        public async Task<List<TBCarCategorie>> GetAllAsync()
+        {
+            List<TBCarCategorie> MySlider = await dbcontext.TBCarCategories.OrderByDescending(n => n.IdCarCategories).Where(a => a.CurrentState == true).ToListAsync();
+            return MySlider;
+        }
+
+        public async Task<List<TBCarCategorie>> GetAllvAsync(int id)
+        {
+            List<TBCarCategorie> MySlider = await dbcontext.TBCarCategories.OrderByDescending(n => n.IdCarCategories == id).Where(a => a.IdCarCategories == id).Where(a => a.CurrentState == true).ToListAsync();
+            return MySlider;
+        }
+
+        public async Task<TBCarCategorie> GetByIdAsync(int id)
+        {
+            TBCarCategorie sslid = await dbcontext.TBCarCategories.FirstOrDefaultAsync(a => a.IdCarCategories == id);
+            return sslid;
+        }
+
+        public async Task<bool> AddDataAsync(TBCarCategorie savee)
+        {
+            try
+            {
+                await dbcontext.AddAsync<TBCarCategorie>(savee);
+                await dbcontext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateDataAsync(TBCarCategorie updatss)
+        {
+            try
+            {
+                dbcontext.Entry(updatss).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                await dbcontext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeletDataAsync(int id)
+        {
+            try
+            {
+                var catr = await GetByIdAsync(id);
+                catr.CurrentState = false;
+                //TbSubCateegoory dele = dbcontex.TbSubCateegoorys.Where(a => a.IdBrand == IdBrand).FirstOrDefault();
+                //dbcontex.TbSubCateegoorys.Remove(dele);
+                dbcontext.Entry(catr).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                dbcontext.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public Task<bool> DeletePhotoAsync(int id)
+        {
+            var result = deleteData(id);
+            return Task.FromResult(result);
+        }
+
+        public Task<bool> DeletePhotoWithErrorAsync(string name)
+        {
+            var result = DELETPhotoWethError(name);
+            return Task.FromResult(result);
         }
     }
 }

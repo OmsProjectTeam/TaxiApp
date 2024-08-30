@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
+
 namespace Infarstuructre.BL
 {
     public interface IITaxiType
@@ -12,7 +14,19 @@ namespace Infarstuructre.BL
         List<TBTaxiType> GetAllv(int IdTaxiType);
         bool DELETPhoto(int IdTaxiType);
         bool DELETPhotoWethError(string PhotoNAme);
+
+        /// //////////////////////////API//////////////////////////
+
+        Task<List<TBTaxiType>> GetAllAsync();
+        Task<List<TBTaxiType>> GetAllvAsync(int id);
+        Task<TBTaxiType> GetByIdAsync(int id);
+        Task<bool> AddDataAsync(TBTaxiType savee);
+        Task<bool> UpdateDataAsync(TBTaxiType updatss);
+        Task<bool> DeletDataAsync(int id);
+        Task<bool> DeletePhotoAsync(int id);
+        Task<bool> DeletePhotoWithErrorAsync(string name);
     }
+
     public class CLSTBTaxiType: IITaxiType
     {
         MasterDbcontext dbcontext;
@@ -153,6 +167,84 @@ namespace Infarstuructre.BL
                 // يفضل ألا تترك البرنامج يتجاوز الأخطاء بصمت، يفضل تسجيل الخطأ أو إعادة رميه
                 return false;
             }
+        }
+
+        // //////////////////////////////////////////API//////////////////////////////////////////////////////
+
+        public async Task<List<TBTaxiType>> GetAllAsync()
+        {
+            List<TBTaxiType> MySlider = await dbcontext.TBTaxiTypes.OrderByDescending(n => n.IdTaxiType).Where(a => a.CurrentState == true).ToListAsync();
+            return MySlider;
+        }
+
+        public async Task<List<TBTaxiType>> GetAllvAsync(int id)
+        {
+            List<TBTaxiType> MySlider = await  dbcontext.TBTaxiTypes.OrderByDescending(n => n.IdTaxiType == id).Where(a => a.IdTaxiType == id).Where(a => a.CurrentState == true).ToListAsync();
+            return MySlider;
+        }
+
+        public async Task<TBTaxiType> GetByIdAsync(int id)
+        {
+            TBTaxiType sslid = await dbcontext.TBTaxiTypes.FirstOrDefaultAsync(a => a.IdTaxiType == id);
+            return sslid;
+        }
+
+        public async Task<bool> AddDataAsync(TBTaxiType savee)
+        {
+            try
+            {
+                await dbcontext.AddAsync<TBTaxiType>(savee);
+                await dbcontext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateDataAsync(TBTaxiType updatss)
+        {
+            try
+            {
+                dbcontext.Entry(updatss).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                await dbcontext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeletDataAsync(int id)
+        {
+            try
+            {
+                var catr = await GetByIdAsync(id);
+                catr.CurrentState = false;
+                //TbSubCateegoory dele = dbcontex.TbSubCateegoorys.Where(a => a.IdBrand == IdBrand).FirstOrDefault();
+                //dbcontex.TbSubCateegoorys.Remove(dele);
+                dbcontext.Entry(catr).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                dbcontext.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public Task<bool> DeletePhotoAsync(int id)
+        {
+            var result = deleteData(id);
+            return Task.FromResult(result);
+        }
+
+        public Task<bool> DeletePhotoWithErrorAsync(string name)
+        {
+            var result = DELETPhotoWethError(name);
+            return Task.FromResult(result);
         }
     }
 }
