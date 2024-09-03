@@ -1,6 +1,7 @@
 ﻿
 
 
+using Infarstuructre.BL;
 using Yara.Areas.Admin.Controllers;
 using static Infarstuructre.BL.IIRolsInformation;
 
@@ -114,6 +115,7 @@ builder.Services.AddScoped<IIPhotoTaxizAppHomeContent, CLSTBPhotoTaxizAppHomeCon
 builder.Services.AddScoped<IITestimonialHomeContent, CLSTBTestimonialHomeContent>();
 builder.Services.AddScoped<IIPhotoTestimonialHomeContent, CLSTBPhotoTestimonialHomeContent>();
 builder.Services.AddScoped<IIlatestNewsBlogHomeContent, CLSTBlatestNewsBlogHomeContent>();
+builder.Services.AddScoped<IIDrivingLicenseCategory, CLSTBDrivingLicenseCategory>();
 
 
 

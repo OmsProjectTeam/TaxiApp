@@ -592,6 +592,42 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج فئة رخصة القيادة باللغة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlDrivingLicenseCategoryAr {
+            get {
+                return ResourceManager.GetString("VlDrivingLicenseCategoryAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج فئة رخصة القيادة باللغة الانكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlDrivingLicenseCategoryEn {
+            get {
+                return ResourceManager.GetString("VlDrivingLicenseCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج فئة رخصة القيادة باللغة الكردية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlDrivingLicenseCategoryKr1 {
+            get {
+                return ResourceManager.GetString("VlDrivingLicenseCategoryKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج فئة رخصة القيادة باللغة السيرانية لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlDrivingLicenseCategoryKr2 {
+            get {
+                return ResourceManager.GetString("VlDrivingLicenseCategoryKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include the nickname for the process to complete successfully..!.
         /// </summary>
         public static string VlEmail {

@@ -582,4 +582,16 @@
   <data name="VlDriverCategoryKr2" xml:space="preserve">
     <value>يرجى أدراج فئة السائق باللغة  السيرانية  لتتم العملية بنجاح</value>
   </data>
+  <data name="VlDrivingLicenseCategoryAr" xml:space="preserve">
+    <value>يرجى إدراج فئة رخصة القيادة باللغة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlDrivingLicenseCategoryEn" xml:space="preserve">
+    <value>يرجى إدراج فئة رخصة القيادة باللغة الانكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlDrivingLicenseCategoryKr1" xml:space="preserve">
+    <value>يرجى إدراج فئة رخصة القيادة باللغة الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlDrivingLicenseCategoryKr2" xml:space="preserve">
+    <value>يرجى إدراج فئة رخصة القيادة باللغة السيرانية لتتم العملية بنجاح ...!</value>
+  </data>
 </root>

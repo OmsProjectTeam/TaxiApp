@@ -209,6 +209,18 @@ namespace Infarstuructre.Data
            .Property(b => b.CurrentState)
            .HasDefaultValueSql("((1))");  
           
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBDrivingLicenseCategory>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBDrivingLicenseCategory>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+            builder.Entity<TBDrivingLicenseCategory>()
+           .Property(b => b.Active)
+           .HasDefaultValueSql("((1))");  
+          
             //---------------------------------	
         }
 
@@ -237,6 +249,7 @@ namespace Infarstuructre.Data
         public DbSet<TBTestimonialHomeContent> TBTestimonialHomeContents { get; set; }
         public DbSet<TBPhotoTestimonialHomeContent> TBPhotoTestimonialHomeContents { get; set; }
         public DbSet<TBlatestNewsBlogHomeContent> TBlatestNewsBlogHomeContents { get; set; }
+        public DbSet<TBDrivingLicenseCategory> TBDrivingLicenseCategorys { get; set; }
       
 
 
