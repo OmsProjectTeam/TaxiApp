@@ -1,6 +1,7 @@
 ﻿
 
 
+using Yara.Areas.Admin.Controllers;
 using static Infarstuructre.BL.IIRolsInformation;
 
 var builder = WebApplication.CreateBuilder(args);
