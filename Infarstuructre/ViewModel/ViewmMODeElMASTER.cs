@@ -83,6 +83,8 @@ namespace Infarstuructre.ViewModel
         public TBPhotoTestimonialHomeContent PhotoTestimonialHomeContent { get; set; }
 		public IEnumerable<TBlatestNewsBlogHomeContent> ListlatestNewsBlogHomeContent { get; set; }
         public TBlatestNewsBlogHomeContent latestNewsBlogHomeContent { get; set; }
+		public IEnumerable<TBDrivingLicenseCategory> ListDrivingLicenseCategory { get; set; }
+        public TBDrivingLicenseCategory DrivingLicenseCategory { get; set; }
     }
  }
 

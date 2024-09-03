@@ -97,6 +97,42 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to فئة رخصة القيادة عربي.
+        /// </summary>
+        public static string DrivingLicenseCategoryAr {
+            get {
+                return ResourceManager.GetString("DrivingLicenseCategoryAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة رخصة القيادة إنكليزي.
+        /// </summary>
+        public static string DrivingLicenseCategoryEn {
+            get {
+                return ResourceManager.GetString("DrivingLicenseCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة رخصة القيادة كردي.
+        /// </summary>
+        public static string DrivingLicenseCategoryKr1 {
+            get {
+                return ResourceManager.GetString("DrivingLicenseCategoryKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئة رخصة القيادة سيراني.
+        /// </summary>
+        public static string DrivingLicenseCategoryKr2 {
+            get {
+                return ResourceManager.GetString("DrivingLicenseCategoryKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to المعلومات باللغة السيراني.
         /// </summary>
         public static string Generallang2 {
@@ -228,6 +264,15 @@ namespace Yara.Resource {
         public static string LBAddDriverCategory {
             get {
                 return ResourceManager.GetString("LBAddDriverCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل فئات رخصة القيادة .
+        /// </summary>
+        public static string LBAddDrivingLicenseCategory {
+            get {
+                return ResourceManager.GetString("LBAddDrivingLicenseCategory", resourceCulture);
             }
         }
         
@@ -1632,6 +1677,15 @@ namespace Yara.Resource {
         public static string LBMyDriverCategory {
             get {
                 return ResourceManager.GetString("LBMyDriverCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فئات رخص القيادة.
+        /// </summary>
+        public static string LBMyDrivingLicenseCategory {
+            get {
+                return ResourceManager.GetString("LBMyDrivingLicenseCategory", resourceCulture);
             }
         }
         
@@ -3513,6 +3567,42 @@ namespace Yara.Resource {
         public static string VLDriverCategoryKr2Doplceted {
             get {
                 return ResourceManager.GetString("VLDriverCategoryKr2Doplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة الرخصة باللغة العربي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLDrivingLicenseCategoryArDoplceted {
+            get {
+                return ResourceManager.GetString("VLDrivingLicenseCategoryArDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة الرخصة باللغة الانكليزيةمسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLDrivingLicenseCategoryEnDoplceted {
+            get {
+                return ResourceManager.GetString("VLDrivingLicenseCategoryEnDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة الرخصة باللغة الكردية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLDrivingLicenseCategoryKr1Doplceted {
+            get {
+                return ResourceManager.GetString("VLDrivingLicenseCategoryKr1Doplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم أدخال فئة الرخصة باللغة السيراني مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        public static string VLDrivingLicenseCategoryKr2Doplceted {
+            get {
+                return ResourceManager.GetString("VLDrivingLicenseCategoryKr2Doplceted", resourceCulture);
             }
         }
         

@@ -4,7 +4,12 @@ namespace Infarstuructre.BL
 {
     public interface IIDrivingLicenseCategory
     {
-
+        List<TBDrivingLicenseCategory> GetAll();
+        TBDrivingLicenseCategory GetById(int IdDrivingLicenseCategory);
+        bool saveData(TBDrivingLicenseCategory savee);
+        bool UpdateData(TBDrivingLicenseCategory updatss);
+        bool deleteData(int IdDrivingLicenseCategory);
+        List<TBDrivingLicenseCategory> GetAllv(int IdDrivingLicenseCategory);
     }
     public class CLSTBDrivingLicenseCategory: IIDrivingLicenseCategory
     {
