@@ -110,6 +110,9 @@ builder.Services.AddScoped<IITaxiType, CLSTBTaxiType>();
 builder.Services.AddScoped<IITaxizAppHomeContent, CLSTBTaxizAppHomeContent>();
 builder.Services.AddScoped<IIDriverCategory, CLSTBDriverCategory>();
 builder.Services.AddScoped<IIPhotoTaxizAppHomeContent, CLSTBPhotoTaxizAppHomeContent>();
+builder.Services.AddScoped<IITestimonialHomeContent, CLSTBTestimonialHomeContent>();
+builder.Services.AddScoped<IIPhotoTestimonialHomeContent, CLSTBPhotoTestimonialHomeContent>();
+builder.Services.AddScoped<IIlatestNewsBlogHomeContent, CLSTBlatestNewsBlogHomeContent>();
 
 
 

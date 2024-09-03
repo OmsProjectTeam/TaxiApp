@@ -286,6 +286,24 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل صور قسم التطبيقات في الرئيسية.
+        /// </summary>
+        public static string LBAddEditPhotoTaxizAppHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddEditPhotoTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل صورة قسم شهادة العملاء بالرئيسية.
+        /// </summary>
+        public static string LBAddEditPhotoTestimonialHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddEditPhotoTestimonialHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to إضافة وتعديل الخدمات .
         /// </summary>
         public static string LBAddEditService {
@@ -363,6 +381,15 @@ namespace Yara.Resource {
         public static string LBAddFAQList {
             get {
                 return ResourceManager.GetString("LBAddFAQList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل عناوين أخر الاخبار والمدونة بالرئيسية.
+        /// </summary>
+        public static string LBAddlatestNewsBlogHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddlatestNewsBlogHomeContent", resourceCulture);
             }
         }
         
@@ -498,6 +525,15 @@ namespace Yara.Resource {
         public static string LBAddTaxizAppHomeContent {
             get {
                 return ResourceManager.GetString("LBAddTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل عنواين أراء العملاء بالرئيسية.
+        /// </summary>
+        public static string LBAddTestimonialHomeContent {
+            get {
+                return ResourceManager.GetString("LBAddTestimonialHomeContent", resourceCulture);
             }
         }
         
@@ -1654,6 +1690,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to عناوين أخر الاخبار والمدونة بالرئيسية.
+        /// </summary>
+        public static string LBMylatestNewsBlogHomeContent {
+            get {
+                return ResourceManager.GetString("LBMylatestNewsBlogHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Merchants&apos; data.
         /// </summary>
         public static string LBMyMerchant {
@@ -1731,6 +1776,15 @@ namespace Yara.Resource {
         public static string LBMYPhotoTaxizAppHomeContent {
             get {
                 return ResourceManager.GetString("LBMYPhotoTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to صورة قسم شهادة العملاء بالرئيسية .
+        /// </summary>
+        public static string LBMYPhotoTestimonialHomeContent {
+            get {
+                return ResourceManager.GetString("LBMYPhotoTestimonialHomeContent", resourceCulture);
             }
         }
         
@@ -1839,6 +1893,15 @@ namespace Yara.Resource {
         public static string LBMyTaxizAppHomeContent {
             get {
                 return ResourceManager.GetString("LBMyTaxizAppHomeContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنواين أراء العملاء بالرئيسية.
+        /// </summary>
+        public static string LBMyTestimonialHomeContent {
+            get {
+                return ResourceManager.GetString("LBMyTestimonialHomeContent", resourceCulture);
             }
         }
         

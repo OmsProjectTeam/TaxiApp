@@ -192,6 +192,12 @@
   <data name="LBAddEditPhotoSliderHomeContent" xml:space="preserve">
     <value>أضافة وتعديل الصور  في السليدر العلوي</value>
   </data>
+  <data name="LBAddEditPhotoTaxizAppHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل صور قسم التطبيقات في الرئيسية</value>
+  </data>
+  <data name="LBAddEditPhotoTestimonialHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل صورة قسم شهادة العملاء بالرئيسية</value>
+  </data>
   <data name="LBAddEditService" xml:space="preserve">
     <value>إضافة وتعديل الخدمات </value>
   </data>
@@ -218,6 +224,9 @@
   </data>
   <data name="LBAddFAQList" xml:space="preserve">
     <value>Add FAQ List</value>
+  </data>
+  <data name="LBAddlatestNewsBlogHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل عناوين أخر الاخبار والمدونة بالرئيسية</value>
   </data>
   <data name="LBAddOrderCase" xml:space="preserve">
     <value>Adding and modifying Order Case</value>
@@ -263,6 +272,9 @@
   </data>
   <data name="LBAddTaxizAppHomeContent" xml:space="preserve">
     <value>إضافة وتعديل عناوين التطبيقات في الرئيسية </value>
+  </data>
+  <data name="LBAddTestimonialHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل عنواين أراء العملاء بالرئيسية</value>
   </data>
   <data name="LBAddTransaction" xml:space="preserve">
     <value>Add and modify currency calculator</value>
@@ -648,6 +660,9 @@
   <data name="LBMYInformationCompanies" xml:space="preserve">
     <value>Information Companies</value>
   </data>
+  <data name="LBMylatestNewsBlogHomeContent" xml:space="preserve">
+    <value>عناوين أخر الاخبار والمدونة بالرئيسية</value>
+  </data>
   <data name="LBMyMerchant" xml:space="preserve">
     <value>Merchants' data</value>
   </data>
@@ -674,6 +689,9 @@
   </data>
   <data name="LBMYPhotoTaxizAppHomeContent" xml:space="preserve">
     <value>صور قسم التطبيقات في الرئيسية </value>
+  </data>
+  <data name="LBMYPhotoTestimonialHomeContent" xml:space="preserve">
+    <value>صورة قسم شهادة العملاء بالرئيسية </value>
   </data>
   <data name="LBMyProfits" xml:space="preserve">
     <value>My Profits</value>
@@ -710,6 +728,9 @@
   </data>
   <data name="LBMyTaxizAppHomeContent" xml:space="preserve">
     <value>عناوين التطبيقات في الرئيسية </value>
+  </data>
+  <data name="LBMyTestimonialHomeContent" xml:space="preserve">
+    <value>عنواين أراء العملاء بالرئيسية</value>
   </data>
   <data name="LBMyTransaction" xml:space="preserve">
     <value>Currency calculator</value>

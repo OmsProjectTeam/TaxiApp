@@ -1,0 +1,178 @@
+﻿@model ViewmMODeElMASTER
+@{
+    ViewData["Title"] = ResourceWeb.LBAddTestimonialHomeContent;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-lg-12 col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddTestimonialHomeContent</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+
+
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBAddTestimonialHomeContent</h4>
+                    <!-- /.box-title -->
+
+
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="TestimonialHomeContent" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.TestimonialHomeContent.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.TestimonialHomeContent.IdTestimonialHomeContent" class="form-control">
+                                <input type="hidden" asp-for="@Model.TestimonialHomeContent.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                                <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
+                                <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+                            </div>
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelOneAr" for="exampleInputEmail1">@ResourceWeb.LbTitelOneAr</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelOneAr" type="text" placeholder="@ResourceWeb.LbTitelOneAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelOneAr" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelOneEn" for="exampleInputEmail1">@ResourceWeb.LbTitelOneEn</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelOneEn" type="text" placeholder="@ResourceWeb.LbTitelOneEn ...." class="form-control">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelOneEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelOneKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr1</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelOneKr1" type="text" placeholder="@ResourceWeb.LbTitelOneKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelOneKr1" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelOneKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelOneKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelOneKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelTwoAr" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoAr</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelTwoAr" type="text" placeholder="@ResourceWeb.LbTitelTwoAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelTwoAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelTwoEn" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoEn</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelTwoEn" type="text" placeholder="@ResourceWeb.LbTitelTwoEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelTwoEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelTwoKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr1</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelTwoKr1" type="text" placeholder="@ResourceWeb.LbTitelTwoKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelTwoKr1" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelTwoKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelTwoKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelTwoKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelThreeAr" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeAr</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelThreeAr" type="text" placeholder="@ResourceWeb.LbTitelThreeAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelThreeAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelThreeEn" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeEn</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelThreeEn" type="text" placeholder="@ResourceWeb.LbTitelThreeEn...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelThreeEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelThreeKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr1</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelThreeKr1" type="text" placeholder="@ResourceWeb.LbTitelThreeKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelThreeKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.TestimonialHomeContent.TitelThreeKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr2</label>
+                                        <input asp-for="@Model.TestimonialHomeContent.TitelThreeKr2" type="text" placeholder="@ResourceWeb.LbTitelThreeKr2...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.TestimonialHomeContent.TitelThreeKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="checkbox margin-bottom-20">
+                                <div class="switch success"><input type="checkbox" asp-for="@Model.TestimonialHomeContent.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+
+                        </form>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.lbOldeAndUserGide</h4>
+                    <!-- /.box-title -->
+                    <div class="card-content">
+                        <div class="form-group">
+                            <img src="~/images/user gide/TestimonialHomeContent.png" width="1920" height="1077" />
+                        </div>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-content -->
+</div>
+
+@section Scripts {
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    <script>
+        $("#url").val(window.location.href);
+    </script>
+}
+

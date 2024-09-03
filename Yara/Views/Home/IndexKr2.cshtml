@@ -1245,12 +1245,19 @@
             <div class="col-lg-6">
                 <div class="download-app-one__image">
                     <div class="download-app-one__image__inner">
-                        <img src="~/Web/assets/images/resources/download-app-1-1.png" alt="download-app">
+                        @foreach (var item2 in Model.ListPhotoTaxizAppHomeContent.Take(1))
+                        {
+                            <img src="@string.Format("/Images/Home/{0}",item2.Photo)" style="height:370px;width:370px" alt="download-app">
+                        }
+
                     </div><!-- /.download-app-one__image__inner -->
                 </div><!-- /.download-app-one__image -->
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row gutter-y-50 -->
-        <img src="~/Web/assets/images/resources/download-app-taxi-mockup-1-1.png" alt="mockup" class="download-app-one__taxi-mockup">
+        @foreach (var item3 in Model.ListPhotoTaxizAppHomeContent.Skip(1).Take(1))
+        {
+            <img src="@string.Format("/Images/Home/{0}",item3.Photo)" style="height:461px;width:394px" alt="mockup" class="download-app-one__taxi-mockup">
+        }
     </div><!-- /.container section-space -->
     <img src="~/Web/assets/images/shapes/download-app-shape-1-1-rtl.png" alt="download-app-shape" class="download-app-one__shape">
 </section><!-- /.download-app-one -->
@@ -1258,12 +1265,17 @@
 <section class="testimonials-one section-space">
     <div class="container">
         <div class="sec-title sec-title--center">
-            <div class="sec-title__top">
-                <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-                <h6 class="sec-title__tagline">our testimonials</h6><!-- /.sec-title__tagline -->
-                <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-            </div><!-- /.sec-title__top -->
-            <h3 class="sec-title__title">peoples talk about <br> taxiz experience</h3><!-- /.sec-title__title -->
+            @foreach (var item in Model.ListTestimonialHomeContent)
+            {
+                <div class="sec-title__top">
+                    <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
+                    <h6 class="sec-title__tagline">@item.TitelOneKr2</h6><!-- /.sec-title__tagline -->
+                    <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
+                </div>
+
+                <!-- /.sec-title__top -->
+                <h3 class="sec-title__title">@item.TitelTwoKr2<br>@item.TitelThreeKr2</h3>
+            }
         </div><!-- /.sec-title -->
         <div class="testimonials-one__inner">
             <div class="testimonials-one__inner__bg"
@@ -1319,8 +1331,11 @@
                         </div><!-- /.item -->
                     </div><!-- /.testimonials-one__carousel -->
                 </div><!-- /.testimonials-one__content__inner -->
-                <img src="~/Web/assets/images/testimonials/testimonials-happy-young-man-1-1.png" alt="young man"
-                     class="testimonials-one__content__image">
+                @foreach (var item in Model.ListPhotoTestimonialHomeContent)
+                {
+                    <img src="@string.Format("/Images/Home/{0}",item.Photo)" style="height:250px;width:300px" alt="young man"
+                         class="testimonials-one__content__image">
+                }
                 <div class="testimonials-one__content__shape-one"></div><!-- /.testimonials-one__content__shape-one -->
                 <div class="testimonials-one__content__shape-two"></div><!-- /.testimonials-one__content__shape-two -->
             </div><!-- /.testimonials-one__content -->
@@ -1333,22 +1348,34 @@
 <section class="blog-one section-space">
     <div class="container">
         <div class="blog-one__top">
+
+
             <div class="row gutter-y-50 align-items-center">
-                <div class="col-lg-8">
-                    <div class="sec-title @@extraClassName">
-                        <div class="sec-title__top">
-                            <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-                            <h6 class="sec-title__tagline">our latest news</h6><!-- /.sec-title__tagline -->
-                        </div><!-- /.sec-title__top -->
-                        <h3 class="sec-title__title">latest news and <br> blog on taxiz </h3><!-- /.sec-title__title -->
-                    </div><!-- /.sec-title -->
-                </div><!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <div class="blog-one__button">
-                        <a href="blog-grid.html" class="blog-one__btn taxiz-btn taxiz-btn--white taxiz-btn--secondary"><span>view all blog</span></a><!-- /.taxiz-btn -->
-                    </div><!-- /.blog-one__button -->
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row gutter-y-40 -->
+                @foreach (var item in Model.ListlatestNewsBlogHomeContent)
+                {
+
+
+                    <div class="col-lg-8">
+                        <div class="sec-title @@extraClassName">
+                            <div class="sec-title__top">
+                                <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
+                                <h6 class="sec-title__tagline">@item.TitelOneKr2</h6><!-- /.sec-title__tagline -->
+                            </div><!-- /.sec-title__top -->
+                            <h3 class="sec-title__title">@item.TitelTwoKr2 <br> @item.TitelThreeKr2</h3><!-- /.sec-title__title -->
+                        </div><!-- /.sec-title -->
+                    </div>
+
+                    <!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="blog-one__button">
+                            <a href="@item.UrlButtonKr2" class="blog-one__btn taxiz-btn taxiz-btn--white taxiz-btn--secondary"><span>@item.TitleButtonKr2</span></a><!-- /.taxiz-btn -->
+                        </div><!-- /.blog-one__button -->
+                    </div>
+
+                }
+            
+            
+            <!-- /.row gutter-y-40 -->
         </div><!-- /.blog-one__top -->
         <div class="row gutter-y-30">
             <div class="col-md-6 col-lg-4">

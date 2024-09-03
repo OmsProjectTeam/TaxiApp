@@ -191,6 +191,24 @@ namespace Infarstuructre.Data
            .Property(b => b.CurrentState)
            .HasDefaultValueSql("((1))");  
           
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBTestimonialHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBTestimonialHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");  
+          
+            //---------------------------------	
+            //---------------------------------	
+            builder.Entity<TBPhotoTestimonialHomeContent>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBPhotoTestimonialHomeContent>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");  
+          
             //---------------------------------	
         }
 
@@ -216,6 +234,9 @@ namespace Infarstuructre.Data
         public DbSet<TBTaxizAppHomeContent> TBTaxizAppHomeContents { get; set; }
         public DbSet<TBDriverCategory> TBDriverCategorys { get; set; }
         public DbSet<TBPhotoTaxizAppHomeContent> TBPhotoTaxizAppHomeContents { get; set; }
+        public DbSet<TBTestimonialHomeContent> TBTestimonialHomeContents { get; set; }
+        public DbSet<TBPhotoTestimonialHomeContent> TBPhotoTestimonialHomeContents { get; set; }
+        public DbSet<TBlatestNewsBlogHomeContent> TBlatestNewsBlogHomeContents { get; set; }
       
 
 

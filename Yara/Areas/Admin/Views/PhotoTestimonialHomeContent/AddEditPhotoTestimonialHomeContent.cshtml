@@ -1,13 +1,13 @@
 ﻿@model ViewmMODeElMASTER
 @{
-    ViewData["Title"] = ResourceWeb.LBAddEditPhotoTaxizAppHomeContent;
+    ViewData["Title"] = ResourceWeb.LBAddEditPhotoTestimonialHomeContent;
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <div class="col-lg-12 col-xs-12">
     <div class="box-content">
         <ul class="list-inline">
-            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddEditPhotoTaxizAppHomeContent</button></a></li>/
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddEditPhotoTestimonialHomeContent</button></a></li>/
             <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
             <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
 
@@ -18,17 +18,17 @@
         <div class="row small-spacing">
             <div class="col-lg-6 col-xs-12">
                 <div class="box-content card white">
-                    <h4 class="box-title">@ResourceWeb.LBAddEditPhotoTaxizAppHomeContent</h4>
+                    <h4 class="box-title">@ResourceWeb.LBAddEditPhotoTestimonialHomeContent</h4>
                     <!-- /.box-title -->
 
 
 
                     <div class="card-content">
-                        <form role="form" method="post" asp-controller="PhotoTaxizAppHomeContent" asp-action="Save" enctype="multipart/form-data">
+                        <form role="form" method="post" asp-controller="PhotoTestimonialHomeContent" asp-action="Save" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input type="hidden" asp-for="@Model.PhotoTaxizAppHomeContent.DataEntry" class="form-control" value="@User.Identity.Name">
-                                <input type="hidden" asp-for="@Model.PhotoTaxizAppHomeContent.IdPhotoTaxizAppHomeContent" class="form-control">
-                                <input type="hidden" asp-for="@Model.PhotoTaxizAppHomeContent.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.PhotoTestimonialHomeContent.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.PhotoTestimonialHomeContent.IdPhotoTestimonialHomeContent" class="form-control">
+                                <input type="hidden" asp-for="@Model.PhotoTestimonialHomeContent.DateTimeEntry" value="@DateTime.Now">
                                 <input type="hidden" asp-for="@Model.returnUrl" id="url">
                                 <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
                                 <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
@@ -45,7 +45,7 @@
 
 
                             <div class="checkbox margin-bottom-20">
-                                <div class="switch success"><input type="checkbox" asp-for="@Model.PhotoTaxizAppHomeContent.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                                <div class="switch success"><input type="checkbox" asp-for="@Model.PhotoTestimonialHomeContent.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
 
@@ -61,7 +61,7 @@
                     <!-- /.box-title -->
                     <div class="card-content">
                         <div class="form-group">
-                            <img src="~/images/user gide/PhotoTaxizAppHomeContent.png" width="1920" height="1077" />
+                            <img src="~/images/user gide/PhotoTestimonialHomeContent.png" width="1920" height="1077" />
                         </div>
                     </div>
                     <!-- /.card-content -->

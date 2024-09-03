@@ -4,6 +4,7 @@ using Infarstuructre.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infarstuructre.Migrations
 {
     [DbContext(typeof(MasterDbcontext))]
-    partial class MasterDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20240831213436_TBlatestNewsBlogHomeContent")]
+    partial class TBlatestNewsBlogHomeContent
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1483,11 +1486,11 @@ namespace Infarstuructre.Migrations
 
             modelBuilder.Entity("Domin.Entity.TBlatestNewsBlogHomeContent", b =>
                 {
-                    b.Property<int>("IdlatestNewsBlogHomeContent")
+                    b.Property<int>("IdTaxizAppHomeContent")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdlatestNewsBlogHomeContent"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTaxizAppHomeContent"));
 
                     b.Property<bool>("CurrentState")
                         .HasColumnType("bit");
@@ -1599,7 +1602,7 @@ namespace Infarstuructre.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
-                    b.HasKey("IdlatestNewsBlogHomeContent");
+                    b.HasKey("IdTaxizAppHomeContent");
 
                     b.ToTable("TBlatestNewsBlogHomeContents");
                 });

@@ -1,0 +1,246 @@
+﻿@model ViewmMODeElMASTER
+@{
+    ViewData["Title"] = ResourceWeb.LBAddlatestNewsBlogHomeContent;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-lg-12 col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddlatestNewsBlogHomeContent</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+
+
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBAddlatestNewsBlogHomeContent</h4>
+                    <!-- /.box-title -->
+
+
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="latestNewsBlogHomeContent" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.latestNewsBlogHomeContent.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.latestNewsBlogHomeContent.IdlatestNewsBlogHomeContent" class="form-control">
+                                <input type="hidden" asp-for="@Model.latestNewsBlogHomeContent.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                                <span style="color:royalblue"> <strong>@TempData["Saved successfully"]</strong></span>
+                                <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+                            </div>
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelOneAr" for="exampleInputEmail1">@ResourceWeb.LbTitelOneAr</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelOneAr" type="text" placeholder="@ResourceWeb.LbTitelOneAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelOneAr" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelOneEn" for="exampleInputEmail1">@ResourceWeb.LbTitelOneEn</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelOneEn" type="text" placeholder="@ResourceWeb.LbTitelOneEn ...." class="form-control">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelOneEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelOneKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr1</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelOneKr1" type="text" placeholder="@ResourceWeb.LbTitelOneKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelOneKr1" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelOneKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelOneKr2</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelOneKr2" type="text" placeholder="@ResourceWeb.LbTitelOneKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelOneKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelTwoAr" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoAr</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelTwoAr" type="text" placeholder="@ResourceWeb.LbTitelTwoAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelTwoAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelTwoEn" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoEn</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelTwoEn" type="text" placeholder="@ResourceWeb.LbTitelTwoEn ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelTwoEn" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelTwoKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr1</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelTwoKr1" type="text" placeholder="@ResourceWeb.LbTitelTwoKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelTwoKr1" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelTwoKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelTwoKr2</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelTwoKr2" type="text" placeholder="@ResourceWeb.LbTitelTwoKr2 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelTwoKr2" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelThreeAr" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeAr</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelThreeAr" type="text" placeholder="@ResourceWeb.LbTitelThreeAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelThreeAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelThreeEn" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeEn</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelThreeEn" type="text" placeholder="@ResourceWeb.LbTitelThreeEn...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelThreeEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelThreeKr1" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr1</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelThreeKr1" type="text" placeholder="@ResourceWeb.LbTitelThreeKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelThreeKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitelThreeKr2" for="exampleInputEmail1">@ResourceWeb.LbTitelThreeKr2</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitelThreeKr2" type="text" placeholder="@ResourceWeb.LbTitelThreeKr2...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitelThreeKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitleButtonAr" for="exampleInputEmail1">@ResourceWeb.LbTitleButtonAr</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitleButtonAr" type="text" placeholder="@ResourceWeb.LbTitleButtonAr ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitleButtonAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitleButtonEn" for="exampleInputEmail1">@ResourceWeb.LbTitleButtonEn</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitleButtonEn" type="text" placeholder="@ResourceWeb.LbTitleButtonEn...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitleButtonEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitleButtonKr1" for="exampleInputEmail1">@ResourceWeb.LbTitleButtonKr1</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitleButtonKr1" type="text" placeholder="@ResourceWeb.LbTitleButtonKr1 ...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitleButtonKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.TitleButtonKr2" for="exampleInputEmail1">@ResourceWeb.LbTitleButtonKr2</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.TitleButtonKr2" type="text" placeholder="@ResourceWeb.LbTitleButtonKr2...." class="form-control" maxlength="150">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.TitleButtonKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.UrlButtonAr" for="exampleInputEmail1">@ResourceWeb.LbUrlButtonAr</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.UrlButtonAr" type="text" placeholder="@ResourceWeb.LbUrlButtonAr ...." class="form-control" maxlength="300">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.UrlButtonAr" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.UrlButtonEn" for="exampleInputEmail1">@ResourceWeb.LbUrlButtonEn</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.UrlButtonEn" type="text" placeholder="@ResourceWeb.LbUrlButtonEn...." class="form-control" maxlength="300">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.UrlButtonEn" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.UrlButtonKr1" for="exampleInputEmail1">@ResourceWeb.LbUrlButtonKr1</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.UrlButtonKr1" type="text" placeholder="@ResourceWeb.LbUrlButtonKr1 ...." class="form-control" maxlength="300">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.UrlButtonKr1" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <label asp-for="@Model.latestNewsBlogHomeContent.UrlButtonKr2" for="exampleInputEmail1">@ResourceWeb.LbUrlButtonKr2</label>
+                                        <input asp-for="@Model.latestNewsBlogHomeContent.UrlButtonKr2" type="text" placeholder="@ResourceWeb.LbUrlButtonKr2...." class="form-control" maxlength="300">
+                                        <span asp-validation-for="@Model.latestNewsBlogHomeContent.UrlButtonKr2" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox margin-bottom-20">
+                                <div class="switch success"><input type="checkbox" asp-for="@Model.latestNewsBlogHomeContent.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+
+                        </form>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.lbOldeAndUserGide</h4>
+                    <!-- /.box-title -->
+                    <div class="card-content">
+                        <div class="form-group">
+                            <img src="~/images/user gide/latestNewsBlogHomeContent.png" width="1920" height="1077" />
+                        </div>
+                    </div>
+                    <!-- /.card-content -->
+                </div>
+                <!-- /.box-content -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.box-content -->
+</div>
+
+@section Scripts {
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    <script>
+        $("#url").val(window.location.href);
+    </script>
+}
+
