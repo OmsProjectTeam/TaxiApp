@@ -27,8 +27,9 @@ namespace Yara.Controllers
         IITestimonialHomeContent iTestimonialHomeContent;
         IIPhotoTestimonialHomeContent iPhotoTestimonialHomeContent;
         IIlatestNewsBlogHomeContent ilatestNewsBlogHomeContent;
+        IIContentHomeBookNow iContentHomeBookNow;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1,IITaxiRatesHomeContent iTaxiRatesHomeContent1,IIPhotoBookYourRideContent iPhotoBookYourRideContent1,IITaxiType iTaxiType1,IITaxizAppHomeContent iTaxizAppHomeContent1,IIPhotoTaxizAppHomeContent iPhotoTaxizAppHomeContent1,IITestimonialHomeContent iTestimonialHomeContent1,IIPhotoTestimonialHomeContent iPhotoTestimonialHomeContent1,IIlatestNewsBlogHomeContent ilatestNewsBlogHomeContent1)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager,IIAboutHomeContent iAboutHomeContent1,IIPhotoAboutHomeContent iPhotoAboutHomeContent1,IISliderHomeContent iSliderHomeContent1,IIPhotoSliderHomeContent iPhotoSliderHomeContent1,IITaxiInfoStep iTaxiInfoStep1,IIServicesHomeContent iServicesHomeContent1,IIService iService1,IIChooseUsHomeContent iChooseUsHomeContent1,IIBointChooseUsHomeContent iBointChooseUsHomeContent1,IICarCategorie iCarCategorie1,IITaxiRatesHomeContent iTaxiRatesHomeContent1,IIPhotoBookYourRideContent iPhotoBookYourRideContent1,IITaxiType iTaxiType1,IITaxizAppHomeContent iTaxizAppHomeContent1,IIPhotoTaxizAppHomeContent iPhotoTaxizAppHomeContent1,IITestimonialHomeContent iTestimonialHomeContent1,IIPhotoTestimonialHomeContent iPhotoTestimonialHomeContent1,IIlatestNewsBlogHomeContent ilatestNewsBlogHomeContent1,IIContentHomeBookNow iContentHomeBookNow1)
 		{
 			_logger = logger;
 			_userManager= userManager;
@@ -50,6 +51,7 @@ namespace Yara.Controllers
             iTestimonialHomeContent = iTestimonialHomeContent1;
             iPhotoTestimonialHomeContent = iPhotoTestimonialHomeContent1;
             ilatestNewsBlogHomeContent = ilatestNewsBlogHomeContent1;
+            iContentHomeBookNow= iContentHomeBookNow1;
         }
 
 		public async Task<IActionResult> Index()
@@ -73,6 +75,7 @@ namespace Yara.Controllers
             vmodel.ListTestimonialHomeContent = iTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListPhotoTestimonialHomeContent = iPhotoTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListlatestNewsBlogHomeContent = ilatestNewsBlogHomeContent.GetAll().Take(1);
+            vmodel.ListContentHomeBookNow = iContentHomeBookNow.GetAll().Take(1);
 
             var user = await _userManager.GetUserAsync(User);
 			if (user == null)
@@ -104,6 +107,8 @@ namespace Yara.Controllers
             vmodel.ListTestimonialHomeContent = iTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListPhotoTestimonialHomeContent = iPhotoTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListlatestNewsBlogHomeContent = ilatestNewsBlogHomeContent.GetAll().Take(1);
+            vmodel.ListContentHomeBookNow = iContentHomeBookNow.GetAll().Take(1);
+
 
 
 
@@ -137,6 +142,8 @@ namespace Yara.Controllers
             vmodel.ListTestimonialHomeContent = iTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListPhotoTestimonialHomeContent = iPhotoTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListlatestNewsBlogHomeContent = ilatestNewsBlogHomeContent.GetAll().Take(1);
+            vmodel.ListContentHomeBookNow = iContentHomeBookNow.GetAll().Take(1);
+
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -168,6 +175,8 @@ namespace Yara.Controllers
             vmodel.ListTestimonialHomeContent = iTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListPhotoTestimonialHomeContent = iPhotoTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListlatestNewsBlogHomeContent = ilatestNewsBlogHomeContent.GetAll().Take(1);
+            vmodel.ListContentHomeBookNow = iContentHomeBookNow.GetAll().Take(1);
+
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -203,7 +212,7 @@ namespace Yara.Controllers
             vmodel.ListPhotoTestimonialHomeContent = iPhotoTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListTestimonialHomeContent = iTestimonialHomeContent.GetAll().Take(1);
             vmodel.ListlatestNewsBlogHomeContent = ilatestNewsBlogHomeContent.GetAll().Take(1);
-
+            vmodel.ListContentHomeBookNow = iContentHomeBookNow.GetAll().Take(1);
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
                 return View(vmodel);

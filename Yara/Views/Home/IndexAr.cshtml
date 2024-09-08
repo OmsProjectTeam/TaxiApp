@@ -1487,21 +1487,26 @@
             <div class="book-one__image">
                 <div class="book-one__image__bg" style="background-image: url('/Web/assets/images/resources/book-left-bg-1-1.jpg');"></div><!-- /.book-one__image__bg -->
             </div><!-- /.book-one__image -->
-            <div class="book-one__content">
-                <div class="sec-title @@extraClassName">
-                    <div class="sec-title__top">
-                        <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
-                        <h6 class="sec-title__tagline">book now</h6><!-- /.sec-title__tagline -->
-                    </div><!-- /.sec-title__top -->
-                    <h3 class="sec-title__title">High Comfort For Your Family</h3><!-- /.sec-title__title -->
-                </div><!-- /.sec-title -->
-                <a href="taxi-booking.html" class="book-one__btn taxiz-btn">
-                    <span class="taxiz-btn__icon">
-                        <i class="icon-taxi"></i>
-                    </span>
-                    <span>book now</span>
-                </a><!-- /.taxiz-btn -->
-            </div><!-- /.book-one__content -->
+            @foreach (var item in Model.ListContentHomeBookNow)
+            {
+                <div class="book-one__content">
+                    <div class="sec-title @@extraClassName">
+                        <div class="sec-title__top">
+                            <div class="sec-title__shape"></div><!-- /.sec-title__shape -->
+                            <h6 class="sec-title__tagline">@item.TitelOneAr</h6><!-- /.sec-title__tagline -->
+                        </div><!-- /.sec-title__top -->
+                        <h3 class="sec-title__title">@item.TitelTwoAr</h3><!-- /.sec-title__title -->
+                    </div><!-- /.sec-title -->
+                    <a href="@item.UrlButtonAr" class="book-one__btn taxiz-btn">
+                        <span class="taxiz-btn__icon">
+                            <i class="icon-taxi"></i>
+                        </span>
+                        <span>@item.TitleButtonAr</span>
+                    </a><!-- /.taxiz-btn -->
+                </div>
+
+                <!-- /.book-one__content -->
+            }<!-- /.book-one__content -->
             <img src="~/Web/assets/images/shapes/book-shape-1-1-rtl.png" alt="shape" class="book-one__shape">
         </div><!-- /.book-one__inner -->
     </div><!-- /.container -->

@@ -221,6 +221,16 @@ namespace Infarstuructre.Data
            .Property(b => b.Active)
            .HasDefaultValueSql("((1))");  
           
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBContentHomeBookNow>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBContentHomeBookNow>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+        
+          
             //---------------------------------	
         }
 
@@ -250,6 +260,7 @@ namespace Infarstuructre.Data
         public DbSet<TBPhotoTestimonialHomeContent> TBPhotoTestimonialHomeContents { get; set; }
         public DbSet<TBlatestNewsBlogHomeContent> TBlatestNewsBlogHomeContents { get; set; }
         public DbSet<TBDrivingLicenseCategory> TBDrivingLicenseCategorys { get; set; }
+        public DbSet<TBContentHomeBookNow> TBContentHomeBookNows { get; set; }
       
 
 

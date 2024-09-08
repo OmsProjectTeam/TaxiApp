@@ -241,6 +241,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to أضافة وتعديل عنواين أحجز لعائلتك الان بالرئيسية.
+        /// </summary>
+        public static string LBAddContentHomeBookNow {
+            get {
+                return ResourceManager.GetString("LBAddContentHomeBookNow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify currencies.
         /// </summary>
         public static string LBAddCurrenciesExchangeRates {
@@ -1641,6 +1650,15 @@ namespace Yara.Resource {
         public static string LBMyClintWitheDeliveryTariffs {
             get {
                 return ResourceManager.GetString("LBMyClintWitheDeliveryTariffs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنواين أحجز لعائلتك الان بالرئيسية.
+        /// </summary>
+        public static string LBMyContentHomeBookNow {
+            get {
+                return ResourceManager.GetString("LBMyContentHomeBookNow", resourceCulture);
             }
         }
         

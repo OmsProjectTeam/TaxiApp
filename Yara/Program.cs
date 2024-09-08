@@ -116,6 +116,7 @@ builder.Services.AddScoped<IITestimonialHomeContent, CLSTBTestimonialHomeContent
 builder.Services.AddScoped<IIPhotoTestimonialHomeContent, CLSTBPhotoTestimonialHomeContent>();
 builder.Services.AddScoped<IIlatestNewsBlogHomeContent, CLSTBlatestNewsBlogHomeContent>();
 builder.Services.AddScoped<IIDrivingLicenseCategory, CLSTBDrivingLicenseCategory>();
+builder.Services.AddScoped<IIContentHomeBookNow, CLSTBContentHomeBookNow>();
 
 
 

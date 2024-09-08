@@ -177,6 +177,9 @@
   <data name="LBAddClintWitheDeliveryTariffs" xml:space="preserve">
     <value>Adding and modifying systems Clint Withe Delivery Tariffs</value>
   </data>
+  <data name="LBAddContentHomeBookNow" xml:space="preserve">
+    <value>أضافة وتعديل عنواين أحجز لعائلتك الان بالرئيسية</value>
+  </data>
   <data name="LBAddCurrenciesExchangeRates" xml:space="preserve">
     <value>Add and modify currencies</value>
   </data>
@@ -644,6 +647,9 @@
   </data>
   <data name="LBMyClintWitheDeliveryTariffs" xml:space="preserve">
     <value>Clint Withe Delivery Tariffs</value>
+  </data>
+  <data name="LBMyContentHomeBookNow" xml:space="preserve">
+    <value>عنواين أحجز لعائلتك الان بالرئيسية</value>
   </data>
   <data name="LBMyCurrenciesExchangeRates" xml:space="preserve">
     <value>Currencies</value>
