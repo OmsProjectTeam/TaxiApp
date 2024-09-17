@@ -406,7 +406,7 @@
     <value>Currency</value>
   </data>
   <data name="lbCurrentState" xml:space="preserve">
-    <value>status</value>
+    <value>الحالة </value>
   </data>
   <data name="LBCustomeronorder" xml:space="preserve">
     <value>Customer On Order</value>
@@ -433,10 +433,10 @@
     <value>old status</value>
   </data>
   <data name="LbDataEntry" xml:space="preserve">
-    <value>data entry</value>
+    <value>مدخل البيانات</value>
   </data>
   <data name="LbDateTimeEntry" xml:space="preserve">
-    <value>Time and date of entry</value>
+    <value>وقت وتاريخ الادخال</value>
   </data>
   <data name="LBDeliveryAddress" xml:space="preserve">
     <value>DeliveryAddress</value>
@@ -835,7 +835,7 @@
     <value>Old photo</value>
   </data>
   <data name="LbOpration" xml:space="preserve">
-    <value>Processes</value>
+    <value>العمليات </value>
   </data>
   <data name="LbOrderCase" xml:space="preserve">
     <value>Case</value>
@@ -886,7 +886,7 @@
     <value>وصف الهاتف بالسيراني </value>
   </data>
   <data name="LbPhoto" xml:space="preserve">
-    <value>Photo</value>
+    <value>الصورة</value>
   </data>
   <data name="lbPortServer" xml:space="preserve">
     <value>Port Server</value>
@@ -934,7 +934,7 @@
     <value>Resived Money</value>
   </data>
   <data name="Lbrole" xml:space="preserve">
-    <value>Role</value>
+    <value>الصلاحية </value>
   </data>
   <data name="LbRolesName" xml:space="preserve">
     <value>Roles Name</value>
@@ -1168,13 +1168,13 @@
     <value>Image</value>
   </data>
   <data name="LbUserEmail" xml:space="preserve">
-    <value>User Email</value>
+    <value>بريد المستخدم</value>
   </data>
   <data name="LbUserName" xml:space="preserve">
-    <value>Name</value>
+    <value>اسم المستخدم</value>
   </data>
   <data name="LbUserPhone" xml:space="preserve">
-    <value>Phone</value>
+    <value>رقم الهاتف</value>
   </data>
   <data name="Lbuserpwd" xml:space="preserve">
     <value>userpwd</value>
@@ -1385,5 +1385,68 @@
   </data>
   <data name="VLUpdatedSuccessfully" xml:space="preserve">
     <value>The modification process was completed successfully</value>
+  </data>
+  <data name="LBMYPhotoContentHomeBookNow" xml:space="preserve">
+    <value>صور احجز لعائلتك </value>
+  </data>
+  <data name="LBAddEditPhotoContentHomeBookNow" xml:space="preserve">
+    <value>أضافة وتعديل صور احجز لعائلتك الان </value>
+  </data>
+  <data name="LBMyDriverInformation" xml:space="preserve">
+    <value>معلومات السائقين </value>
+  </data>
+  <data name="LbDriverNameAr" xml:space="preserve">
+    <value>اسم السائق عربي</value>
+  </data>
+  <data name="LbDriverNameEn" xml:space="preserve">
+    <value>اسم السائق إنكليزي</value>
+  </data>
+  <data name="LbDriverNameKr1" xml:space="preserve">
+    <value>اسم السائق كردي</value>
+  </data>
+  <data name="LbDriverNameKr2" xml:space="preserve">
+    <value>اسم السائق سرياني</value>
+  </data>
+  <data name="LbGenderAr" xml:space="preserve">
+    <value>النوع عربي</value>
+  </data>
+  <data name="LbGenderEn" xml:space="preserve">
+    <value>النوع إنكليزي</value>
+  </data>
+  <data name="LbGenderKr1" xml:space="preserve">
+    <value>النوع كردي</value>
+  </data>
+  <data name="LbGenderKr2" xml:space="preserve">
+    <value>النوع سرياني </value>
+  </data>
+  <data name="LbCurrentAddressAr" xml:space="preserve">
+    <value>العنوان عربي</value>
+  </data>
+  <data name="LbCurrentAddressEn" xml:space="preserve">
+    <value>العنوان إنكليزي</value>
+  </data>
+  <data name="LbCurrentAddressEnKr1" xml:space="preserve">
+    <value>العنوان كردي</value>
+  </data>
+  <data name="LbCurrentAddressKr2" xml:space="preserve">
+    <value>العنوان سرياني</value>
+  </data>
+  <data name="LbdateOfbirth" xml:space="preserve">
+    <value>تاريخ الولادة </value>
+  </data>
+  <data name="LbNationalNumber" xml:space="preserve">
+    <value>الرقم الوطني</value>
+  </data>
+  <data name="LbFamilyNumber" xml:space="preserve">
+    <value>الرقم العائلي</value>
+  </data>
+  <data name="LbCurrentAddressKr1" xml:space="preserve">
+    <value>العنوان كردي</value>
+  </data>
+  <data name="LBDrivers" xml:space="preserve">
+    <value>السائقين</value>
+  </data>
+  <data name="LBAddDriverInformation" xml:space="preserve">
+    <value>إضافة وتعديل بيانات الساقين </value>
   </data>
 </root>

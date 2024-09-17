@@ -707,7 +707,7 @@ namespace Yara.Areas.Admin.Controllers
                         //Succsseded				
                         //var myuser = await _userManager.FindByEmailAsync(user.Email);
                         var myuser = await _userManager.FindByIdAsync(user.Id);
-                        var toaw = await _userManager.AddToRoleAsync(myuser, "Merchant");
+                        var toaw = await _userManager.AddToRoleAsync(myuser, "Driver");
                         var loginResulte = await _signInManager.PasswordSignInAsync(user, model.NewRegister.Password, true, true);
                         if (toaw.Succeeded)
                             return RedirectToAction("Index", "Home", new { area = "" });

@@ -1,0 +1,238 @@
+﻿@model ViewmMODeElMASTER
+@{
+    ViewData["Title"] = ResourceWeb.LBAddDriverInformation;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="col-xs-12">
+    <div class="box-content">
+        <ul class="list-inline">
+            <li class="margin-bottom-10"><a href="#"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">@ResourceWeb.LBAddDriverInformation</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="Admin" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Admin Home</button></a></li>/
+            <li class="margin-bottom-10"><a asp-area="" asp-controller="Home" asp-action="Index"><button type="button" class="btn btn-primary btn-rounded btn-bordered waves-effect waves-light">Home</button></a></li>
+            <span style="color:royalblue"> <strong>@TempData["Saved successfullyl"]</strong></span>
+            <span style="color:red"> <strong>@TempData["ErrorSave"]</strong></span>
+        </ul>
+
+        <div class="row small-spacing">
+            <div class="col-lg-6 col-xs-12">
+                <div class="box-content card white">
+                    <h4 class="box-title">@ResourceWeb.LBEmageSise</h4>
+
+                    <div class="card-content">
+                        <form role="form" method="post" asp-controller="DriverInformation" asp-action="Save" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="hidden" asp-for="@Model.DriverInformation.DataEntry" class="form-control" value="@User.Identity.Name">
+                                <input type="hidden" asp-for="@Model.DriverInformation.IdDriverInformation" class="form-control">
+                                <input type="hidden" asp-for="@Model.DriverInformation.DateTimeEntry" value="@DateTime.Now">
+                                <input type="hidden" asp-for="@Model.returnUrl" id="url">
+                            </div>
+
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-12 col-sm-4">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.IdDriverUser" for="merchant-select">@ResourceWeb.LbUserName</label>
+                                            <select id="merchant-select" class="form-control" asp-for="@Model.DriverInformation.IdDriverUser" asp-items="@(new SelectList(ViewBag.user, "Id", "Name"))">
+                                            </select>
+                                            <span asp-validation-for="@Model.DriverInformation.IdDriverUser" class="text-danger"></span>
+                                            <span style="color:red"> <strong>@TempData["Message"]</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.IdDriverCategory" for="merchant-select">@ResourceWeb.DriverCategoryAr</label>
+                                            <select id="merchant-select" class="form-control" asp-for="@Model.DriverInformation.IdDriverCategory" asp-items="@(new SelectList(ViewBag.DriverCategory, "IdDriverCategory", "DriverCategoryAr"))">
+                                            </select>
+                                            <span asp-validation-for="@Model.DriverInformation.IdDriverCategory" class="text-danger"></span>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.IdDrivingLicenseCategory" for="merchant-select">@ResourceWeb.DrivingLicenseCategoryAr</label>
+                                            <select id="merchant-select" class="form-control" asp-for="@Model.DriverInformation.IdDrivingLicenseCategory" asp-items="@(new SelectList(ViewBag.DrivingLicenseCategory, "IdDrivingLicenseCategory", "DrivingLicenseCategoryAr"))">
+                                            </select>
+                                            <span asp-validation-for="@Model.DriverInformation.IdDrivingLicenseCategory" class="text-danger"></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+
+                                    <div class="col-12 col-sm-4">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.dateOfbirth" for="merchantEmail">@ResourceWeb.LbdateOfbirth</label>
+                                            <input asp-for="@Model.DriverInformation.dateOfbirth" type="date" placeholder="@ResourceWeb.LbdateOfbirth ...." class="form-control" >
+                                            <span asp-validation-for="@Model.DriverInformation.dateOfbirth" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.NationalNumber" for="merchantEmail">@ResourceWeb.LbNationalNumber</label>
+                                            <input asp-for="@Model.DriverInformation.NationalNumber" type="text" placeholder="@ResourceWeb.LbNationalNumber ...." class="form-control"maxlength="50">
+                                            <span asp-validation-for="@Model.DriverInformation.NationalNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-4">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.FamilyNumber" for="exampleInputEmail1">@ResourceWeb.LbFamilyNumber</label>
+                                            <input asp-for="@Model.DriverInformation.FamilyNumber" type="text" placeholder="@ResourceWeb.LbFamilyNumber ...." class="form-control" maxlength="50"></input>
+                                            <span asp-validation-for="@Model.DriverInformation.FamilyNumber" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.DriverNameAr" for="exampleInputEmail1">@ResourceWeb.LbDriverNameAr</label>
+                                            <input asp-for="@Model.DriverInformation.DriverNameAr" type="text" placeholder="@ResourceWeb.LbDriverNameAr ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.DriverNameAr" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.DriverNameEn" for="exampleInputEmail1">@ResourceWeb.LbDriverNameEn</label>
+                                            <input asp-for="@Model.DriverInformation.DriverNameEn" type="text" placeholder="@ResourceWeb.LbDriverNameEn ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.DriverNameEn" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.DriverNameKr1" for="exampleInputEmail1">@ResourceWeb.LbDriverNameKr1</label>
+                                            <input asp-for="@Model.DriverInformation.DriverNameKr1" type="text" placeholder="@ResourceWeb.LbDriverNameKr1 ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.DriverNameKr1" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.DriverNameKr2" for="exampleInputEmail1">@ResourceWeb.LbDriverNameKr2</label>
+                                            <input asp-for="@Model.DriverInformation.DriverNameKr2" type="text" placeholder="@ResourceWeb.LbDriverNameKr2 ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.DriverNameKr2" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.GenderAr" for="exampleInputEmail1">@ResourceWeb.LbGenderAr</label>
+                                            <input asp-for="@Model.DriverInformation.GenderAr" type="text" placeholder="@ResourceWeb.LbGenderAr ...." class="form-control" maxlength="100">
+                                            <span asp-validation-for="@Model.DriverInformation.GenderAr" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.GenderEn" for="exampleInputEmail1">@ResourceWeb.LbGenderEn</label>
+                                            <input asp-for="@Model.DriverInformation.GenderEn" type="text" placeholder="@ResourceWeb.LbGenderEn ...." class="form-control" maxlength="100">
+                                            <span asp-validation-for="@Model.DriverInformation.GenderEn" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.GenderKr1" for="exampleInputEmail1">@ResourceWeb.LbGenderKr1</label>
+                                            <input asp-for="@Model.DriverInformation.GenderKr1" type="text" placeholder="@ResourceWeb.LbGenderKr1 ...." class="form-control" maxlength="100">
+                                            <span asp-validation-for="@Model.DriverInformation.GenderKr1" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.GenderKr2" for="exampleInputEmail1">@ResourceWeb.LbGenderKr2</label>
+                                            <input asp-for="@Model.DriverInformation.GenderKr2" type="text" placeholder="@ResourceWeb.LbGenderKr2 ...." class="form-control" maxlength="100">
+                                            <span asp-validation-for="@Model.DriverInformation.GenderKr2" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.CurrentAddressAr" for="exampleInputEmail1">@ResourceWeb.LbCurrentAddressAr</label>
+                                            <input asp-for="@Model.DriverInformation.CurrentAddressAr" type="text" placeholder="@ResourceWeb.LbCurrentAddressAr ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.CurrentAddressAr" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.CurrentAddressEn" for="exampleInputEmail1">@ResourceWeb.LbCurrentAddressEn</label>
+                                            <input asp-for="@Model.DriverInformation.CurrentAddressEn" type="text" placeholder="@ResourceWeb.LbCurrentAddressEn ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.CurrentAddressEn" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="row small-spacing">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.CurrentAddressKr1" for="exampleInputEmail1">@ResourceWeb.LbCurrentAddressKr1</label>
+                                            <input asp-for="@Model.DriverInformation.CurrentAddressKr1" type="text" placeholder="@ResourceWeb.LbCurrentAddressKr1 ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.CurrentAddressKr1" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group">
+                                            <label asp-for="@Model.DriverInformation.CurrentAddressKr2" for="exampleInputEmail1">@ResourceWeb.LbCurrentAddressKr2</label>
+                                            <input asp-for="@Model.DriverInformation.CurrentAddressKr2" type="text" placeholder="@ResourceWeb.LbCurrentAddressKr2 ...." class="form-control" maxlength="300">
+                                            <span asp-validation-for="@Model.DriverInformation.CurrentAddressKr2" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkbox margin-bottom-20">
+                                <div class="switch success"><input type="checkbox" asp-for="@Model.DriverInformation.CurrentState" id="switch-10" checked="checked"><label for="switch-10">@ResourceWeb.lbCurrentState</label></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm waves-effect waves-light">@ResourceWeb.lbSave</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+
+
+
+
+
+
+
+}

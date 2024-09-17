@@ -87,6 +87,10 @@ namespace Infarstuructre.ViewModel
         public TBDrivingLicenseCategory DrivingLicenseCategory { get; set; }
 		public IEnumerable<TBContentHomeBookNow> ListContentHomeBookNow { get; set; }
         public TBContentHomeBookNow ContentHomeBookNow { get; set; }
+		public IEnumerable<TBPhotoContentHomeBookNow> ListPhotoContentHomeBookNow { get; set; }
+        public TBPhotoContentHomeBookNow PhotoContentHomeBookNow { get; set; }
+		public IEnumerable<TBViewDriverInformation> ListViewDriverInformation { get; set; }
+        public TBDriverInformation DriverInformation { get; set; }
     }
  }
 

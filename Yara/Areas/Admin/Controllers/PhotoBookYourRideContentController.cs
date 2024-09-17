@@ -163,5 +163,13 @@ namespace Yara.Areas.Admin.Controllers
                 return RedirectToAction("MYPhotoBookYourRideContent");
             }
         }
+
+        public IActionResult MYPhotoBookYourRideContent1()
+        {
+            ViewmMODeElMASTER vmodel = new ViewmMODeElMASTER();
+            vmodel.ListPhotoBookYourRideContent = iPhotoBookYourRideContent.GetAll();
+            return View(vmodel);
+        }
+
     }
 }

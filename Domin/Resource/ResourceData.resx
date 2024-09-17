@@ -594,4 +594,52 @@
   <data name="VlDrivingLicenseCategoryKr2" xml:space="preserve">
     <value>يرجى إدراج فئة رخصة القيادة باللغة السيرانية لتتم العملية بنجاح ...!</value>
   </data>
+  <data name="VlDriverNameAr" xml:space="preserve">
+    <value>يرجى أدراج اسم السائق باللغة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlDriverNameEn" xml:space="preserve">
+    <value>يرجى أدراج اسم السائق باللغة الانكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlDriverNameKr1" xml:space="preserve">
+    <value>يرجى أدراج اسم السائق باللغة الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlDriverNameKr2" xml:space="preserve">
+    <value>يرجى أدراج اسم السائق باللغة السيرانية  لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlGenderAr" xml:space="preserve">
+    <value>يرجى أدراج النوع باللغة العربية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlGenderEn" xml:space="preserve">
+    <value>يرجى إدراج النوع باللغة الانكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlGenderKr1" xml:space="preserve">
+    <value>يرجى أدراج النوع باللغة الكردية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlGenderKr2" xml:space="preserve">
+    <value>يرجى أدراج النوع باللغة السيرانية لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VldateOfbirth" xml:space="preserve">
+    <value>يرجى أدراج تاريخ الميلاد لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VlNationalNumber" xml:space="preserve">
+    <value>يرجى إدراج الرقم الوطني لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="MaxLength50" xml:space="preserve">
+    <value>يجب أن لا يتجاوز عدد الحروف المدخلة عن 50 حرف ..!</value>
+  </data>
+  <data name="VlFamilyNumber" xml:space="preserve">
+    <value>يرجى إدخال الرقم العائلي  لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VlCurrentAddressAr" xml:space="preserve">
+    <value>يرجى أدراج العنوان الحالي باللغة العربية لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VlCurrentAddressEn" xml:space="preserve">
+    <value>يرجى أدراج العنوان الحالي باللغة الانكليزية لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlCurrentAddressKr1" xml:space="preserve">
+    <value>يرجى أدراج العنوان الحالي باللغة الكردية لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VlCurrentAddressKr2" xml:space="preserve">
+    <value>يرجى إدراج العنوان الحالي باللغة السيرانية لتتم العملية بنجاح ..!</value>
+  </data>
 </root>

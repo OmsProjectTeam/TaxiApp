@@ -1482,11 +1482,23 @@
 <section class="book-one section-space">
     <div class="container">
         <div class="book-one__inner">
-            <div class="book-one__inner__bg" style="background-image: url('/Web/assets/images/backgrounds/book-bg-1-1.jpg');">
-            </div><!-- /.book-one__inner__bg -->
-            <div class="book-one__image">
-                <div class="book-one__image__bg" style="background-image: url('/Web/assets/images/resources/book-left-bg-1-1.jpg');"></div><!-- /.book-one__image__bg -->
-            </div><!-- /.book-one__image -->
+            <div class="book-one__inner">
+                @foreach (var item in Model.ListPhotoContentHomeBookNow.Take(1))
+                {
+                    <div class="book-one__inner__bg" style="background-image: url('@string.Format("/Images/Home/{0}",item.Photo)');">
+                    </div>
+                }
+
+
+
+                <!-- /.book-one__inner__bg -->
+                <div class="book-one__image">
+                    @foreach (var item in Model.ListPhotoContentHomeBookNow.Skip(1).Take(1))
+                    {
+                        <div class="book-one__image__bg" style="background-image: url('@string.Format("/Images/Home/{0}",item.Photo)');"></div>
+                    }
+                    <!-- /.book-one__image__bg -->
+                </div>
             <div class="book-one__content">
                 @foreach (var item in Model.ListContentHomeBookNow)
                 {
@@ -1508,12 +1520,7 @@
 
                     <!-- /.book-one__content -->
                 }<!-- /.sec-title -->
-                <a href="taxi-booking.html" class="book-one__btn taxiz-btn">
-                    <span class="taxiz-btn__icon">
-                        <i class="icon-taxi"></i>
-                    </span>
-                    <span>book now</span>
-                </a><!-- /.taxiz-btn -->
+               
             </div><!-- /.book-one__content -->
             <img src="~/Web/assets/images/shapes/book-shape-1-1-rtl.png" alt="shape" class="book-one__shape">
         </div><!-- /.book-one__inner -->

@@ -39,6 +39,13 @@ namespace Infarstuructre.Data
 			{
 				entity.HasNoKey();
 				entity.ToView("ViewPhotoSliderHomeContent");
+			});   //***********************************************************
+
+
+			builder.Entity<TBViewDriverInformation>(entity =>
+			{
+				entity.HasNoKey();
+				entity.ToView("ViewDriverInformation");
 			});
 
 
@@ -231,6 +238,25 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("((1))");
         
           
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBPhotoContentHomeBookNow>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBPhotoContentHomeBookNow>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+        
+          
+            //---------------------------------	
+            builder.Entity<TBDriverInformation>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBDriverInformation>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+        
+          
             //---------------------------------	
         }
 
@@ -261,6 +287,9 @@ namespace Infarstuructre.Data
         public DbSet<TBlatestNewsBlogHomeContent> TBlatestNewsBlogHomeContents { get; set; }
         public DbSet<TBDrivingLicenseCategory> TBDrivingLicenseCategorys { get; set; }
         public DbSet<TBContentHomeBookNow> TBContentHomeBookNows { get; set; }
+        public DbSet<TBPhotoContentHomeBookNow> TBPhotoContentHomeBookNows { get; set; }
+        public DbSet<TBDriverInformation> TBDriverInformations { get; set; }
+        public DbSet<TBViewDriverInformation>ViewDriverInformation { get; set; }
       
 
 

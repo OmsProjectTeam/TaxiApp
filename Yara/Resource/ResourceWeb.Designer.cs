@@ -277,6 +277,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل بيانات الساقين .
+        /// </summary>
+        public static string LBAddDriverInformation {
+            get {
+                return ResourceManager.GetString("LBAddDriverInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to إضافة وتعديل فئات رخصة القيادة .
         /// </summary>
         public static string LBAddDrivingLicenseCategory {
@@ -327,6 +336,15 @@ namespace Yara.Resource {
         public static string LBAddEditPhotoBookYourRideContent {
             get {
                 return ResourceManager.GetString("LBAddEditPhotoBookYourRideContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to أضافة وتعديل صور احجز لعائلتك الان .
+        /// </summary>
+        public static string LBAddEditPhotoContentHomeBookNow {
+            get {
+                return ResourceManager.GetString("LBAddEditPhotoContentHomeBookNow", resourceCulture);
             }
         }
         
@@ -925,7 +943,52 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to status.
+        ///   Looks up a localized string similar to العنوان عربي.
+        /// </summary>
+        public static string LbCurrentAddressAr {
+            get {
+                return ResourceManager.GetString("LbCurrentAddressAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان إنكليزي.
+        /// </summary>
+        public static string LbCurrentAddressEn {
+            get {
+                return ResourceManager.GetString("LbCurrentAddressEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان كردي.
+        /// </summary>
+        public static string LbCurrentAddressEnKr1 {
+            get {
+                return ResourceManager.GetString("LbCurrentAddressEnKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان كردي.
+        /// </summary>
+        public static string LbCurrentAddressKr1 {
+            get {
+                return ResourceManager.GetString("LbCurrentAddressKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العنوان سرياني.
+        /// </summary>
+        public static string LbCurrentAddressKr2 {
+            get {
+                return ResourceManager.GetString("LbCurrentAddressKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الحالة .
         /// </summary>
         public static string lbCurrentState {
             get {
@@ -1006,7 +1069,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to data entry.
+        ///   Looks up a localized string similar to مدخل البيانات.
         /// </summary>
         public static string LbDataEntry {
             get {
@@ -1015,7 +1078,16 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Time and date of entry.
+        ///   Looks up a localized string similar to تاريخ الولادة .
+        /// </summary>
+        public static string LbdateOfbirth {
+            get {
+                return ResourceManager.GetString("LbdateOfbirth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to وقت وتاريخ الادخال.
         /// </summary>
         public static string LbDateTimeEntry {
             get {
@@ -1132,6 +1204,51 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اسم السائق عربي.
+        /// </summary>
+        public static string LbDriverNameAr {
+            get {
+                return ResourceManager.GetString("LbDriverNameAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اسم السائق إنكليزي.
+        /// </summary>
+        public static string LbDriverNameEn {
+            get {
+                return ResourceManager.GetString("LbDriverNameEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اسم السائق كردي.
+        /// </summary>
+        public static string LbDriverNameKr1 {
+            get {
+                return ResourceManager.GetString("LbDriverNameKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اسم السائق سرياني.
+        /// </summary>
+        public static string LbDriverNameKr2 {
+            get {
+                return ResourceManager.GetString("LbDriverNameKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to السائقين.
+        /// </summary>
+        public static string LBDrivers {
+            get {
+                return ResourceManager.GetString("LBDrivers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Image size 150*150.
         /// </summary>
         public static string LBEmageSise {
@@ -1182,6 +1299,15 @@ namespace Yara.Resource {
         public static string LbExchangeRate {
             get {
                 return ResourceManager.GetString("LbExchangeRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الرقم العائلي.
+        /// </summary>
+        public static string LbFamilyNumber {
+            get {
+                return ResourceManager.GetString("LbFamilyNumber", resourceCulture);
             }
         }
         
@@ -1272,6 +1398,42 @@ namespace Yara.Resource {
         public static string Lbfull_package {
             get {
                 return ResourceManager.GetString("Lbfull_package", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to النوع عربي.
+        /// </summary>
+        public static string LbGenderAr {
+            get {
+                return ResourceManager.GetString("LbGenderAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to النوع إنكليزي.
+        /// </summary>
+        public static string LbGenderEn {
+            get {
+                return ResourceManager.GetString("LbGenderEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to النوع كردي.
+        /// </summary>
+        public static string LbGenderKr1 {
+            get {
+                return ResourceManager.GetString("LbGenderKr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to النوع سرياني .
+        /// </summary>
+        public static string LbGenderKr2 {
+            get {
+                return ResourceManager.GetString("LbGenderKr2", resourceCulture);
             }
         }
         
@@ -1699,6 +1861,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to معلومات السائقين .
+        /// </summary>
+        public static string LBMyDriverInformation {
+            get {
+                return ResourceManager.GetString("LBMyDriverInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to فئات رخص القيادة.
         /// </summary>
         public static string LBMyDrivingLicenseCategory {
@@ -1830,6 +2001,15 @@ namespace Yara.Resource {
         public static string LBMYPhotoBookYourRideContent {
             get {
                 return ResourceManager.GetString("LBMYPhotoBookYourRideContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to صور احجز لعائلتك .
+        /// </summary>
+        public static string LBMYPhotoContentHomeBookNow {
+            get {
+                return ResourceManager.GetString("LBMYPhotoContentHomeBookNow", resourceCulture);
             }
         }
         
@@ -2059,6 +2239,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الرقم الوطني.
+        /// </summary>
+        public static string LbNationalNumber {
+            get {
+                return ResourceManager.GetString("LbNationalNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الاسم الفريد.
         /// </summary>
         public static string LbNekName {
@@ -2212,7 +2401,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Processes.
+        ///   Looks up a localized string similar to العمليات .
         /// </summary>
         public static string LbOpration {
             get {
@@ -2365,7 +2554,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Photo.
+        ///   Looks up a localized string similar to الصورة.
         /// </summary>
         public static string LbPhoto {
             get {
@@ -2509,7 +2698,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Role.
+        ///   Looks up a localized string similar to الصلاحية .
         /// </summary>
         public static string Lbrole {
             get {
@@ -3220,7 +3409,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Email.
+        ///   Looks up a localized string similar to بريد المستخدم.
         /// </summary>
         public static string LbUserEmail {
             get {
@@ -3229,7 +3418,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to اسم المستخدم.
         /// </summary>
         public static string LbUserName {
             get {
@@ -3238,7 +3427,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Phone.
+        ///   Looks up a localized string similar to رقم الهاتف.
         /// </summary>
         public static string LbUserPhone {
             get {
