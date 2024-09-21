@@ -313,6 +313,15 @@ namespace Yara.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل  وثائق السائقين .
+        /// </summary>
+        public static string LBAddEditDriversDocument {
+            get {
+                return ResourceManager.GetString("LBAddEditDriversDocument", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify company data.
         /// </summary>
         public static string LbAddEditInformationCompanies {
@@ -1114,7 +1123,7 @@ namespace Yara.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Region.
+        ///   Looks up a localized string similar to الوصف.
         /// </summary>
         public static string LbDescription {
             get {
@@ -1866,6 +1875,15 @@ namespace Yara.Resource {
         public static string LBMyDriverInformation {
             get {
                 return ResourceManager.GetString("LBMyDriverInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to وثائق السائقين.
+        /// </summary>
+        public static string LBMYDriversDocument {
+            get {
+                return ResourceManager.GetString("LBMYDriversDocument", resourceCulture);
             }
         }
         

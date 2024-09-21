@@ -547,7 +547,7 @@ namespace Domin.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter The Description.
+        ///   Looks up a localized string similar to يرجى أدخال وصف الوثيقة لتتم العملية بنجاح ..!.
         /// </summary>
         public static string VlDescription {
             get {

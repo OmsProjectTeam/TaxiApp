@@ -90,7 +90,9 @@ namespace Infarstuructre.ViewModel
 		public IEnumerable<TBPhotoContentHomeBookNow> ListPhotoContentHomeBookNow { get; set; }
         public TBPhotoContentHomeBookNow PhotoContentHomeBookNow { get; set; }
 		public IEnumerable<TBViewDriverInformation> ListViewDriverInformation { get; set; }
-        public TBDriverInformation DriverInformation { get; set; }
+        public TBDriverInformation DriverInformation { get; set; }	
+		public IEnumerable<TBViewDriversDocument> ListViewDriversDocument { get; set; }
+        public TBDriversDocument DriversDocument { get; set; }
     }
  }
 

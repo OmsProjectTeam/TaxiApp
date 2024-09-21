@@ -39,13 +39,21 @@ namespace Infarstuructre.Data
 			{
 				entity.HasNoKey();
 				entity.ToView("ViewPhotoSliderHomeContent");
-			});   //***********************************************************
+			});   
+            //***********************************************************
 
 
 			builder.Entity<TBViewDriverInformation>(entity =>
 			{
 				entity.HasNoKey();
 				entity.ToView("ViewDriverInformation");
+			});      //***********************************************************
+
+
+			builder.Entity<TBViewDriversDocument>(entity =>
+			{
+				entity.HasNoKey();
+				entity.ToView("ViewDriversDocument");
 			});
 
 
@@ -257,6 +265,16 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("((1))");
         
           
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBDriversDocument>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBDriversDocument>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+        
+          
             //---------------------------------	
         }
 
@@ -290,6 +308,8 @@ namespace Infarstuructre.Data
         public DbSet<TBPhotoContentHomeBookNow> TBPhotoContentHomeBookNows { get; set; }
         public DbSet<TBDriverInformation> TBDriverInformations { get; set; }
         public DbSet<TBViewDriverInformation>ViewDriverInformation { get; set; }
+        public DbSet<TBDriversDocument> TBDriversDocuments { get; set; }
+        public DbSet<TBViewDriversDocument> ViewDriversDocument { get; set; }
       
 
 

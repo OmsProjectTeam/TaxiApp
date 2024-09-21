@@ -119,6 +119,7 @@ builder.Services.AddScoped<IIDrivingLicenseCategory, CLSTBDrivingLicenseCategory
 builder.Services.AddScoped<IIContentHomeBookNow, CLSTBContentHomeBookNow>();
 builder.Services.AddScoped<IIPhotoContentHomeBookNow, CLSTBPhotoContentHomeBookNow>();
 builder.Services.AddScoped<IIDriverInformation, CLSTBDriverInformation>();
+builder.Services.AddScoped<IIDriversDocument, CLSTBDriversDocument>();
 
 
 

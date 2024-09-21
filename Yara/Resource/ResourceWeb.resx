@@ -445,7 +445,7 @@
     <value>Delivery Charges</value>
   </data>
   <data name="LbDescription" xml:space="preserve">
-    <value>Region</value>
+    <value>الوصف</value>
   </data>
   <data name="LbDescription1" xml:space="preserve">
     <value>Description</value>
@@ -1448,5 +1448,11 @@
   </data>
   <data name="LBAddDriverInformation" xml:space="preserve">
     <value>إضافة وتعديل بيانات الساقين </value>
+  </data>
+  <data name="LBMYDriversDocument" xml:space="preserve">
+    <value>وثائق السائقين</value>
+  </data>
+  <data name="LBAddEditDriversDocument" xml:space="preserve">
+    <value>إضافة وتعديل  وثائق السائقين </value>
   </data>
 </root>

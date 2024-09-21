@@ -226,7 +226,7 @@
     <value>Currency</value>
   </data>
   <data name="VlDescription" xml:space="preserve">
-    <value>Enter The Description</value>
+    <value>يرجى أدخال وصف الوثيقة لتتم العملية بنجاح ..!</value>
   </data>
   <data name="VlDescriptionClint" xml:space="preserve">
     <value>Please include a description of the link between the customer and the pricing. The process is completed successfully...!</value>
