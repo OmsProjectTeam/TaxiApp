@@ -187,6 +187,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يجب أن لا يتجواز عدد الحروف المدخلة عن 5 أحرف لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string MaxLength5 {
+            get {
+                return ResourceManager.GetString("MaxLength5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يجب أن لا يتجاوز عدد الحروف المدخلة عن 50 حرف ..!.
         /// </summary>
         public static string MaxLength50 {
@@ -394,11 +403,29 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدخال رقم  المركبة لتتم العملية بنجاح .
+        /// </summary>
+        public static string VlCarNumber {
+            get {
+                return ResourceManager.GetString("VlCarNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to please inclode the Catch Receipt.
         /// </summary>
         public static string VlCatchReceiptNo {
             get {
                 return ResourceManager.GetString("VlCatchReceiptNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رقم الشاسي الخاص بالمركبة لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlChassisNumber {
+            get {
+                return ResourceManager.GetString("VlChassisNumber", resourceCulture);
             }
         }
         
@@ -736,6 +763,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج تاريخ أنتهاء كرت المركبة لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlExpiryDate {
+            get {
+                return ResourceManager.GetString("VlExpiryDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يرجى إدخال الرقم العائلي  لتتم العملية بنجاح ..!.
         /// </summary>
         public static string VlFamilyNumber {
@@ -849,6 +885,15 @@ namespace Domin.Resource {
         public static string VlGlobalExchangeRate {
             get {
                 return ResourceManager.GetString("VlGlobalExchangeRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج رقم كرت المركبة لتتم العملية بنجاح ...!.
+        /// </summary>
+        public static string VlLicenseNumber {
+            get {
+                return ResourceManager.GetString("VlLicenseNumber", resourceCulture);
             }
         }
         
@@ -1011,6 +1056,15 @@ namespace Domin.Resource {
         public static string VlReceiptStatment {
             get {
                 return ResourceManager.GetString("VlReceiptStatment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج تاريخ أصدار كرت المركبة لتتم العملية بنجاح ..!.
+        /// </summary>
+        public static string VlReleaseDate {
+            get {
+                return ResourceManager.GetString("VlReleaseDate", resourceCulture);
             }
         }
         
@@ -1429,6 +1483,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج نوع السيارة لتتم العملية بنجاح ..!.
+        /// </summary>
+        public static string VlTypeCar {
+            get {
+                return ResourceManager.GetString("VlTypeCar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The entered format must be the email format for the process to complete successfully...!.
         /// </summary>
         public static string VLTypEmail {
@@ -1623,6 +1686,15 @@ namespace Domin.Resource {
         public static string VlUrlServiceKr2 {
             get {
                 return ResourceManager.GetString("VlUrlServiceKr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج تاريخ الصنع للمركبة لتتم العملية بنجاح ..!.
+        /// </summary>
+        public static string VlYearManufacture {
+            get {
+                return ResourceManager.GetString("VlYearManufacture", resourceCulture);
             }
         }
         

@@ -54,6 +54,14 @@ namespace Infarstuructre.Data
 			{
 				entity.HasNoKey();
 				entity.ToView("ViewDriversDocument");
+			}); 
+            //***********************************************************
+
+
+			builder.Entity<TBViewCarInformation>(entity =>
+			{
+				entity.HasNoKey();
+				entity.ToView("ViewCarInformation");
 			});
 
 
@@ -275,6 +283,16 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("((1))");
         
           
+            //---------------------------------	 
+            //---------------------------------	
+            builder.Entity<TBCarInformation>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBCarInformation>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+        
+          
             //---------------------------------	
         }
 
@@ -310,6 +328,8 @@ namespace Infarstuructre.Data
         public DbSet<TBViewDriverInformation>ViewDriverInformation { get; set; }
         public DbSet<TBDriversDocument> TBDriversDocuments { get; set; }
         public DbSet<TBViewDriversDocument> ViewDriversDocument { get; set; }
+        public DbSet<TBCarInformation> TBCarInformations { get; set; }
+        public DbSet<TBViewCarInformation> ViewCarInformation { get; set; }
       
 
 

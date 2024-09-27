@@ -642,4 +642,28 @@
   <data name="VlCurrentAddressKr2" xml:space="preserve">
     <value>يرجى إدراج العنوان الحالي باللغة السيرانية لتتم العملية بنجاح ..!</value>
   </data>
+  <data name="VlCarNumber" xml:space="preserve">
+    <value>يرجى أدخال رقم  المركبة لتتم العملية بنجاح </value>
+  </data>
+  <data name="VlTypeCar" xml:space="preserve">
+    <value>يرجى إدراج نوع السيارة لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VlChassisNumber" xml:space="preserve">
+    <value>يرجى أدراج رقم الشاسي الخاص بالمركبة لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlYearManufacture" xml:space="preserve">
+    <value>يرجى أدراج تاريخ الصنع للمركبة لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="MaxLength5" xml:space="preserve">
+    <value>يجب أن لا يتجواز عدد الحروف المدخلة عن 5 أحرف لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlReleaseDate" xml:space="preserve">
+    <value>يرجى أدراج تاريخ أصدار كرت المركبة لتتم العملية بنجاح ..!</value>
+  </data>
+  <data name="VlExpiryDate" xml:space="preserve">
+    <value>يرجى أدراج تاريخ أنتهاء كرت المركبة لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VlLicenseNumber" xml:space="preserve">
+    <value>يرجى أدراج رقم كرت المركبة لتتم العملية بنجاح ...!</value>
+  </data>
 </root>

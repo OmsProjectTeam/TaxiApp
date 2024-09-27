@@ -120,6 +120,7 @@ builder.Services.AddScoped<IIContentHomeBookNow, CLSTBContentHomeBookNow>();
 builder.Services.AddScoped<IIPhotoContentHomeBookNow, CLSTBPhotoContentHomeBookNow>();
 builder.Services.AddScoped<IIDriverInformation, CLSTBDriverInformation>();
 builder.Services.AddScoped<IIDriversDocument, CLSTBDriversDocument>();
+builder.Services.AddScoped<IICarInformation, CLSTBCarInformation>();
 
 
 
